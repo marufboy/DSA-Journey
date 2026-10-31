@@ -1,0 +1,4720 @@
+{
+  "modules": [
+    {
+      "id": "m22",
+      "title": "Greedy: keputusan lokal dengan bukti",
+      "stage": "Advanced DSA",
+      "description": "Greedy: keputusan lokal dengan bukti. Pengantar terarah dengan bukti dan review; completion tidak otomatis berarti mastery.",
+      "estimatedHours": [
+        24,
+        32
+      ],
+      "prerequisites": [
+        "m16",
+        "m18",
+        "m21"
+      ],
+      "lessonIds": [
+        "m22-l1",
+        "m22-l2",
+        "m22-l3",
+        "m22-l4"
+      ],
+      "exerciseIds": [
+        "m22-e1",
+        "m22-e2",
+        "m22-e3",
+        "m22-e4",
+        "m22-e5",
+        "m22-e6"
+      ]
+    },
+    {
+      "id": "m23",
+      "title": "Dynamic programming: state dan dependency",
+      "stage": "Advanced DSA",
+      "description": "Dynamic programming: state dan dependency. Pengantar terarah dengan bukti dan review; completion tidak otomatis berarti mastery.",
+      "estimatedHours": [
+        28,
+        38
+      ],
+      "prerequisites": [
+        "m11",
+        "m12",
+        "m16"
+      ],
+      "lessonIds": [
+        "m23-l1",
+        "m23-l2",
+        "m23-l3",
+        "m23-l4"
+      ],
+      "exerciseIds": [
+        "m23-e1",
+        "m23-e2",
+        "m23-e3",
+        "m23-e4",
+        "m23-e5",
+        "m23-e6"
+      ]
+    },
+    {
+      "id": "m24",
+      "title": "Advanced electives: bits, trie, string, range",
+      "stage": "Advanced DSA",
+      "description": "Advanced electives: bits, trie, string, range. Pengantar terarah dengan bukti dan review; completion tidak otomatis berarti mastery.",
+      "estimatedHours": [
+        24,
+        34
+      ],
+      "prerequisites": [
+        "m13",
+        "m14",
+        "m17",
+        "m21",
+        "m23"
+      ],
+      "lessonIds": [
+        "m24-l1",
+        "m24-l2",
+        "m24-l3",
+        "m24-l4"
+      ],
+      "exerciseIds": [
+        "m24-e1",
+        "m24-e2",
+        "m24-e3",
+        "m24-e4",
+        "m24-e5",
+        "m24-e6"
+      ]
+    },
+    {
+      "id": "m25",
+      "title": "Proyek engineering yang dapat ditinjau",
+      "stage": "Project and career",
+      "description": "Proyek engineering yang dapat ditinjau. Pengantar terarah dengan bukti dan review; completion tidak otomatis berarti mastery.",
+      "estimatedHours": [
+        36,
+        44
+      ],
+      "prerequisites": [
+        "m12",
+        "m14",
+        "m20"
+      ],
+      "lessonIds": [
+        "m25-l1",
+        "m25-l2",
+        "m25-l3",
+        "m25-l4"
+      ],
+      "exerciseIds": [
+        "m25-e1",
+        "m25-e2",
+        "m25-e3",
+        "m25-e4",
+        "m25-e5",
+        "m25-e6",
+        "m25-e7"
+      ]
+    },
+    {
+      "id": "m26",
+      "title": "Fondasi CS dan system design",
+      "stage": "Project and career",
+      "description": "Fondasi CS dan system design. Pengantar terarah dengan bukti dan review; completion tidak otomatis berarti mastery.",
+      "estimatedHours": [
+        32,
+        40
+      ],
+      "prerequisites": [
+        "m14",
+        "m20",
+        "m25"
+      ],
+      "lessonIds": [
+        "m26-l1",
+        "m26-l2",
+        "m26-l3",
+        "m26-l4"
+      ],
+      "exerciseIds": [
+        "m26-e1",
+        "m26-e2",
+        "m26-e3",
+        "m26-e4",
+        "m26-e5",
+        "m26-e6",
+        "m26-e7"
+      ]
+    },
+    {
+      "id": "m27",
+      "title": "Mixed problems dan mock interview",
+      "stage": "Project and career",
+      "description": "Mixed problems dan mock interview. Pengantar terarah dengan bukti dan review; completion tidak otomatis berarti mastery.",
+      "estimatedHours": [
+        34,
+        42
+      ],
+      "prerequisites": [
+        "m16",
+        "m20",
+        "m22",
+        "m23"
+      ],
+      "lessonIds": [
+        "m27-l1",
+        "m27-l2",
+        "m27-l3",
+        "m27-l4"
+      ],
+      "exerciseIds": [
+        "m27-e1",
+        "m27-e2",
+        "m27-e3",
+        "m27-e4",
+        "m27-e5",
+        "m27-e6",
+        "m27-e7"
+      ]
+    },
+    {
+      "id": "m28",
+      "title": "Career: role fit dan bukti engineering",
+      "stage": "Project and career",
+      "description": "Career: role fit dan bukti engineering. Pengantar terarah dengan bukti dan review; completion tidak otomatis berarti mastery.",
+      "estimatedHours": [
+        28,
+        34
+      ],
+      "prerequisites": [
+        "m04"
+      ],
+      "lessonIds": [
+        "m28-l1",
+        "m28-l2",
+        "m28-l3",
+        "m28-l4"
+      ],
+      "exerciseIds": [
+        "m28-e1",
+        "m28-e2",
+        "m28-e3",
+        "m28-e4",
+        "m28-e5",
+        "m28-e6",
+        "m28-e7"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "m22-l1",
+      "moduleId": "m22",
+      "title": "Interval scheduling dan exchange argument",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi interval scheduling dan exchange argument",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Greedy memilih tanpa membatalkan keputusan. Untuk jumlah sesi maksimum pada satu ruang, interval [s,e) kompatibel jika start berikutnya >= end terakhir. Pilih end paling awal agar sisa waktu paling luas. Aturan start paling awal dan durasi paling pendek tidak memberi jaminan yang sama."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "A=[0,5),B=[1,3),C=[3,4),D=[4,7). Urut end: B,C,A,D. Ambil B,C, tolak A, ambil D: tiga sesi. Pada solusi optimal O, sesi pertama selesai tidak lebih awal dari B. Menggantinya dengan B menjaga semua sesi sesudahnya feasible. Ulangi pertukaran pada sisa masalah."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Bukti melestarikan jumlah sesi, bukan total profit. Satu sesi panjang bernilai tinggi dapat mengalahkan beberapa sesi pendek. Tentukan endpoint; [1,3) dan [3,4) kompatibel. Uji input kosong, end sama, dan semua overlap sebelum menyebut implementasi benar."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Aturan aman untuk jumlah sesi tanpa bobot?",
+        "options": [
+          "End terkecil yang masih kompatibel",
+          "Start terkecil selalu",
+          "Durasi terkecil selalu",
+          "Profit terbesar selalu"
+        ],
+        "correctIndex": 0,
+        "explanation": "Exchange argument mempertahankan jumlah dan kelayakan untuk earliest finish."
+      },
+      "summary": [
+        "Greedy memilih tanpa membatalkan keputusan.",
+        "Bukti melestarikan jumlah sesi, bukan total profit."
+      ],
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "exerciseIds": [
+        "m22-e1",
+        "m22-e4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m22-l2",
+      "moduleId": "m22",
+      "title": "Pairing pada garis",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi pairing pada garis",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Untuk 2k titik pada garis, pasangkan semua titik agar total jarak absolut minimum. Sorting membuka struktur: bila a<=b<=c<=d, pasangan yang melompati tetangga tidak lebih murah daripada (a,b),(c,d). Pertukaran mengizinkan optimum memasangkan dua titik pertama, lalu induksi pada suffix."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Titik9,1,6,2 diurut menjadi1,2,6,9. Pasangan tetangga berbiaya(2-1)+(9-6)=4; pasangan luar(1,9),(2,6) berbiaya12. Setelah pasangan pertama tetap, sisa masalah identik. Alasan ini memakai urutan garis, bukan sekadar cocok pada satu input."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Jangan menerapkan klaim pada jarak dua dimensi atau pasangan terlarang. Sorting O(k log k) mendominasi scan O(k). Total jarak dapat jauh melampaui int C++, sehingga gunakan long long. Koordinat sama valid dan menghasilkan pasangan berbiaya nol."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Biaya dominan algoritma umum?",
+        "options": [
+          "O(k log k)",
+          "O(1)",
+          "O(log k)",
+          "O(k²) selalu"
+        ],
+        "correctIndex": 0,
+        "explanation": "Sorting mendominasi penjumlahan pasangan linear."
+      },
+      "summary": [
+        "Untuk 2k titik pada garis, pasangkan semua titik agar total jarak absolut minimum.",
+        "Jangan menerapkan klaim pada jarak dua dimensi atau pasangan terlarang."
+      ],
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "exerciseIds": [
+        "m22-e2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m22-l3",
+      "moduleId": "m22",
+      "title": "Resource allocation dengan heap",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi resource allocation dengan heap",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Jumlah worker minimum berbeda dari memilih jumlah sesi maksimum: semua job wajib dilayani. Urut start, simpan end job aktif di min-heap. Sebelum start s keluarkan seluruh end<=s, lalu push end baru. Ukuran maksimum heap adalah overlap maksimum, lower bound yang dapat dicapai dengan reuse worker."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Job[0,4),[1,2),[2,5): heap setelah start0=[4], setelah start1=[2,4]. Pada start2 pop2 dan push5 menjadi[4,5]. Dua worker cukup dan wajib karena dua job aktif bersamaan. Untuk [1,2),[2,3) satu worker cukup sebab end=start boleh reuse."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Untuk jumlah worker, identitas ruang tidak dibutuhkan. Untuk assignment, simpan ID resource juga. Jangan membuang job dengan earliest-finish selection karena semua wajib dilayani. Urutan event timestamp sama harus konsisten dengan interval setengah terbuka."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Ruang untuk [1,2),[2,3)?",
+        "options": [
+          "1",
+          "2",
+          "0",
+          "Tidak diketahui"
+        ],
+        "correctIndex": 0,
+        "explanation": "Resource selesai tepat pada start dapat digunakan ulang."
+      },
+      "summary": [
+        "Jumlah worker minimum berbeda dari memilih jumlah sesi maksimum: semua job wajib dilayani.",
+        "Untuk jumlah worker, identitas ruang tidak dibutuhkan."
+      ],
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "exerciseIds": [
+        "m22-e3",
+        "m22-e5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m22-l4",
+      "moduleId": "m22",
+      "title": "Counterexample dan batas greedy",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi counterexample dan batas greedy",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Satu counterexample menolak klaim universal. Largest-coin greedy mengambil koin terbesar yang tidak melebihi remainder. Pada denominasi sembarang, pilihan besar dapat menyisakan remainder mahal. Cari kombinasi koin lebih kecil yang mengalahkannya; greedy boleh menjadi baseline tetapi butuh bukti sebelum disebut optimum."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Koin{1,4,6},target8: greedy6+1+1 memakai3 koin, sedangkan4+4 memakai2. Satu koin mustahil karena8 bukan denominasi, jadi optimum tepat2. DP dengan pilihan koin terakhir mengevaluasi kandidat tanpa mengunci koin terbesar terlebih dahulu."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Kesimpulan hanya menyerang largest-first pada denominasi sembarang. Bukti interval tetap valid pada domainnya. Banyak contoh sukses tidak membuktikan aturan universal. Brute force kecil membantu menemukan kegagalan, tetapi tidak menggantikan argumen general."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Apa yang dibuktikan target8?",
+        "options": [
+          "Largest-first tidak selalu optimal",
+          "Semua greedy salah",
+          "DP selalu O(1)",
+          "Koin1 harus dihapus"
+        ],
+        "correctIndex": 0,
+        "explanation": "Counterexample membantah aturan tertentu dalam domain tertentu."
+      },
+      "summary": [
+        "Satu counterexample menolak klaim universal.",
+        "Kesimpulan hanya menyerang largest-first pada denominasi sembarang."
+      ],
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "exerciseIds": [
+        "m22-e6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m23-l1",
+      "moduleId": "m23",
+      "title": "State biaya ubin",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi state biaya ubin",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "DP dimulai dengan arti state. dp[i] adalah biaya minimum tiba di ubin i setelah membayar cost[i]. Mulai posisi-1, langkah1 atau2, wajib berakhir tepat di ubin terakhir. Untuk biaya nonnegatif dp[0]=cost[0] dan dp[1]=cost[1] karena boleh lompat langsung dari-1."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Biaya[3,9,2,4] memberi dp=[3,9,5,9]. dp[2]=2+min(3,9); dp[3]=4+min(9,5). Jalur0,2,3 membayar9. Semua jalur ke i berasal dari i-1 atau i-2; memilih subjalur optimal dari dua predecessor membuktikan recurrence."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Versi wajib berakhir di ubin terakhir berbeda dari bebas keluar tangga. Python indeks-1 dapat menyembunyikan base case salah. Jika biaya negatif diizinkan, dp[1] juga perlu kandidat cost[0]+cost[1]; latihan ini nonnegatif. Uji n=1 dan n=2 eksplisit."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Langkah pertama merancang DP?",
+        "options": [
+          "Arti state dan tujuan akhir",
+          "Memo tanpa model",
+          "Sorting biaya selalu",
+          "Pilihan lokal termurah"
+        ],
+        "correctIndex": 0,
+        "explanation": "State menentukan dependency dan base case."
+      },
+      "summary": [
+        "DP dimulai dengan arti state.",
+        "Versi wajib berakhir di ubin terakhir berbeda dari bebas keluar tangga."
+      ],
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "exerciseIds": [
+        "m23-e1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m23-l2",
+      "moduleId": "m23",
+      "title": "Coin DP: memoization dan tabulation",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi coin dp: memoization dan tabulation",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "d[x] menyimpan minimum koin membentuk jumlah x. d[0]=0, lainnya infinity. Untuk koin positif c<=x, kandidat1+d[x-c]. Memoization mengevaluasi state saat diminta, tabulation mengisi jumlah kecil ke besar. Kedua teknik memakai recurrence yang sama; koin positif menjamin dependency menurun."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Koin[3,5],target7 memberi d[0..7]=[0,INF,INF,1,INF,1,2,INF]. Output-1 untuk7; target8 memakai3+5. Sentinel target+1 cukup besar karena setiap koin minimal1 sehingga solusi tidak butuh lebih dari target koin."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Nol berarti solusi kosong target0, bukan impossible. Minimum berbeda dari menghitung kombinasi atau urutan; loop order dapat mengubah hitungan pada masalah lain. Recursion Python punya batas stack sehingga tabulation cocok untuk target besar pada latihan ini."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Makna d[0]=0?",
+        "options": [
+          "Jumlah nol tanpa koin",
+          "Semua target mustahil",
+          "Koin gratis",
+          "Target0 harus-1"
+        ],
+        "correctIndex": 0,
+        "explanation": "Solusi kosong dan impossible harus dibedakan."
+      },
+      "summary": [
+        "d[x] menyimpan minimum koin membentuk jumlah x.",
+        "Nol berarti solusi kosong target0, bukan impossible."
+      ],
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "exerciseIds": [
+        "m23-e2",
+        "m23-e5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m23-l3",
+      "moduleId": "m23",
+      "title": "Grid DP dan rolling array",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi grid dp dan rolling array",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Rute kanan/bawah ke sel berasal dari atas atau kiri; kedua himpunan rute terpisah. ways[r][c] menjumlah keduanya, kecuali blok bernilai0. Start terbuka memiliki satu rute kosong. Bangun tabel untuk debugging sebelum mengompresi ruang agar arti nilai tidak kabur."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Grid3x3 dengan blok tengah memiliki baris ways[1,1,1],[1,0,1],[1,1,2]. Pada rolling array d[c] sebelum update adalah nilai atas, d[c-1] sesudah update adalah kiri baris kini. Saat blok, d[c]=0 menghapus rute lama agar tidak menembus blok."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Start atau tujuan terblokir menghasilkan0; satu sel terbuka menghasilkan1. Hitungan satu baris tidak langsung menyediakan rekonstruksi jalur. Gunakan modulus hanya jika kontrak menentukan; jangan membiarkan integer fixed-width overflow atau mengarang batas jumlah rute."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Update ketika sel blok?",
+        "options": [
+          "d[c]=0",
+          "Biarkan nilai lama",
+          "Tambah1",
+          "Hapus kolom"
+        ],
+        "correctIndex": 0,
+        "explanation": "Blok menghapus seluruh kontribusi atas dan kiri."
+      },
+      "summary": [
+        "Rute kanan/bawah ke sel berasal dari atas atau kiri; kedua himpunan rute terpisah.",
+        "Start atau tujuan terblokir menghasilkan0; satu sel terbuka menghasilkan1."
+      ],
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "exerciseIds": [
+        "m23-e3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m23-l4",
+      "moduleId": "m23",
+      "title": "Include/exclude dan rekonstruksi",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi include/exclude dan rekonstruksi",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Untuk nilai tanpa indeks bertetangga, best[i] adalah maksimum dari i elemen pertama, boleh kosong. Skip terakhir memberi best[i-1]; take memberi value[i-1]+best[i-2]. Dua cabang mencakup seluruh solusi. Dua accumulator adalah kompresi DP, bukan bukti algoritma greedy."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Nilai[4,7,5,8] menghasilkan best=[0,4,7,9,15]. Prefix4 mengambil8+best[2]=15 dibanding skip9. Rekonstruksi pilih indeks3, mundur dua prefix, lalu pilih indeks1. Jika hanya jumlah diminta, dua nilai cukup; output indeks memerlukan sejarah keputusan."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Semua negatif menghasilkan0 jika kosong diperbolehkan. Bila wajib memilih satu, base case berubah. Tie rule skip deterministik tetapi belum otomatis lexicographic terkecil. Tabel atau parent perlu untuk rekonstruksi; dua accumulator membuang informasi sejarah."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Hasil [-5,-2] jika kosong boleh?",
+        "options": [
+          "0",
+          "-2",
+          "-7",
+          "5"
+        ],
+        "correctIndex": 0,
+        "explanation": "Pilihan kosong mengalahkan seluruh nilai negatif."
+      },
+      "summary": [
+        "Untuk nilai tanpa indeks bertetangga, best[i] adalah maksimum dari i elemen pertama, boleh kosong.",
+        "Semua negatif menghasilkan0 jika kosong diperbolehkan."
+      ],
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "exerciseIds": [
+        "m23-e4",
+        "m23-e6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m24-l1",
+      "moduleId": "m24",
+      "title": "Bitmask himpunan kecil",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi bitmask himpunan kecil",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Bit posisi i menyatakan elemen i. Set memakai OR, cek AND, toggle XOR. Ini cocok untuk semesta kecil berindeks, bukan pengganti universal set. Pengantar ini mencakup operasi dasar; subset DP dan bit tricks kompleks memerlukan pendalaman tersendiri."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Mask5=0101 mewakili{0,2}. Menambah1 memberi0111=7. Hapus2 dengan mask & ~(1<<2) memberi0011=3. XOR5 dan6 menghasilkan0011: posisi berbeda tepat bernilai1. Menghitung bit1 pada XOR menghitung perbedaan fitur."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Python integer tidak dibatasi32 bit dan ~5 negatif. Komplemen dalam k-bit memakai mask ^ ((1<<k)-1). C++ shift memakai unsigned cukup lebar, indeks>=0 dan lebih kecil dari lebar tipe. XOR tidak menyimpan multiplicity umum."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "5 XOR6?",
+        "options": [
+          "3",
+          "11",
+          "1",
+          "0"
+        ],
+        "correctIndex": 0,
+        "explanation": "Pada setiap posisi, XOR menghasilkan 1 hanya jika kedua bit berbeda. Karena 0101 XOR 0110 adalah 0011, hasil desimalnya 3; ini merepresentasikan perbedaan keanggotaan, bukan penjumlahan mask."
+      },
+      "summary": [
+        "Bit posisi i menyatakan elemen i.",
+        "Python integer tidak dibatasi32 bit dan ~5 negatif."
+      ],
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "exerciseIds": [
+        "m24-e1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m24-l2",
+      "moduleId": "m24",
+      "title": "Trie dan prefix query",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi trie dan prefix query",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Trie menyimpan karakter sepanjang lintasan root. Terminal menunjukkan kata lengkap sebab prefix belum tentu kata. Query prefix panjang p memakai O(p) akses child dengan asumsi konstan. Overhead node bisa besar; compressed trie dan automata banyak pola berada di luar pengantar ini."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Masukkan car,cart,cat. Node r terminal untuk car memiliki anak t terminal untuk cart; cabang t dari a terminal untuk cat. Prefix ca mencakup3 kata, ar bukan prefix walau substring car. Untuk count kata unik, duplicate car tidak boleh mengincrement semua node lagi."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Katalog kecil mungkin lebih sederhana dengan sorting plus binary search. Tetapkan alfabet, duplicate dan empty string. C++ vector dapat memindahkan node ketika tumbuh; simpan indeks alih-alih reference yang melintasi push. Count prefix dan flag terminal adalah informasi berbeda."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Mengapa car perlu terminal?",
+        "options": [
+          "Membedakan kata car dari prefix cart",
+          "Menghapus root",
+          "Substring otomatis",
+          "Memaksa tiga anak"
+        ],
+        "correctIndex": 0,
+        "explanation": "Path car ada juga bila hanya cart tersimpan."
+      },
+      "summary": [
+        "Trie menyimpan karakter sepanjang lintasan root.",
+        "Katalog kecil mungkin lebih sederhana dengan sorting plus binary search."
+      ],
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "exerciseIds": [
+        "m24-e6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m24-l3",
+      "moduleId": "m24",
+      "title": "String matching dan overlap",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi string matching dan overlap",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Naive matching mencoba setiap start dan worst case O(nm). KMP memakai pi[i], panjang proper prefix terpanjang yang juga suffix pola sampai i. Fallback ke pi[j-1] mempertahankan bagian match yang masih berguna. Ini orientasi trace, bukan mastery implementasi dan bukti amortized KMP."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Pola aba mempunyai pi=[0,0,1]. Pada teks ababa, match mulai indeks0 dan2. Setelah match pertama, j=pi[2]=1 mempertahankan suffix a yang sama dengan prefix pola. Informasi overlap mencegah memulai pencarian ulang tanpa memanfaatkan struktur yang sudah diketahui."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Fungsi count bawaan sering non-overlap sehingga tidak memenuhi kontrak ini. Tetapkan pola kosong, indeks0-based dan alfabet. Python string dan byte C++ dapat disejajarkan untuk ASCII; UTF-8 C++ bukan otomatis grapheme Unicode. Jangan mengklaim penguasaan string matching dari satu trace."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Jumlah overlap aba dalam ababa?",
+        "options": [
+          "2",
+          "1",
+          "3",
+          "0"
+        ],
+        "correctIndex": 0,
+        "explanation": "Start0 dan2 berbagi satu karakter."
+      },
+      "summary": [
+        "Naive matching mencoba setiap start dan worst case O(nm).",
+        "Fungsi count bawaan sering non-overlap sehingga tidak memenuhi kontrak ini."
+      ],
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "exerciseIds": [
+        "m24-e2",
+        "m24-e4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m24-l4",
+      "moduleId": "m24",
+      "title": "Range query dan pemilihan struktur",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi range query dan pemilihan struktur",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "P[i] adalah jumlah i elemen pertama; sum statis[l,r)=P[r]-P[l]. Build O(n), query O(1), tetapi update memengaruhi banyak prefix. Fenwick memberi point-add/prefix-sum O(log n); segment tree mendukung agregat asosiatif seperti min. Pengantar ini tidak mencakup implementasi lengkap kedua tree."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Array[2,-1,5,3], P=[0,2,1,6,9]. Query[1,3)=6-2=4 dan[2,2)=0. Fenwick internal1-based memakai i+=i&-i untuk update, i-=i&-i untuk query. Update pada0 macet sebab lowbit0."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Minimum tidak dapat dihitung dengan subtraction dua prefix minimum. Assignment pada Fenwick sum perlu delta dari nilai lama. Identity sum0 dan min+infinity berbeda. Jangan mencampur konvensi indeks atau memilih tree hanya karena lebih advanced."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Struktur sederhana untuk static range sum?",
+        "options": [
+          "Prefix sum",
+          "Trie",
+          "BFS queue",
+          "Heap job"
+        ],
+        "correctIndex": 0,
+        "explanation": "Query konstan setelah build linear sudah mencukupi."
+      },
+      "summary": [
+        "P[i] adalah jumlah i elemen pertama; sum statis[l,r)=P[r]-P[l].",
+        "Minimum tidak dapat dihitung dengan subtraction dua prefix minimum."
+      ],
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "exerciseIds": [
+        "m24-e3",
+        "m24-e5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m25-l1",
+      "moduleId": "m25",
+      "title": "Scope proyek dan acceptance contract",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi scope proyek dan acceptance contract",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Satu proyek lengkap lebih berguna daripada empat kerangka kosong. Pilih dedup transaksi, dependency scheduler, prefix catalog atau LRU. Tetapkan pengguna, kontrak input-output, aturan error dan non-goal sebelum kode. Identity transaksi harus jelas: ID atau gabungan payload menentukan correctness."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Brief dedup: JSON lines id/amount; first occurrence diterima, ID dan amount sama duplicate, ID sama amount berbeda conflict. A10,A10,B3 memberi accepted A,B dan satu duplicate. A10,A12 memberi conflict tanpa mengganti accepted awal. Non-goal persistence terdistribusi menjaga scope CLI kecil."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Hindari acceptance cepat tanpa ukuran. Nyatakan order output, invalid record dan batas input. Early role-fit checkpoint: SWE menonjolkan API dan model data; SDET menonjolkan oracle dan failure diagnosis. Keduanya memerlukan implementasi yang dapat dijelaskan, bukan title saja."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Acceptance yang dapat diuji?",
+        "options": [
+          "Duplicate identik tidak menambah accepted count",
+          "Aplikasi keren",
+          "Pakai struktur populer",
+          "Semua error diabaikan"
+        ],
+        "correctIndex": 0,
+        "explanation": "Perilaku input-output memberi oracle konkret."
+      },
+      "summary": [
+        "Satu proyek lengkap lebih berguna daripada empat kerangka kosong.",
+        "Hindari acceptance cepat tanpa ukuran."
+      ],
+      "sources": [
+        {
+          "title": "Git documentation",
+          "url": "https://git-scm.com/docs"
+        },
+        {
+          "title": "Python unittest",
+          "url": "https://docs.python.org/3/library/unittest.html"
+        }
+      ],
+      "exerciseIds": [
+        "m25-e1",
+        "m25-e2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m25-l2",
+      "moduleId": "m25",
+      "title": "Milestone dan Git",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi milestone dan git",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Pisahkan parser, fungsi domain dan formatter secukupnya agar aturan inti dapat diuji tanpa network. Git mencatat perubahan bermakna; commit mengikuti satu alasan perubahan, bukan hari kerja. Sebelum refactor, pertahankan perilaku melalui contoh yang dapat dijalankan. Framework tambahan perlu kebutuhan jelas."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Milestone dedup:1 classify(records) menghasilkan accepted/duplicate/conflict;2 parser dengan nomor baris error dan CLI;3 tests dan README. Commit pertama menjelaskan kebijakan conflict serta order. Reviewer dapat menghubungkan perubahan dengan satu acceptance dan alasan hash lookup expected O(n)."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Jangan simpan credential atau data kerja nyata dalam repository; fixture sintetis cukup. Git solo bukan bukti collaboration. Alternatif sorting mungkin mengubah output order dan memerlukan indeks awal. Catat trade-off itu daripada mengklaim struktur pilihan selalu terbaik."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Boundary yang membantu unit test?",
+        "options": [
+          "Fungsi domain menerima data dan mengembalikan hasil",
+          "Semua logika input interaktif",
+          "Parser mengirim network",
+          "Global mutable state"
+        ],
+        "correctIndex": 0,
+        "explanation": "Boundary deterministik memudahkan observasi dan oracle."
+      },
+      "summary": [
+        "Pisahkan parser, fungsi domain dan formatter secukupnya agar aturan inti dapat diuji tanpa network.",
+        "Jangan simpan credential atau data kerja nyata dalam repository; fixture sintetis cukup."
+      ],
+      "sources": [
+        {
+          "title": "Git documentation",
+          "url": "https://git-scm.com/docs"
+        },
+        {
+          "title": "Python unittest",
+          "url": "https://docs.python.org/3/library/unittest.html"
+        }
+      ],
+      "exerciseIds": [
+        "m25-e3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m25-l3",
+      "moduleId": "m25",
+      "title": "Tests, oracle dan regression",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi tests, oracle dan regression",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Test harus gagal ketika perilaku penting salah. Unit memeriksa domain, integration parser sampai output, property memeriksa invariant pada banyak data. Coverage baris membantu menemukan bagian tidak disentuh tetapi assertion lemah tetap melewatkan bug. Pilih kasus berdasarkan risiko requirement."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Properties dedup: accepted ID unik, order mengikuti first occurrence, mengulang record identik hanya menambah duplicate. Fixture A10,B3,A12 harus conflict. Mutasi equality payload menjadi selalu True seharusnya membuat test conflict gagal; pulihkan lalu jalankan ulang untuk memeriksa suite benar-benar membedakan bug."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Expected jangan dihitung dengan fungsi yang sedang diuji. Catat command, environment, revisi dan hasil aktual. Repeated run memeriksa state bocor. Flaky test perlu diagnosis nondeterminisme; mengulang hingga hijau bukan perbaikan dan bukan evidence reliability."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Coverage100% menjamin?",
+        "options": [
+          "Baris terukur dieksekusi, bukan semua perilaku benar",
+          "Semua requirement benar",
+          "Tidak ada race",
+          "Assertion tidak diperlukan"
+        ],
+        "correctIndex": 0,
+        "explanation": "Coverage mengukur eksekusi struktur, bukan kualitas oracle."
+      },
+      "summary": [
+        "Test harus gagal ketika perilaku penting salah.",
+        "Expected jangan dihitung dengan fungsi yang sedang diuji."
+      ],
+      "sources": [
+        {
+          "title": "Git documentation",
+          "url": "https://git-scm.com/docs"
+        },
+        {
+          "title": "Python unittest",
+          "url": "https://docs.python.org/3/library/unittest.html"
+        }
+      ],
+      "exerciseIds": [
+        "m25-e4",
+        "m25-e5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m25-l4",
+      "moduleId": "m25",
+      "title": "README dan evidence review",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi readme dan evidence review",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "README memuat masalah, kontrak, quick start, contoh normal/error, test command, trade-off dan limit. Demo menunjukkan satu skenario sukses dan satu kegagalan terkendali. Pembaca baru seharusnya dapat mengulang tanpa menebak versi runtime, fixture atau file entry point."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Evidence entry contoh: revisi tertentu, Python3.11, python -m unittest discover, hasil aktual dan tanggal. Hash map memakai O(u) state ID; membaca streaming tidak menghapus kebutuhan memory dedup. Limit belum persistence antar process atau distributed idempotency. Angka test harus berasal dari run nyata."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Engineering checkpoint sebelum portfolio: reviewer dapat mereproduksi acceptance, melihat alasan desain dan failure behavior. Jika belum, rapikan evidence sebelum fitur tambahan. Screenshot editor tidak membuktikan test pass; benchmark kecil tidak menjamin kapasitas produksi. Self-review tetap berbeda dari review orang lain."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Bukti test terkuat?",
+        "options": [
+          "Command, versi, hasil aktual dan revisi",
+          "Screenshot editor",
+          "Jumlah file",
+          "Nama framework"
+        ],
+        "correctIndex": 0,
+        "explanation": "Bukti terkait kode dan environment dapat direproduksi."
+      },
+      "summary": [
+        "README memuat masalah, kontrak, quick start, contoh normal/error, test command, trade-off dan limit.",
+        "Engineering checkpoint sebelum portfolio: reviewer dapat mereproduksi acceptance, melihat alasan desain dan failure behavior."
+      ],
+      "sources": [
+        {
+          "title": "Git documentation",
+          "url": "https://git-scm.com/docs"
+        },
+        {
+          "title": "Python unittest",
+          "url": "https://docs.python.org/3/library/unittest.html"
+        }
+      ],
+      "exerciseIds": [
+        "m25-e6",
+        "m25-e7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m26-l1",
+      "moduleId": "m26",
+      "title": "Database dan index",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi database dan index",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Primary key mengidentifikasi baris; unique constraint menjaga integrity di shared database. Index mempercepat query tertentu dengan biaya storage dan write. B-tree umum membantu equality dan range. Hash map satu aplikasi tidak menggantikan constraint karena beberapa process dapat menulis bersamaan."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "events(id,user_id,created_at,status), query user7 dalam[t1,t2). Index(user_id,created_at) menyaring equality user lalu range waktu. Index status dua nilai mungkin kurang selektif. Periksa EXPLAIN dengan distribusi representatif. SELECT kosong lalu INSERT memiliki race jika dua writer membaca sebelum salah satu menulis."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Index semua kolom memperlambat insert dan memakai ruang. Urutan key, fungsi kolom dan query shape memengaruhi rencana. Unique constraint plus penanganan konflik menjaga ID meski writer bersamaan. Jangan mengklaim query cepat hanya dari nama index tanpa rencana dan pengukuran."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Mengapa SELECT lalu INSERT race?",
+        "options": [
+          "Dua writer dapat sama-sama membaca kosong",
+          "SELECT selalu lock tabel",
+          "Index menghapus semua race",
+          "HTTP menserialisasi writer"
+        ],
+        "correctIndex": 0,
+        "explanation": "Read/write terpisah bukan operasi atomik."
+      },
+      "summary": [
+        "Primary key mengidentifikasi baris; unique constraint menjaga integrity di shared database.",
+        "Index semua kolom memperlambat insert dan memakai ruang."
+      ],
+      "sources": [
+        {
+          "title": "MDN HTTP overview",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+        },
+        {
+          "title": "PostgreSQL indexes",
+          "url": "https://www.postgresql.org/docs/current/indexes.html"
+        }
+      ],
+      "exerciseIds": [
+        "m26-e1",
+        "m26-e2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m26-l2",
+      "moduleId": "m26",
+      "title": "HTTP timeout dan idempotency",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi http timeout dan idempotency",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Timeout berarti client belum menerima respons tepat waktu, bukan server pasti gagal. Network dapat putus setelah commit. Retry side effect membutuhkan identitas operasi logis yang durable. Idempotency key mengaitkan request ulang dengan hasil yang sama, dan payload fingerprint mencegah key dipakai ulang untuk operasi berbeda."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Client POST order keyK payloadP. Server commit tetapi respons hilang. Retry K/P mengembalikan hasil tersimpan, tanpa order baru. KeyL dapat menciptakan duplicate. K/Q harus conflict. Bila job pending, client memeriksa status K, bukan memulai operasi baru atau menganggap gagal bisnis."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "POST tidak otomatis idempotent. Status500 juga tidak membuktikan side effect belum terjadi. Tetapkan atomic ledger, retention key dan restart recovery. Credential privat tetap backend; log demo memakai data sintetis. Unknown perlu dipertahankan sampai hasil operasi diketahui."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Timeout setelah POST berarti?",
+        "options": [
+          "Hasil belum diketahui client",
+          "Server pasti belum menulis",
+          "Key baru pasti aman",
+          "Semua retry otomatis aman"
+        ],
+        "correctIndex": 0,
+        "explanation": "Respons dapat hilang sesudah side effect selesai."
+      },
+      "summary": [
+        "Timeout berarti client belum menerima respons tepat waktu, bukan server pasti gagal.",
+        "POST tidak otomatis idempotent."
+      ],
+      "sources": [
+        {
+          "title": "MDN HTTP overview",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+        },
+        {
+          "title": "PostgreSQL indexes",
+          "url": "https://www.postgresql.org/docs/current/indexes.html"
+        }
+      ],
+      "exerciseIds": [
+        "m26-e3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m26-l3",
+      "moduleId": "m26",
+      "title": "Concurrency dan scope lock",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi concurrency dan scope lock",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Thread berbagi memory dalam process; process mempunyai resource dan ruang alamat terpisah. Concurrency berarti beberapa pekerjaan maju pada rentang sama, parallelism eksekusi bersamaan. Read-modify-write tidak otomatis atomik. Mutex hanya melindungi jalur yang memakai mutex sama pada critical section penuh."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Counter5: A read5, B read5, A write6, B write6 menghasilkan6 bukan7. Dengan mutex A menyelesaikan read/write lalu B membaca6 dan menulis7. Dua server mempunyai mutex lokal berbeda; atomic UPDATE database atau transaksi diperlukan untuk shared state lintas writer."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Critical section terlalu luas menurunkan throughput; urutan lock berbeda dapat deadlock. Event loop single thread tetap dapat interleave pada await di tengah operasi logis. Pengantar ini tidak mencakup memory model C++ lengkap atau distributed consensus; jangan meluaskan klaim dari satu counter."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Mutex lokal melindungi?",
+        "options": [
+          "Jalur yang berbagi mutex di process itu",
+          "Semua server",
+          "Semua transaksi otomatis",
+          "Seluruh network"
+        ],
+        "correctIndex": 0,
+        "explanation": "Koordinasi harus mencakup semua partisipan shared state."
+      },
+      "summary": [
+        "Thread berbagi memory dalam process; process mempunyai resource dan ruang alamat terpisah.",
+        "Critical section terlalu luas menurunkan throughput; urutan lock berbeda dapat deadlock."
+      ],
+      "sources": [
+        {
+          "title": "MDN HTTP overview",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+        },
+        {
+          "title": "PostgreSQL indexes",
+          "url": "https://www.postgresql.org/docs/current/indexes.html"
+        }
+      ],
+      "exerciseIds": [
+        "m26-e4",
+        "m26-e5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m26-l4",
+      "moduleId": "m26",
+      "title": "Desain layanan kecil",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi desain layanan kecil",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Mulai dari kebutuhan: operasi, latency, freshness, ukuran, retention dan akses. Katalog2000 item20 read/detik mungkin cukup satu API process dan database. Cache atau queue ditambahkan ketika requirement atau pengukuran membenarkan biaya. Diagram panjang tidak menggantikan reasoning correctness."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "GET /items?prefix=ca&limit=20 mengembalikan order stabil; database source of truth. Update terlihat<=5detik. Jika memakai cache, TTL dan invalidation harus menjaga batas itu. Saat database outage, respons503 terstruktur atau stale data berlabel sesuai kontrak, bukan hasil kosong palsu."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Walk through restart, respons hilang, write ganda dan cache stale. Estimasi order-of-magnitude bukan benchmark. Validasi input dan least privilege tetap perlu. Jangan provision service dalam latihan desain atau memasukkan secret ke repository hanya demi demo."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Alasan awal menambah cache?",
+        "options": [
+          "Read mahal terukur dan staleness diizinkan jelas",
+          "Semua desain wajib cache",
+          "Memperpanjang diagram",
+          "Menghapus database"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cache menambah consistency dan invalidation cost."
+      },
+      "summary": [
+        "Mulai dari kebutuhan: operasi, latency, freshness, ukuran, retention dan akses.",
+        "Walk through restart, respons hilang, write ganda dan cache stale."
+      ],
+      "sources": [
+        {
+          "title": "MDN HTTP overview",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+        },
+        {
+          "title": "PostgreSQL indexes",
+          "url": "https://www.postgresql.org/docs/current/indexes.html"
+        }
+      ],
+      "exerciseIds": [
+        "m26-e6",
+        "m26-e7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m27-l1",
+      "moduleId": "m27",
+      "title": "Klarifikasi sebelum memilih pola",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi klarifikasi sebelum memilih pola",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Mixed interview menghilangkan label pola agar pemodelan menjadi evidence. Tanyakan input/output, ukuran, duplicates, ordering, mutasi dan edge. Ulangi contoh lalu berikan baseline benar sebelum optimasi. Pertanyaan spesifik lebih berguna daripada daftar panjang yang tidak mengubah model."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Prompt longest span with no repeated event type. Klarifikasi span contiguous. Untuk[a,b,a,c], jawaban3 dari[b,a,c], bukan subsequence4. Baseline semua start dengan set O(n²). Window menyimpan last index, left=max(left,last[x]+1) agar batas tidak mundur."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Kata longest tidak otomatis sliding window; nilai negatif dapat membatalkan monotonicity pada sum problem. Catat asumsi yang disepakati, bukan mengarang klarifikasi. Bahasa Inggris dapat bertahap: prompt English, alasan Indonesia, lalu latih penjelasan singkat English setelah model jelas."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Klarifikasi utama untuk span?",
+        "options": [
+          "Apakah wajib contiguous?",
+          "Tema editor?",
+          "Warna logo?",
+          "Semua solusi recursion?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Contiguous membedakan window dari subsequence."
+      },
+      "summary": [
+        "Mixed interview menghilangkan label pola agar pemodelan menjadi evidence.",
+        "Kata longest tidak otomatis sliding window; nilai negatif dapat membatalkan monotonicity pada sum problem."
+      ],
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "exerciseIds": [
+        "m27-e1",
+        "m27-e4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m27-l2",
+      "moduleId": "m27",
+      "title": "Implementasi dengan invariant",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi implementasi dengan invariant",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Komunikasi berguna menjelaskan keputusan dan invariant, bukan membacakan tiap karakter. Tetapkan arti variabel lalu pertahankan sepanjang loop. Saat bug muncul, bandingkan state dengan invariant. Menemukan dan memperbaiki bug dengan alasan adalah bagian evidence, bukan otomatis kegagalan total."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Earliest repeated event: sebelum indeks i, seen memuat tepat event pada indeks<i. Jika x sudah ada, kemunculan kedua x paling awal karena scan kronologis. [red,blue,blue,red] memberi blue, bukan red yang kemunculan pertamanya lebih awal. Semantik output menentukan algoritma."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Hapus debug print sebelum Submit exact-output. C++ map operator[] dapat insert saat sekadar cek, gunakan find jika tidak ingin mutasi. Jelaskan hash O(n) expected, bukan worst-case universal. Syntax diperiksa terpisah dari alasan correctness agar diagnosis tidak bercampur."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Isi seen sebelum indeks i?",
+        "options": [
+          "Event pada prefix sebelum i",
+          "Event masa depan",
+          "Hanya paling sering",
+          "Semua indeks"
+        ],
+        "correctIndex": 0,
+        "explanation": "Invariant prefix menjelaskan deteksi repeat pertama."
+      },
+      "summary": [
+        "Komunikasi berguna menjelaskan keputusan dan invariant, bukan membacakan tiap karakter.",
+        "Hapus debug print sebelum Submit exact-output."
+      ],
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "exerciseIds": [
+        "m27-e2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m27-l3",
+      "moduleId": "m27",
+      "title": "Tes diagnostik dan complexity",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi tes diagnostik dan complexity",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Tes harus membedakan algoritma benar dari bug masuk akal. Trace normal lalu boundary yang menyerang asumsi. Complexity memisahkan sorting, scan, output dan auxiliary memory; sebut asumsi hash serta ukuran integer. Planned test berbeda dari test yang benar-benar dijalankan."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Longest unique span[a,b,b,a] menangkap left=last[x]+1 tanpa max. Setelah b kedua left2; a terakhir punya last0 sehingga assignment naïf memundurkan left1 dan memasukkan dua b. max menjaga left2, jawaban2. Empty menguji base0, semua unik menguji pertumbuhan window."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Tes acak kecil membantu bila ada oracle baseline independen. Expected yang dihitung memakai algoritma sama bukan pembanding kuat. Dalam waktu terbatas pilih kasus diagnostik dahulu dan laporkan hasil aktual. Menyebut O(1) memory saat menyimpan map u key adalah kekeliruan ruang."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Mengapa max saat update left?",
+        "options": [
+          "Agar left tidak mundur",
+          "Agar array sorted",
+          "Agar map kosong",
+          "Menghapus semua event"
+        ],
+        "correctIndex": 0,
+        "explanation": "Batas mundur mengembalikan duplicate yang sudah dikeluarkan."
+      },
+      "summary": [
+        "Tes harus membedakan algoritma benar dari bug masuk akal.",
+        "Tes acak kecil membantu bila ada oracle baseline independen."
+      ],
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "exerciseIds": [
+        "m27-e3",
+        "m27-e5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m27-l4",
+      "moduleId": "m27",
+      "title": "Mock dan review evidence",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi mock dan review evidence",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Mock35menit dapat membagi5 klarifikasi,8 desain,15 implementasi,7 testing/diskusi. Ini heuristik. Nilai clarity, correctness, complexity, testing dan communication terpisah. Hint atau solusi yang pernah dibaca mengubah interpretasi attempt; accepted setelah bantuan bukan unseen independent transfer."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Review contoh: clarity2/3 lupa empty; correctness2/3 bug left ditemukan sendiri; testing3/3 memilih duplicate jauh; communication2/3 invariant tidak dijelaskan saat coding. Next action besok trace invariant pada soal dikenal, lalu variasi baru setelah jeda tanpa label untuk transfer. Retention memerlukan review tertunda."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Satu skor tidak menjamin hiring. Readiness terkait target role, beberapa sesi, proyek dan CS dasar. Exposure harus dicatat meski retry dimulai ulang. Soal dikenal berguna untuk recall serta language fluency, tetapi tidak berubah menjadi unseen hanya karena waktu pengerjaan lebih cepat."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Setelah melihat solusi, attempt dicatat?",
+        "options": [
+          "Assisted practice atau recall",
+          "Unseen transfer",
+          "Retensi otomatis",
+          "Pengalaman produksi"
+        ],
+        "correctIndex": 0,
+        "explanation": "Manfaat belajar tetap ada tetapi evidence mandiri berbeda."
+      },
+      "summary": [
+        "Mock35menit dapat membagi5 klarifikasi,8 desain,15 implementasi,7 testing/diskusi.",
+        "Satu skor tidak menjamin hiring."
+      ],
+      "sources": [
+        {
+          "title": "Amazon SDE interview preparation",
+          "url": "https://www.amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep"
+        }
+      ],
+      "exerciseIds": [
+        "m27-e6",
+        "m27-e7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m28-l1",
+      "moduleId": "m28",
+      "title": "Role fit awal SWE atau SDET",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi role fit awal swe atau sdet",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Checkpoint ini dapat dibuka setelah m04, tidak perlu menunggu elective. SWE sering menekankan produk/API dan ownership; SDET test systems, diagnosis dan tooling, tetapi batas antar tim berbeda. Pengalaman QA memberi domain story, bukan pengganti fondasi coding atau kecocokan role otomatis."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Matriks minat: API4/5, flaky-test diagnosis5/5, test infrastructure5/5, product flow3/5. Hipotesis SDET jalur dekat, SWE tetap diuji. Eksperimen2minggu: buat CLI dedup/API kecil lalu harness conflict/malformed. Catat artefak, hambatan dan energi tiap tugas untuk membandingkan arah."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Jangan memilih dari title saja. Ketika menarget role aktual, baca deskripsi saat itu karena requirement berubah. Keputusan boleh direvisi setelah proyek. Role-fit note bukan bukti DSA mastery; pertanyaan utamanya tugas apa yang ingin dikerjakan dan mana yang sudah punya evidence."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Hasil role-fit checkpoint berguna?",
+        "options": [
+          "Hipotesis role dengan eksperimen",
+          "Pasti cocok karena QA",
+          "Tunda sampai28modul",
+          "Lewati programming dasar"
+        ],
+        "correctIndex": 0,
+        "explanation": "Hipotesis bisa diuji tanpa mengunci identitas atau melewati fondasi."
+      },
+      "summary": [
+        "Checkpoint ini dapat dibuka setelah m04, tidak perlu menunggu elective.",
+        "Jangan memilih dari title saja."
+      ],
+      "sources": [
+        {
+          "title": "Amazon SDE interview preparation",
+          "url": "https://www.amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep"
+        }
+      ],
+      "exerciseIds": [
+        "m28-e1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m28-l2",
+      "moduleId": "m28",
+      "title": "Evidence inventory dan CV",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi evidence inventory dan cv",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Engineering checkpoint juga dapat dimulai awal: inventaris commit, test report, README, bug diagnosis dan design note. Setiap klaim punya konteks, kontribusi pribadi, hasil, bukti dan limit. CV memilih evidence relevan, bukan daftar semua pelajaran. Sanitasi pengalaman kerja tanpa data sensitif."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Bullet lemah Expert Python and scalable systems. Revisi: Membangun CLI dedup data sintetis dengan kebijakan conflict ID dan tests, mendokumentasikan expected O(n) lookup serta O(u) memory. Jika performa diukur, sebut dataset, environment, baseline dan hasil. Tanpa pengukuran, jangan tambahkan persentase."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Proyek pribadi dan course dilabeli demikian. Tests ditulis belum berarti tests pass; kerja solo belum leadership tim. Jumlah test hanya ditulis setelah dihitung. Evidence kecil lengkap lebih kuat daripada angka yang tidak bisa dipertanggungjawabkan; inventaris gap membantu memilih next artifact."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Kapan angka performa layak dicantumkan?",
+        "options": [
+          "Ada baseline, metode dan hasil nyata",
+          "Angka menarik",
+          "Dari tutorial lain",
+          "Dari jumlah baris"
+        ],
+        "correctIndex": 0,
+        "explanation": "Angka butuh dasar pengukuran yang dapat dijelaskan."
+      },
+      "summary": [
+        "Engineering checkpoint juga dapat dimulai awal: inventaris commit, test report, README, bug diagnosis dan design note.",
+        "Proyek pribadi dan course dilabeli demikian."
+      ],
+      "sources": [
+        {
+          "title": "Amazon SDE interview preparation",
+          "url": "https://www.amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep"
+        }
+      ],
+      "exerciseIds": [
+        "m28-e2",
+        "m28-e3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m28-l3",
+      "moduleId": "m28",
+      "title": "Portfolio dan STAR",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi portfolio dan star",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Portfolio memilih artefak lengkap dengan konteks, reproduksi dan alasan desain. STAR menyusun Situation,Task,Action,Result. Action menunjukkan keputusan pribadi, alternatif dan koordinasi; bukan hanya kami memperbaiki. Result boleh terbatas atau berupa pembelajaran jika tidak ada metrik sah."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Contoh sintetis: fixture shared-state menyebabkan flaky suite. Task reproduksi tanpa menambah timeout. Action catat seed/order, isolasi state, ubah fixture per-test, tambahkan regression yang gagal pada versi lama. Result suite terverifikasi pada environment tersebut; belum lintas semua OS. Refleksi membedakan root cause dari mitigasi timeout."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Jangan memakai skenario sintetis sebagai pengalaman sendiri. Cerita nyata atau proyek pribadi tetap diberi konteks. Siapkan jawaban apa yang gagal, mengapa alternatif ditolak, dan bagaimana hasil diverifikasi. Detail sensitif tidak diperlukan untuk menunjukkan reasoning dan kontribusi."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Bagian STAR untuk kontribusi pribadi?",
+        "options": [
+          "Action dengan keputusan dan alasan",
+          "Nama perusahaan",
+          "Jumlah anggota saja",
+          "Hasil tanpa metode"
+        ],
+        "correctIndex": 0,
+        "explanation": "Action menunjukkan apa yang dilakukan dan mengapa."
+      },
+      "summary": [
+        "Portfolio memilih artefak lengkap dengan konteks, reproduksi dan alasan desain.",
+        "Jangan memakai skenario sintetis sebagai pengalaman sendiri."
+      ],
+      "sources": [
+        {
+          "title": "Amazon SDE interview preparation",
+          "url": "https://www.amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep"
+        }
+      ],
+      "exerciseIds": [
+        "m28-e4",
+        "m28-e5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "m28-l4",
+      "moduleId": "m28",
+      "title": "Rencana lamaran dan feedback loop",
+      "minutes": 25,
+      "objectives": [
+        "Menjelaskan alasan dan asumsi rencana lamaran dan feedback loop",
+        "Menguji model dengan contoh dan kasus pembeda"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Model dan alasan",
+          "body": "Bandingkan target role dengan evidence coding, proyek, CS, komunikasi dan domain. Prioritaskan gap penghambat tugas target. Lamaran dapat berjalan saat bukti level relevan cukup, tanpa menunggu seluruh elective. Tracker manual memuat role/link,tanggal,stage,evidence dan next action; tidak ada auto-apply."
+        },
+        {
+          "type": "text",
+          "title": "Contoh dikerjakan",
+          "body": "Rencana4minggu:1README dan review proyek;2dua mock independen serta HTTP retry;3CV sesuai dua role berdasarkan bukti;4tinjau feedback dan gap. Jika complexity reasoning berulang lemah, review terarah lebih berguna daripada menambah klaim. Beban disesuaikan double job dan checkpoint kecil."
+        },
+        {
+          "type": "text",
+          "title": "Batas dan kesalahan umum",
+          "body": "Penolakan dapat terkait timing, lokasi, kebutuhan tim atau performa; tanpa feedback penyebab unknown. Jangan mengubah dugaan menjadi diagnosis. Catat bantuan dan exposure latihan terpisah. Career checklist mengukur artefak kesiapan, bukan concept mastery atau probabilitas mendapat kerja."
+        },
+        {
+          "type": "callout",
+          "title": "Checkpoint aktif",
+          "body": "Tutup contoh, ulangi langkah dengan kata sendiri dan cari satu input yang menyerang asumsi. Catat bantuan yang dipakai; membaca solusi berguna untuk belajar tetapi bukan evidence mandiri."
+        }
+      ],
+      "checkpoint": {
+        "question": "Dua mock menunjukkan gap sama, next action?",
+        "options": [
+          "Latihan terarah lalu variasi baru",
+          "Anggap tak cocok selamanya",
+          "Naikkan skor sendiri",
+          "Tambah klaim CV"
+        ],
+        "correctIndex": 0,
+        "explanation": "Feedback menjadi hipotesis perbaikan yang diuji dengan evidence baru."
+      },
+      "summary": [
+        "Bandingkan target role dengan evidence coding, proyek, CS, komunikasi dan domain.",
+        "Penolakan dapat terkait timing, lokasi, kebutuhan tim atau performa; tanpa feedback penyebab unknown."
+      ],
+      "sources": [
+        {
+          "title": "Amazon SDE interview preparation",
+          "url": "https://www.amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep"
+        }
+      ],
+      "exerciseIds": [
+        "m28-e6",
+        "m28-e7"
+      ],
+      "version": 1
+    }
+  ],
+  "exercises": [
+    {
+      "id": "m22-e1",
+      "moduleId": "m22",
+      "lessonId": "m22-l1",
+      "title": "Jumlah sesi komunitas maksimum",
+      "kind": "coding",
+      "concepts": [
+        "greedy-interval"
+      ],
+      "family": "greedy-selection",
+      "variant": "practice",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Pilih sebanyak mungkin sesi tidak berbobot pada satu ruang. Interval [s,e) boleh berdampingan tepat di end=start. Cetak jumlah maksimum.",
+      "constraints": [
+        "0<=n<=20000; 0<=s<e<=10^9"
+      ],
+      "inputDescription": "n lalu n baris s e.",
+      "outputDescription": "Satu integer jumlah maksimum.",
+      "examples": [
+        {
+          "input": "4\n0 5\n1 3\n3 4\n4 7\n",
+          "output": "3",
+          "explanation": "Pilih [1,3),[3,4),[4,7)."
+        },
+        {
+          "input": "0\n",
+          "output": "0",
+          "explanation": "Tanpa sesi."
+        }
+      ],
+      "tests": [
+        {
+          "input": "4\n0 5\n1 3\n3 4\n4 7\n",
+          "expected": "3"
+        },
+        {
+          "input": "0\n",
+          "expected": "0"
+        },
+        {
+          "input": "3\n1 4\n2 4\n3 4\n",
+          "expected": "1"
+        }
+      ],
+      "starter": {
+        "python": "import sys\n\ndef main():\n    # Baca input dan implementasikan model.\n    pass\n\nif __name__ == \"__main__\":\n    main()\n",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main(){\n    // Baca input dan implementasikan algoritma.\n    return 0;\n}\n"
+      },
+      "solutions": {
+        "python": "import sys\na=list(map(int,sys.stdin.buffer.read().split())); v=sorted(zip(a[1::2],a[2::2]),key=lambda p:(p[1],p[0])); last=-1; ans=0\nfor s,e in v:\n    if s>=last: ans+=1; last=e\nprint(ans)\n",
+        "cpp": "#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;int main(){int n;cin>>n;vector<pair<long long,long long>>a;for(int i=0;i<n;i++){long long s,e;cin>>s>>e;a.push_back({e,s});}sort(a.begin(),a.end());long long last=-1;int ans=0;for(auto [e,s]:a)if(s>=last){ans++;last=e;}cout<<ans<<\"\\n\";}\n"
+      },
+      "hints": [
+        "Pilih sesi yang menyisakan waktu terluas.",
+        "Urutkan end, bukan start.",
+        "Ambil bila start>=last end."
+      ],
+      "explanation": "Urut end, ambil sesi kompatibel. Mengganti sesi pertama optimum dengan end minimum menjaga semua sesi selanjutnya feasible; induksi pada suffix membuktikan jumlah optimal.",
+      "complexity": {
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      "rubric": [
+        "Memenuhi format dan semua batas kontrak.",
+        "Menjelaskan invariant atau recurrence dan menguji boundary.",
+        "Time/space sesuai operasi dengan asumsi eksplisit."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m22-e2",
+      "moduleId": "m22",
+      "lessonId": "m22-l2",
+      "title": "Pairing sensor pada garis",
+      "kind": "coding",
+      "concepts": [
+        "greedy-exchange"
+      ],
+      "family": "greedy-pairing",
+      "variant": "transfer",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Pasangkan seluruh 2k sensor pada garis untuk minimum total jarak absolut. Tiap sensor dipakai tepat sekali; koordinat sama diperbolehkan.",
+      "constraints": [
+        "0<=k<=10000; -10^9<=coordinate<=10^9"
+      ],
+      "inputDescription": "k lalu 2k koordinat.",
+      "outputDescription": "Minimum total jarak.",
+      "examples": [
+        {
+          "input": "2\n9 1 6 2\n",
+          "output": "4",
+          "explanation": "(1,2),(6,9)."
+        },
+        {
+          "input": "0\n",
+          "output": "0",
+          "explanation": "Tidak ada sensor."
+        }
+      ],
+      "tests": [
+        {
+          "input": "2\n9 1 6 2\n",
+          "expected": "4"
+        },
+        {
+          "input": "0\n",
+          "expected": "0"
+        },
+        {
+          "input": "2\n-5 -5 8 9\n",
+          "expected": "1"
+        }
+      ],
+      "starter": {
+        "python": "import sys\n\ndef main():\n    # Baca input dan implementasikan model.\n    pass\n\nif __name__ == \"__main__\":\n    main()\n",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main(){\n    // Baca input dan implementasikan algoritma.\n    return 0;\n}\n"
+      },
+      "solutions": {
+        "python": "import sys\na=list(map(int,sys.stdin.buffer.read().split())); k=a[0];v=sorted(a[1:]);print(sum(v[i+1]-v[i] for i in range(0,2*k,2)))\n",
+        "cpp": "#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;int main(){int k;cin>>k;vector<long long>a(2*k);for(auto &x:a)cin>>x;sort(a.begin(),a.end());long long ans=0;for(int i=0;i<2*k;i+=2)ans+=a[i+1]-a[i];cout<<ans<<\"\\n\";}\n"
+      },
+      "hints": [
+        "Urutkan koordinat.",
+        "Bandingkan dua pasangan menyilang dengan pasangan tetangga.",
+        "Jumlahkan selisih indeks(0,1),(2,3),dst."
+      ],
+      "explanation": "Pertukaran pasangan yang melompati tetangga pada garis tidak menambah biaya. Ada optimum memasangkan dua titik pertama; ulangi pada sisa titik. Total memakai64bit C++.",
+      "complexity": {
+        "time": "O(k log k)",
+        "space": "O(k)"
+      },
+      "rubric": [
+        "Memenuhi format dan semua batas kontrak.",
+        "Menjelaskan invariant atau recurrence dan menguji boundary.",
+        "Time/space sesuai operasi dengan asumsi eksplisit."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m22-e3",
+      "moduleId": "m22",
+      "lessonId": "m22-l3",
+      "title": "Minimum worker simultan",
+      "kind": "coding",
+      "concepts": [
+        "greedy-resources"
+      ],
+      "family": "greedy-resource",
+      "variant": "transfer",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Semua job [s,e) wajib dijalankan tanpa jeda. Satu worker hanya dapat menjalankan satu job. Hitung minimum worker.",
+      "constraints": [
+        "0<=n<=20000; 0<=s<e<=10^9"
+      ],
+      "inputDescription": "n lalu n baris s e.",
+      "outputDescription": "Jumlah worker minimum.",
+      "examples": [
+        {
+          "input": "3\n0 4\n1 2\n2 5\n",
+          "output": "2",
+          "explanation": "Worker selesai pada2 dipakai ulang."
+        },
+        {
+          "input": "0\n",
+          "output": "0",
+          "explanation": "Tidak ada job."
+        }
+      ],
+      "tests": [
+        {
+          "input": "3\n0 4\n1 2\n2 5\n",
+          "expected": "2"
+        },
+        {
+          "input": "0\n",
+          "expected": "0"
+        },
+        {
+          "input": "3\n1 2\n1 2\n1 2\n",
+          "expected": "3"
+        }
+      ],
+      "starter": {
+        "python": "import sys\n\ndef main():\n    # Baca input dan implementasikan model.\n    pass\n\nif __name__ == \"__main__\":\n    main()\n",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main(){\n    // Baca input dan implementasikan algoritma.\n    return 0;\n}\n"
+      },
+      "solutions": {
+        "python": "import sys,heapq\na=list(map(int,sys.stdin.buffer.read().split()));h=[];ans=0\nfor s,e in sorted(zip(a[1::2],a[2::2])):\n    while h and h[0]<=s: heapq.heappop(h)\n    heapq.heappush(h,e);ans=max(ans,len(h))\nprint(ans)\n",
+        "cpp": "#include <iostream>\n#include <vector>\n#include <queue>\n#include <algorithm>\n#include <functional>\nusing namespace std;int main(){int n;cin>>n;vector<pair<long long,long long>>a(n);for(auto &p:a)cin>>p.first>>p.second;sort(a.begin(),a.end());priority_queue<long long,vector<long long>,greater<long long>>h;int ans=0;for(auto [s,e]:a){while(!h.empty()&&h.top()<=s)h.pop();h.push(e);ans=max(ans,(int)h.size());}cout<<ans<<\"\\n\";}\n"
+      },
+      "hints": [
+        "Semua job wajib dilayani.",
+        "Urut start dan simpan end aktif.",
+        "Pop seluruh end<=start, push end baru, catat ukuran maksimum."
+      ],
+      "explanation": "Heap selalu memuat tepat job aktif. Overlap maksimum adalah lower bound worker; reuse yang selesai mencapai bound tersebut.",
+      "complexity": {
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      "rubric": [
+        "Memenuhi format dan semua batas kontrak.",
+        "Menjelaskan invariant atau recurrence dan menguji boundary.",
+        "Time/space sesuai operasi dengan asumsi eksplisit."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m22-e4",
+      "moduleId": "m22",
+      "lessonId": "m22-l1",
+      "title": "Bukti dan batas interval berbobot",
+      "kind": "explanation",
+      "concepts": [
+        "greedy-proof"
+      ],
+      "family": "greedy-selection",
+      "variant": "transfer",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Jelaskan exchange argument earliest finish. Berikan tiga interval berbobot yang membatalkannya bila objective menjadi total profit.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Mulai dari solusi optimal.",
+        "Bandingkan end sesi pengganti.",
+        "Buat satu sesi panjang lebih berharga daripada dua pendek."
+      ],
+      "explanation": "Contoh respons / standar hasil: Ganti sesi pertama optimum dengan sesi end minimum, menjaga seluruh suffix feasible; induksi memberi optimum jumlah. A=[0,2) profit2,B=[2,4) profit2,C=[0,4) profit9. Greedy memilih A+B profit4, optimum C profit9. Bukti jumlah tidak mempertahankan profit.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Pertukaran dan submasalah dijelaskan.",
+        "Counterexample memiliki interval, profit, hasil greedy dan optimum.",
+        "Asumsi objective yang berubah disebut."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m22-e5",
+      "moduleId": "m22",
+      "lessonId": "m22-l3",
+      "title": "Trace heap pada batas sama",
+      "kind": "trace",
+      "concepts": [
+        "greedy-resources"
+      ],
+      "family": "greedy-resource",
+      "variant": "guided",
+      "difficulty": "Easy",
+      "estimatedMinutes": 35,
+      "statement": "Proses [0,3),[1,2),[2,3),[3,4). Sesudah job terakhir, berapa ukuran heap aktif dan maksimum selama proses?",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Tuliskan state awal.",
+        "Jalankan satu transisi sekaligus.",
+        "Periksa batas dan invariant sebelum memilih."
+      ],
+      "explanation": "Pada start3 kedua end3 keluar sebelum push4. Heap akhir1, maksimum2 pada start1 dan2.",
+      "complexity": {
+        "time": "O(k) langkah trace",
+        "space": "O(k) catatan"
+      },
+      "rubric": [
+        "Pilihan benar disertai state antara dan alasan invariant."
+      ],
+      "answer": {
+        "options": [
+          "1 dan2",
+          "2 dan2",
+          "3 dan3",
+          "1 dan3"
+        ],
+        "correctIndex": 0,
+        "explanation": "Pada start3 kedua end3 keluar sebelum push4. Heap akhir1, maksimum2 pada start1 dan2."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m22-e6",
+      "moduleId": "m22",
+      "lessonId": "m22-l4",
+      "title": "Kontra coin greedy",
+      "kind": "explanation",
+      "concepts": [
+        "greedy-counterexample"
+      ],
+      "family": "coin-counterexample",
+      "variant": "guided",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Trace largest-first untuk koin1,4,6 target8. Buktikan optimum dengan lower bound, lalu jelaskan mengapa greedy interval tidak ikut terbantah.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Catat remainder setiap pilihan.",
+        "Cari pasangan tepat target.",
+        "Bedakan aturan coin dan interval."
+      ],
+      "explanation": "Contoh respons / standar hasil: Remainder8→2→1→0 menghasilkan6+1+1, tiga koin. Satu koin mustahil sebab8 tidak tersedia;4+4 mencapai target dengan dua, jadi optimum2. Ini membantah largest-first pada denominasi sembarang; interval memiliki exchange argument berbeda.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Trace remainder lengkap.",
+        "Lower bound dan solusi dua koin benar.",
+        "Kesimpulan dibatasi domain."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m23-e1",
+      "moduleId": "m23",
+      "lessonId": "m23-l1",
+      "title": "Biaya menyeberangi ubin",
+      "kind": "coding",
+      "concepts": [
+        "dp-state"
+      ],
+      "family": "dp-path-cost",
+      "variant": "practice",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Mulai posisi-1 sebelum n ubin. Langkah maju1 atau2, bayar setiap ubin yang diinjak, wajib berhenti tepat pada n-1. Cari biaya minimum.",
+      "constraints": [
+        "1<=n<=10000; 0<=cost<=10^6"
+      ],
+      "inputDescription": "n lalu n biaya.",
+      "outputDescription": "Biaya minimum.",
+      "examples": [
+        {
+          "input": "4\n3 9 2 4\n",
+          "output": "9",
+          "explanation": "Jalur0,2,3."
+        },
+        {
+          "input": "1\n7\n",
+          "output": "7",
+          "explanation": "Ubin tunggal wajib diinjak."
+        }
+      ],
+      "tests": [
+        {
+          "input": "4\n3 9 2 4\n",
+          "expected": "9"
+        },
+        {
+          "input": "1\n7\n",
+          "expected": "7"
+        },
+        {
+          "input": "2\n5 1\n",
+          "expected": "1"
+        }
+      ],
+      "starter": {
+        "python": "import sys\n\ndef main():\n    # Baca input dan implementasikan model.\n    pass\n\nif __name__ == \"__main__\":\n    main()\n",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main(){\n    // Baca input dan implementasikan algoritma.\n    return 0;\n}\n"
+      },
+      "solutions": {
+        "python": "import sys\na=list(map(int,sys.stdin.buffer.read().split()));n=a[0];c=a[1:];d=[0]*n;d[0]=c[0]\nif n>1:d[1]=c[1]\nfor i in range(2,n):d[i]=c[i]+min(d[i-1],d[i-2])\nprint(d[-1])\n",
+        "cpp": "#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;int main(){int n;cin>>n;vector<long long>c(n),d(n);for(auto &x:c)cin>>x;d[0]=c[0];if(n>1)d[1]=c[1];for(int i=2;i<n;i++)d[i]=c[i]+min(d[i-1],d[i-2]);cout<<d[n-1]<<\"\\n\";}\n"
+      },
+      "hints": [
+        "Tuliskan arti biaya sesudah tiba.",
+        "Perhatikan loncatan-1 ke1.",
+        "Tambah cost[i] pada minimum dua predecessor."
+      ],
+      "explanation": "State membayar cost tujuan. Tiap jalur datang dari i-1 atau i-2; pilih subjalur optimum. Base d[1]=c[1] valid karena semua biaya nonnegatif dan boleh loncat dari-1.",
+      "complexity": {
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      "rubric": [
+        "Memenuhi format dan semua batas kontrak.",
+        "Menjelaskan invariant atau recurrence dan menguji boundary.",
+        "Time/space sesuai operasi dengan asumsi eksplisit."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m23-e2",
+      "moduleId": "m23",
+      "lessonId": "m23-l2",
+      "title": "Koin mesin voucher",
+      "kind": "coding",
+      "concepts": [
+        "dp-min-coins"
+      ],
+      "family": "coin-optimization",
+      "variant": "transfer",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Denominasi positif unlimited. Cari minimum koin membentuk target tepat; cetak-1 jika mustahil.",
+      "constraints": [
+        "1<=k<=30; 0<=target<=10000; 1<=coin<=10000"
+      ],
+      "inputDescription": "k target lalu k denominasi.",
+      "outputDescription": "Minimum jumlah koin atau-1.",
+      "examples": [
+        {
+          "input": "3 8\n1 4 6\n",
+          "output": "2",
+          "explanation": "4+4."
+        },
+        {
+          "input": "2 7\n3 5\n",
+          "output": "-1",
+          "explanation": "Tidak ada kombinasi7."
+        }
+      ],
+      "tests": [
+        {
+          "input": "3 8\n1 4 6\n",
+          "expected": "2"
+        },
+        {
+          "input": "2 7\n3 5\n",
+          "expected": "-1"
+        },
+        {
+          "input": "1 0\n4\n",
+          "expected": "0"
+        }
+      ],
+      "starter": {
+        "python": "import sys\n\ndef main():\n    # Baca input dan implementasikan model.\n    pass\n\nif __name__ == \"__main__\":\n    main()\n",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main(){\n    // Baca input dan implementasikan algoritma.\n    return 0;\n}\n"
+      },
+      "solutions": {
+        "python": "import sys\na=list(map(int,sys.stdin.buffer.read().split()));k,t=a[:2];coins=a[2:];d=[t+1]*(t+1);d[0]=0\nfor x in range(1,t+1):\n    for c in coins:\n        if c<=x:d[x]=min(d[x],1+d[x-c])\nprint(d[t] if d[t]<=t else -1)\n",
+        "cpp": "#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;int main(){int k,t;cin>>k>>t;vector<int>c(k),d(t+1,t+1);for(auto &x:c)cin>>x;d[0]=0;for(int x=1;x<=t;x++)for(int v:c)if(v<=x)d[x]=min(d[x],d[x-v]+1);cout<<(d[t]<=t?d[t]:-1)<<\"\\n\";}\n"
+      },
+      "hints": [
+        "State menyimpan minimum jumlah.",
+        "d[0]=0, state lain impossible.",
+        "Coba semua koin sebagai langkah terakhir."
+      ],
+      "explanation": "Koin terakhir membagi semua solusi. Positive coin membuat dependency lebih kecil. Sentinel t+1 melebihi biaya solusi mana pun.",
+      "complexity": {
+        "time": "O(k*target)",
+        "space": "O(target)"
+      },
+      "rubric": [
+        "Memenuhi format dan semua batas kontrak.",
+        "Menjelaskan invariant atau recurrence dan menguji boundary.",
+        "Time/space sesuai operasi dengan asumsi eksplisit."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m23-e3",
+      "moduleId": "m23",
+      "lessonId": "m23-l3",
+      "title": "Rute pengiriman grid",
+      "kind": "coding",
+      "concepts": [
+        "dp-grid"
+      ],
+      "family": "dp-grid-count",
+      "variant": "practice",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Hitung rute kiri-atas ke kanan-bawah, hanya kanan/bawah. # blok, . terbuka. Cetak jumlah modulo1000000007.",
+      "constraints": [
+        "1<=r,c<=200; start/tujuan boleh blok."
+      ],
+      "inputDescription": "r c lalu r string panjang c.",
+      "outputDescription": "Jumlah rute modulo1000000007.",
+      "examples": [
+        {
+          "input": "3 3\n...\n.#.\n...\n",
+          "output": "2",
+          "explanation": "Mengitari blok tengah."
+        },
+        {
+          "input": "1 1\n.\n",
+          "output": "1",
+          "explanation": "Satu rute kosong."
+        }
+      ],
+      "tests": [
+        {
+          "input": "3 3\n...\n.#.\n...\n",
+          "expected": "2"
+        },
+        {
+          "input": "1 1\n.\n",
+          "expected": "1"
+        },
+        {
+          "input": "1 2\n#.\n",
+          "expected": "0"
+        },
+        {
+          "input": "2 2\n..\n.#\n",
+          "expected": "0"
+        }
+      ],
+      "starter": {
+        "python": "import sys\n\ndef main():\n    # Baca input dan implementasikan model.\n    pass\n\nif __name__ == \"__main__\":\n    main()\n",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main(){\n    // Baca input dan implementasikan algoritma.\n    return 0;\n}\n"
+      },
+      "solutions": {
+        "python": "import sys\na=sys.stdin.buffer.read().split();r,c=map(int,a[:2]);d=[0]*c;d[0]=1\nfor row in a[2:]:\n    for j in range(c):\n        if row[j]==35:d[j]=0\n        elif j:d[j]=(d[j]+d[j-1])%1000000007\nprint(d[-1])\n",
+        "cpp": "#include <iostream>\n#include <vector>\n#include <string>\nusing namespace std;int main(){int r,c;cin>>r>>c;vector<long long>d(c);d[0]=1;for(int i=0;i<r;i++){string s;cin>>s;for(int j=0;j<c;j++){if(s[j]=='#')d[j]=0;else if(j)d[j]=(d[j]+d[j-1])%1000000007;}}cout<<d[c-1]<<\"\\n\";}\n"
+      },
+      "hints": [
+        "Start terbuka punya satu rute kosong.",
+        "Blok menghapus nilai lama.",
+        "Jumlahkan atas lama dan kiri baru."
+      ],
+      "explanation": "Gerakan terakhir datang dari atas/kiri, dua himpunan terpisah. d[j] lama=atas, d[j-1] baru=kiri. Blok menghapus keduanya.",
+      "complexity": {
+        "time": "O(r*c)",
+        "space": "O(c) auxiliary; input Python O(r*c)"
+      },
+      "rubric": [
+        "Memenuhi format dan semua batas kontrak.",
+        "Menjelaskan invariant atau recurrence dan menguji boundary.",
+        "Time/space sesuai operasi dengan asumsi eksplisit."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m23-e4",
+      "moduleId": "m23",
+      "lessonId": "m23-l4",
+      "title": "Hari kerja tanpa tetangga",
+      "kind": "coding",
+      "concepts": [
+        "dp-include-exclude"
+      ],
+      "family": "dp-nonadjacent",
+      "variant": "transfer",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Pilih subset hari tanpa dua hari bertetangga untuk total nilai maksimum. Boleh tidak memilih satu pun.",
+      "constraints": [
+        "0<=n<=100000; -10^9<=value<=10^9"
+      ],
+      "inputDescription": "n lalu n nilai.",
+      "outputDescription": "Total maksimum, minimal0.",
+      "examples": [
+        {
+          "input": "4\n4 7 5 8\n",
+          "output": "15",
+          "explanation": "Indeks1 dan3."
+        },
+        {
+          "input": "2\n-5 -2\n",
+          "output": "0",
+          "explanation": "Pilih kosong."
+        }
+      ],
+      "tests": [
+        {
+          "input": "4\n4 7 5 8\n",
+          "expected": "15"
+        },
+        {
+          "input": "2\n-5 -2\n",
+          "expected": "0"
+        },
+        {
+          "input": "0\n",
+          "expected": "0"
+        },
+        {
+          "input": "3\n9 1 9\n",
+          "expected": "18"
+        }
+      ],
+      "starter": {
+        "python": "import sys\n\ndef main():\n    # Baca input dan implementasikan model.\n    pass\n\nif __name__ == \"__main__\":\n    main()\n",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main(){\n    // Baca input dan implementasikan algoritma.\n    return 0;\n}\n"
+      },
+      "solutions": {
+        "python": "import sys\na=list(map(int,sys.stdin.buffer.read().split()));p2=p1=0\nfor x in a[1:]:p2,p1=p1,max(p1,p2+x)\nprint(p1)\n",
+        "cpp": "#include <iostream>\n#include <algorithm>\nusing namespace std;int main(){int n;cin>>n;long long p2=0,p1=0;for(int i=0;i<n;i++){long long x;cin>>x;long long cur=max(p1,p2+x);p2=p1;p1=cur;}cout<<p1<<\"\\n\";}\n"
+      },
+      "hints": [
+        "Pisahkan take dan skip.",
+        "Take melarang satu tetangga sebelumnya.",
+        "Update dua accumulator dengan nilai lama yang benar."
+      ],
+      "explanation": "Skip memakai optimum prefix sebelumnya; take memakai optimum dua prefix sebelumnya. Base0 mengizinkan empty sehingga negatif semua memberi0.",
+      "complexity": {
+        "time": "O(n)",
+        "space": "O(1) auxiliary; Python membaca O(n) input"
+      },
+      "rubric": [
+        "Memenuhi format dan semua batas kontrak.",
+        "Menjelaskan invariant atau recurrence dan menguji boundary.",
+        "Time/space sesuai operasi dengan asumsi eksplisit."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m23-e5",
+      "moduleId": "m23",
+      "lessonId": "m23-l2",
+      "title": "Trace impossible",
+      "kind": "trace",
+      "concepts": [
+        "dp-min-coins"
+      ],
+      "family": "dp-coin-trace",
+      "variant": "guided",
+      "difficulty": "Easy",
+      "estimatedMinutes": 35,
+      "statement": "Koin[2,5], d[0]=0. Apa d[1],d[2],d[3],d[4],d[5] jika impossible=INF?",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Tuliskan state awal.",
+        "Jalankan satu transisi sekaligus.",
+        "Periksa batas dan invariant sebelum memilih."
+      ],
+      "explanation": "Jumlah 1 dan 3 mustahil dibentuk karena koin terkecil adalah 2 dan koin 5 belum dapat digunakan. Jumlah 2 memakai satu koin 2, jumlah 4 memakai dua koin 2, dan jumlah 5 memakai satu koin 5. Karena itu urutannya INF,1,INF,2,1; jangan memakai nol untuk state mustahil karena nol sudah menyatakan solusi kosong bagi target 0.",
+      "complexity": {
+        "time": "O(k) langkah trace",
+        "space": "O(k) catatan"
+      },
+      "rubric": [
+        "Pilihan benar disertai state antara dan alasan invariant."
+      ],
+      "answer": {
+        "options": [
+          "INF,1,INF,2,1",
+          "0,1,1,2,1",
+          "1,1,2,2,1",
+          "INF,1,2,2,3"
+        ],
+        "correctIndex": 0,
+        "explanation": "Jumlah 1 dan 3 mustahil dibentuk karena koin terkecil adalah 2 dan koin 5 belum dapat digunakan. Jumlah 2 memakai satu koin 2, jumlah 4 memakai dua koin 2, dan jumlah 5 memakai satu koin 5. Karena itu urutannya INF,1,INF,2,1; jangan memakai nol untuk state mustahil karena nol sudah menyatakan solusi kosong bagi target 0."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m23-e6",
+      "moduleId": "m23",
+      "lessonId": "m23-l4",
+      "title": "Rekonstruksi DP dan tie",
+      "kind": "explanation",
+      "concepts": [
+        "dp-reconstruction"
+      ],
+      "family": "dp-nonadjacent",
+      "variant": "guided",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Untuk[5,5,5], tulis tabel best prefix dan subset indeks optimal. Mengapa dua accumulator tidak langsung menyimpan indeks? Tetapkan tie rule deterministik.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Isi tabel dahulu.",
+        "Bandingkan best[i] dan best[i-1].",
+        "Jika take, mundur dua prefix."
+      ],
+      "explanation": "Contoh respons / standar hasil: best=[0,5,5,10]. Take indeks2 lalu mundur dua prefix dan take indeks0 memberi[0,2]. Dua accumulator menyimpan nilai tetapi membuang keputusan sejarah; gunakan tabel/parent. Saat take=skip pilih skip secara konsisten, tanpa mengklaim lexicographic terkecil untuk semua kontrak.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Tabel dan indeks benar.",
+        "Informasi hilang pada kompresi dijelaskan.",
+        "Tie rule eksplisit dengan batas klaim."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m24-e1",
+      "moduleId": "m24",
+      "lessonId": "m24-l1",
+      "title": "Perbedaan fitur konfigurasi",
+      "kind": "coding",
+      "concepts": [
+        "bitmask"
+      ],
+      "family": "bits-difference",
+      "variant": "practice",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Dua konfigurasi memakai k bit terendah. Hitung banyak posisi fitur berbeda.",
+      "constraints": [
+        "1<=k<=30; 0<=a,b<2^k"
+      ],
+      "inputDescription": "k a b.",
+      "outputDescription": "Jumlah posisi berbeda.",
+      "examples": [
+        {
+          "input": "4 5 6\n",
+          "output": "2",
+          "explanation": "0101 dan0110 berbeda dua bit."
+        },
+        {
+          "input": "1 0 0\n",
+          "output": "0",
+          "explanation": "Identik."
+        }
+      ],
+      "tests": [
+        {
+          "input": "4 5 6\n",
+          "expected": "2"
+        },
+        {
+          "input": "1 0 0\n",
+          "expected": "0"
+        },
+        {
+          "input": "5 0 31\n",
+          "expected": "5"
+        }
+      ],
+      "starter": {
+        "python": "import sys\n\ndef main():\n    # Baca input dan implementasikan model.\n    pass\n\nif __name__ == \"__main__\":\n    main()\n",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main(){\n    // Baca input dan implementasikan algoritma.\n    return 0;\n}\n"
+      },
+      "solutions": {
+        "python": "import sys\nk,a,b=map(int,sys.stdin.buffer.read().split());x=a^b;ans=0\nwhile x:ans+=x&1;x>>=1\nprint(ans)\n",
+        "cpp": "#include <iostream>\nusing namespace std;int main(){unsigned int k,a,b;cin>>k>>a>>b;unsigned int x=a^b;int ans=0;while(x){ans+=x&1U;x>>=1;}cout<<ans<<\"\\n\";}\n"
+      },
+      "hints": [
+        "Bandingkan setiap pasangan bit: hasil yang dicari bernilai satu hanya ketika kedua konfigurasi berbeda pada posisi itu.",
+        "Ambil XOR kedua mask untuk membentuk mask baru yang menandai tepat seluruh posisi fitur yang berbeda.",
+        "Jumlahkan bit terendah hasil XOR dengan x & 1, lalu geser x ke kanan sampai seluruh bit selesai diperiksa."
+      ],
+      "explanation": "XOR memberi1 tepat pada posisi berbeda. Scan bit terendah dan shift menghitung seluruh perbedaan; unsigned menghindari signed shift.",
+      "complexity": {
+        "time": "O(k)",
+        "space": "O(1)"
+      },
+      "rubric": [
+        "Memenuhi format dan semua batas kontrak.",
+        "Menjelaskan invariant atau recurrence dan menguji boundary.",
+        "Time/space sesuai operasi dengan asumsi eksplisit."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m24-e2",
+      "moduleId": "m24",
+      "lessonId": "m24-l3",
+      "title": "Kemunculan pola overlap: baseline",
+      "kind": "coding",
+      "concepts": [
+        "string-matching"
+      ],
+      "family": "string-overlap",
+      "variant": "practice",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Cetak semua indeks start pola di teks, termasuk overlap. Ini baseline naive untuk oracle KMP, bukan implementasi KMP. Jika tidak ada, cetak-1.",
+      "constraints": [
+        "1<=panjang teks,pola<=2000; lowercase ASCII."
+      ],
+      "inputDescription": "teks lalu pola dipisah whitespace.",
+      "outputDescription": "Indeks0-based berurutan dipisah spasi atau-1.",
+      "examples": [
+        {
+          "input": "ababa aba\n",
+          "output": "0 2",
+          "explanation": "Overlap pada a."
+        },
+        {
+          "input": "abc d\n",
+          "output": "-1",
+          "explanation": "Tidak ditemukan."
+        }
+      ],
+      "tests": [
+        {
+          "input": "ababa aba\n",
+          "expected": "0 2"
+        },
+        {
+          "input": "abc d\n",
+          "expected": "-1"
+        },
+        {
+          "input": "a aaa\n",
+          "expected": "-1"
+        },
+        {
+          "input": "aaaa aa\n",
+          "expected": "0 1 2"
+        }
+      ],
+      "starter": {
+        "python": "import sys\n\ndef main():\n    # Baca input dan implementasikan model.\n    pass\n\nif __name__ == \"__main__\":\n    main()\n",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main(){\n    // Baca input dan implementasikan algoritma.\n    return 0;\n}\n"
+      },
+      "solutions": {
+        "python": "import sys\ns,p=sys.stdin.buffer.read().decode().split();v=[str(i) for i in range(len(s)-len(p)+1) if s[i:i+len(p)]==p];print(\" \".join(v) if v else \"-1\")\n",
+        "cpp": "#include <iostream>\n#include <string>\n#include <vector>\nusing namespace std;int main(){string s,p;cin>>s>>p;vector<int>a;for(int i=0;i+(int)p.size()<=(int)s.size();i++)if(s.compare(i,p.size(),p)==0)a.push_back(i);if(a.empty())cout<<-1;else for(int i=0;i<(int)a.size();i++){if(i)cout<<\" \";cout<<a[i];}cout<<\"\\n\";}\n"
+      },
+      "hints": [
+        "Start valid harus menyisakan ruang pola.",
+        "Setelah match tetap maju satu posisi.",
+        "Kumpulkan semua i dengan substring panjang pola sama."
+      ],
+      "explanation": "Coba tiap start valid, bandingkan seluruh pola, maju satu posisi meski match sehingga overlap tidak hilang. Baseline ini cocok oracle input kecil untuk algoritma lanjutan.",
+      "complexity": {
+        "time": "O(n*m)",
+        "space": "O(n+m) input/output; slicing Python O(m) temporary"
+      },
+      "rubric": [
+        "Memenuhi format dan semua batas kontrak.",
+        "Menjelaskan invariant atau recurrence dan menguji boundary.",
+        "Time/space sesuai operasi dengan asumsi eksplisit."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m24-e3",
+      "moduleId": "m24",
+      "lessonId": "m24-l4",
+      "title": "Sum potongan telemetry",
+      "kind": "coding",
+      "concepts": [
+        "range-prefix"
+      ],
+      "family": "range-static",
+      "variant": "practice",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Jawab query sum array statis pada interval[l,r), termasuk interval kosong. Tidak ada update.",
+      "constraints": [
+        "0<=n<=100000; 1<=q<=100000; -10^9<=value<=10^9; 0<=l<=r<=n"
+      ],
+      "inputDescription": "n q, n nilai, q pasangan l r.",
+      "outputDescription": "Satu sum per baris.",
+      "examples": [
+        {
+          "input": "4 3\n2 -1 5 3\n1 3\n0 4\n2 2\n",
+          "output": "4\n9\n0",
+          "explanation": "Subtraction dua prefix."
+        },
+        {
+          "input": "0 1\n0 0\n",
+          "output": "0",
+          "explanation": "Array dan interval kosong."
+        }
+      ],
+      "tests": [
+        {
+          "input": "4 3\n2 -1 5 3\n1 3\n0 4\n2 2\n",
+          "expected": "4\n9\n0"
+        },
+        {
+          "input": "0 1\n0 0\n",
+          "expected": "0"
+        },
+        {
+          "input": "1 2\n-9\n0 1\n1 1\n",
+          "expected": "-9\n0"
+        }
+      ],
+      "starter": {
+        "python": "import sys\n\ndef main():\n    # Baca input dan implementasikan model.\n    pass\n\nif __name__ == \"__main__\":\n    main()\n",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main(){\n    // Baca input dan implementasikan algoritma.\n    return 0;\n}\n"
+      },
+      "solutions": {
+        "python": "import sys\na=list(map(int,sys.stdin.buffer.read().split()));n,q=a[:2];p=[0]\nfor x in a[2:2+n]:p.append(p[-1]+x)\nk=2+n\nfor _ in range(q):\n    l,r=a[k:k+2];k+=2;print(p[r]-p[l])\n",
+        "cpp": "#include <iostream>\n#include <vector>\nusing namespace std;int main(){int n,q;cin>>n>>q;vector<long long>p(n+1);for(int i=0;i<n;i++){long long x;cin>>x;p[i+1]=p[i]+x;}while(q--){int l,r;cin>>l>>r;cout<<p[r]-p[l]<<\"\\n\";}}\n"
+      },
+      "hints": [
+        "Definisikan P[i] sebagai jumlah i elemen pertama; P[0]=0 mewakili prefix kosong sebelum indeks pertama.",
+        "Bangun prefix secara berurutan dengan P[i+1]=P[i]+a[i], memakai integer yang cukup lebar untuk total.",
+        "Untuk interval setengah terbuka [l,r), kurangi prefix awal dari prefix akhir: P[r]-P[l]. Jika l=r, hasil otomatis nol."
+      ],
+      "explanation": "P[r] memuat P[l] dan interval[l,r). Subtraction menghapus prefix awal. long long menampung jumlah C++.",
+      "complexity": {
+        "time": "O(n+q)",
+        "space": "O(n) prefix; Python juga menyimpan input"
+      },
+      "rubric": [
+        "Memenuhi format dan semua batas kontrak.",
+        "Menjelaskan invariant atau recurrence dan menguji boundary.",
+        "Time/space sesuai operasi dengan asumsi eksplisit."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m24-e4",
+      "moduleId": "m24",
+      "lessonId": "m24-l3",
+      "title": "Fallback pola overlap",
+      "kind": "trace",
+      "concepts": [
+        "string-matching"
+      ],
+      "family": "kmp-overlap",
+      "variant": "guided",
+      "difficulty": "Easy",
+      "estimatedMinutes": 35,
+      "statement": "Pola aba, pi=[0,0,1]. Sesudah match pada teks ababa indeks0..2, j=pi[2]. Berapa j dan start match berikutnya?",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Tuliskan state awal.",
+        "Jalankan satu transisi sekaligus.",
+        "Periksa batas dan invariant sebelum memilih."
+      ],
+      "explanation": "Suffix a match pertama adalah prefix a pola. Mempertahankan j1 memungkinkan match indeks2..4.",
+      "complexity": {
+        "time": "O(k) langkah trace",
+        "space": "O(k) catatan"
+      },
+      "rubric": [
+        "Pilihan benar disertai state antara dan alasan invariant."
+      ],
+      "answer": {
+        "options": [
+          "j=1,start=2",
+          "j=0,start=3",
+          "j=2,start=1",
+          "j=3,tidak ada lagi"
+        ],
+        "correctIndex": 0,
+        "explanation": "Suffix a match pertama adalah prefix a pola. Mempertahankan j1 memungkinkan match indeks2..4."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m24-e5",
+      "moduleId": "m24",
+      "lessonId": "m24-l4",
+      "title": "Pilih struktur sesuai workload",
+      "kind": "explanation",
+      "concepts": [
+        "range-structure-choice"
+      ],
+      "family": "range-dynamic",
+      "variant": "transfer",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "A static sum range, B point-add/prefix-sum, C point-assignment/range-min. Pilih struktur, biaya operasi dan satu jebakan boundary.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Tulis apakah ada update.",
+        "Bedakan sum dengan min.",
+        "Pilih struktur paling sederhana yang memenuhi kontrak."
+      ],
+      "explanation": "Contoh respons / standar hasil: A prefix sum buildO(n),queryO(1),updateO(n). B Fenwick update/queryO(log n), internal1-based; update0 macet. C segment tree buildO(n),update/queryO(log n), identity+infinity untuk min. Prefix-min subtraction tidak memberi range-min karena minimum tidak punya inverse itu. Ini pemilihan struktur, bukan klaim implementasi dikuasai.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Tiga pilihan dan biaya benar.",
+        "Alasan minimum tidak memakai subtraction.",
+        "Boundary dan identity sesuai operasi."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m24-e6",
+      "moduleId": "m24",
+      "lessonId": "m24-l2",
+      "title": "Rencana pendalaman trie",
+      "kind": "explanation",
+      "concepts": [
+        "elective-scope"
+      ],
+      "family": "advanced-study-plan",
+      "variant": "guided",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Rancang dua sesi pendalaman trie: prerequisite, artefak, test pembeda dan evidence yang belum dimiliki sesudah lesson pengantar.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Fokus satu elective.",
+        "Cari bug khas terminal.",
+        "Tentukan hasil yang dapat direview."
+      ],
+      "explanation": "Contoh respons / standar hasil: Prerequisite string/hash dan tree invariant. Sesi1 insert/search dengan terminal; tests car/cart, absent word, duplicate. Sesi2 prefix-count unique dan analisis total node terhadap total karakter; variasi delete membutuhkan decrements dan cleanup. Belum boleh mengklaim delete benar atau compressed trie dikuasai sebelum artefak dan tests tersedia.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Artefak nyata untuk dua sesi.",
+        "Tests menyerang terminal dan duplicate.",
+        "Limit pengantar dan bukti lanjutan jelas."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m25-e1",
+      "moduleId": "m25",
+      "lessonId": "m25-l1",
+      "title": "Project brief satu halaman",
+      "kind": "project",
+      "concepts": [
+        "project-scope"
+      ],
+      "family": "project-contract",
+      "variant": "guided",
+      "difficulty": "Medium",
+      "estimatedMinutes": 60,
+      "statement": "Pilih satu proyek kurikulum. Tulis masalah, pengguna, input/output, tiga acceptance, non-goal dan dua risiko; jangan langsung membangun semua pilihan.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Pilih satu proyek relevan role.",
+        "Ubah kata cepat menjadi perilaku terukur.",
+        "Tuliskan kondisi selesai sebelum kode."
+      ],
+      "explanation": "Contoh respons / standar hasil: Dedup untuk analis data sintetis. Input JSON lines id/amount; output accepted/duplicate/conflict stabil. Acceptance ID baru diterima, payload sama duplicate, payload beda conflict. Non-goal distributed persistence. Risiko malformed record dan state ID tumbuh. Selesai saat CLI, tests dan README dapat direproduksi.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Satu pengguna dan masalah jelas.",
+        "Tiga acceptance punya oracle input-output.",
+        "Non-goal dan risiko membatasi scope."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "Git documentation",
+          "url": "https://git-scm.com/docs"
+        },
+        {
+          "title": "Python unittest",
+          "url": "https://docs.python.org/3/library/unittest.html"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m25-e2",
+      "moduleId": "m25",
+      "lessonId": "m25-l1",
+      "title": "Duplicate versus conflict",
+      "kind": "explanation",
+      "concepts": [
+        "project-contract"
+      ],
+      "family": "project-contract",
+      "variant": "transfer",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Record berisi id,amount,timestamp. Tentukan identity/equality/order lalu klasifikasikan(A,10,t1),(A,10,t2),(A,12,t3). Jelaskan asumsi bisnis.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Tentukan transaksi logis.",
+        "Pisahkan metadata dari payload bisnis.",
+        "Nyatakan first-write atau replacement."
+      ],
+      "explanation": "Contoh respons / standar hasil: Identity=id dan equality hanya amount; timestamp metadata. Baris1 accepted,2 duplicate,3 conflict. First payload tetap10, output mengikuti urutan input. Jika timestamp bagian identity, hasil berbeda; requirement menentukan kontrak, bukan kemudahan implementasi. Record conflict tidak diam-diam menimpa canonical payload.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Identity dan equality dipisah.",
+        "Ketiga hasil konsisten.",
+        "Alternatif dan alasan requirement disebut."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "Git documentation",
+          "url": "https://git-scm.com/docs"
+        },
+        {
+          "title": "Python unittest",
+          "url": "https://docs.python.org/3/library/unittest.html"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m25-e3",
+      "moduleId": "m25",
+      "lessonId": "m25-l2",
+      "title": "Milestone dan patch review",
+      "kind": "project",
+      "concepts": [
+        "git-review"
+      ],
+      "family": "project-delivery",
+      "variant": "guided",
+      "difficulty": "Medium",
+      "estimatedMinutes": 60,
+      "statement": "Susun tiga milestone vertikal. Buat perubahan pertama dan commit lokal bila repository pribadi tersedia, atau serahkan patch. Catat pekerjaan yang benar-benar dilakukan.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Mulai vertical slice terkecil.",
+        "Satu commit satu alasan.",
+        "Pisahkan planned/executed."
+      ],
+      "explanation": "Contoh respons / standar hasil: M1 pure classify dan tests acceptance;M2 parser+CLI fixture;M3 README/error/review. Perubahan awal hanya aturan domain serta tests, satu alasan commit. Jika commit belum dibuat, tulis belum dibuat; jangan mengarang hash. Bedakan command direncanakan dengan hasil run aktual dan jangan mengubah repository orang lain.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Tiap milestone menghasilkan perilaku teramati.",
+        "Perubahan awal kecil dapat direview.",
+        "Patch/commit dan run evidence faktual."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "Git documentation",
+          "url": "https://git-scm.com/docs"
+        },
+        {
+          "title": "Python unittest",
+          "url": "https://docs.python.org/3/library/unittest.html"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m25-e4",
+      "moduleId": "m25",
+      "lessonId": "m25-l3",
+      "title": "Matriks delapan test",
+      "kind": "project",
+      "concepts": [
+        "test-design"
+      ],
+      "family": "project-quality",
+      "variant": "practice",
+      "difficulty": "Medium",
+      "estimatedMinutes": 60,
+      "statement": "Buat delapan kasus proyek dengan expected: normal,kosong,duplicate,conflict,malformed,order,boundary,repeated run. Jelaskan unit atau integration dan oracle.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Mulai dari acceptance.",
+        "Expected sebelum implementasi.",
+        "Tambahkan repeated run."
+      ],
+      "explanation": "Contoh respons / standar hasil: Dedup: kosong→lists kosong;A10→accepted;A10,A10→duplicate;A10,A12→conflict;JSON invalid→error line;B,A→order B,A;dua ID amount sama→keduanya accepted;run dua kali→hasil sama tanpa state bocor. Oracle manual dari kontrak, bukan fungsi yang diuji. Parser/error cases integration, classify cases unit.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Delapan expected konkret.",
+        "Unit/integration dibedakan.",
+        "Oracle independen dan state leakage diperiksa."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "Git documentation",
+          "url": "https://git-scm.com/docs"
+        },
+        {
+          "title": "Python unittest",
+          "url": "https://docs.python.org/3/library/unittest.html"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m25-e5",
+      "moduleId": "m25",
+      "lessonId": "m25-l3",
+      "title": "Mutasi kecil dan regression",
+      "kind": "project",
+      "concepts": [
+        "regression-testing"
+      ],
+      "family": "project-quality",
+      "variant": "transfer",
+      "difficulty": "Medium",
+      "estimatedMinutes": 60,
+      "statement": "Pada salinan proyek pribadi, ubah satu aturan penting, jalankan test yang seharusnya gagal, pulihkan, verifikasi ulang. Laporkan hasil aktual, bukan hasil yang diasumsikan.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Pilih satu branch keputusan.",
+        "Fixture harus membedakan mutant.",
+        "Pulihkan lalu verifikasi."
+      ],
+      "explanation": "Contoh respons / standar hasil: Mutasi equality payload menjadi selalu True. FixtureA10,A12 harus gagal karena conflict berubah duplicate. Pulihkan dan jalankan test terkait serta suite. Jika test tetap hijau, perbaiki fixture/assertion. Catat command,revisi,environment,output dan limit. Tidak ada verdict aktual learner yang disediakan materi ini.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Mutasi aman terkait requirement.",
+        "Hasil sebelum/sesudah pemulihan nyata.",
+        "Diagnosis jika test gagal mendeteksi mutant."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "Git documentation",
+          "url": "https://git-scm.com/docs"
+        },
+        {
+          "title": "Python unittest",
+          "url": "https://docs.python.org/3/library/unittest.html"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m25-e6",
+      "moduleId": "m25",
+      "lessonId": "m25-l4",
+      "title": "README dan demo error",
+      "kind": "project",
+      "concepts": [
+        "readme-evidence"
+      ],
+      "family": "project-portfolio",
+      "variant": "practice",
+      "difficulty": "Medium",
+      "estimatedMinutes": 60,
+      "statement": "Serahkan README dengan quick start, contoh normal/error, test command, complexity, trade-off dan limit. Gunakan data sintetis dan cocokkan contoh dengan program sendiri.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Bayangkan pembaca baru clone.",
+        "Pakai fixture kecil dihitung manual.",
+        "Bedakan contoh format dan hasil terverifikasi."
+      ],
+      "explanation": "Contoh respons / standar hasil: Requires Python3.11; python app.py < fixtures/basic.jsonl; output sesuai fixture. Malformed fixture menampilkan line2 invalid amount menurut kontrak. Test command python -m unittest discover. Hash stateO(u), belum persistence. Output dan jumlah test harus berasal dari run aktual, bukan sekadar menyalin template.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Versi/file/command cukup untuk reproduksi.",
+        "Normal dan error sesuai kontrak.",
+        "Time/space dan limit jujur."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "Git documentation",
+          "url": "https://git-scm.com/docs"
+        },
+        {
+          "title": "Python unittest",
+          "url": "https://docs.python.org/3/library/unittest.html"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m25-e7",
+      "moduleId": "m25",
+      "lessonId": "m25-l4",
+      "title": "Engineering evidence checkpoint",
+      "kind": "project",
+      "concepts": [
+        "engineering-evidence"
+      ],
+      "family": "project-review",
+      "variant": "transfer",
+      "difficulty": "Medium",
+      "estimatedMinutes": 60,
+      "statement": "Nilai correctness,tests,reproducibility,trade-off,maintainability dengan0 belum ada,1 sebagian,2 terbukti. Sertakan evidence dan satu next action; jangan jadikan skor mastery DSA.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Audit tiap klaim README.",
+        "Skor0 bila bukti kosong.",
+        "Pilih satu perbaikan risiko terbesar."
+      ],
+      "explanation": "Contoh respons / standar hasil: Contoh self-review: correctness2 tiga acceptance;tests1 malformed belum;reproducibility2 README diulang sendiri;trade-off1 memory belum diukur;maintainability1 parser bercampur output. Total7/10 ringkasan artefak. Prioritas malformed integration. Review orang lain hanya diklaim jika benar terjadi; self-review bukan bukti independen.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Lima dimensi memiliki evidence.",
+        "Jenis reviewer dan eksekusi faktual.",
+        "Prioritas berbasis risiko, terpisah DSA mastery."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "Git documentation",
+          "url": "https://git-scm.com/docs"
+        },
+        {
+          "title": "Python unittest",
+          "url": "https://docs.python.org/3/library/unittest.html"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m26-e1",
+      "moduleId": "m26",
+      "lessonId": "m26-l1",
+      "title": "Index untuk query user-time",
+      "kind": "explanation",
+      "concepts": [
+        "database-index"
+      ],
+      "family": "db-workload",
+      "variant": "practice",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "events(id,user_id,created_at,status), dominan query satu user pada rentang waktu. Usulkan index, biaya read/write dan cara memvalidasi.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Pisahkan equality/range.",
+        "Perkirakan selektivitas.",
+        "Lihat query plan lalu ukur."
+      ],
+      "explanation": "Contoh respons / standar hasil: Index(user_id,created_at) equality user lalu range waktu. Primary key id menjaga identitas. Insert memperbarui index, biaya storage/write bertambah. EXPLAIN dan data representatif menguji rencana; status dua nilai belum tentu selektif. Tidak ada benchmark yang telah dilakukan hanya karena desain ini ditulis.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Urutan kolom sesuai predicate.",
+        "Trade-off read/write/storage.",
+        "Validasi dibedakan hasil belum ada."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MDN HTTP overview",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+        },
+        {
+          "title": "PostgreSQL indexes",
+          "url": "https://www.postgresql.org/docs/current/indexes.html"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m26-e2",
+      "moduleId": "m26",
+      "lessonId": "m26-l1",
+      "title": "Dua writer dedup",
+      "kind": "explanation",
+      "concepts": [
+        "database-integrity"
+      ],
+      "family": "db-race",
+      "variant": "transfer",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "A dan B SELECT ID X, keduanya melihat kosong, lalu INSERT. Tulis interleaving dan desain agar hanya satu X diterima.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Gambar langkah A/B.",
+        "Aturan harus melihat semua writer.",
+        "Tentukan respons loser."
+      ],
+      "explanation": "Contoh respons / standar hasil: A SELECT kosong;B SELECT kosong;A INSERT;B INSERT. Tanpa constraint dua baris bisa berhasil. Unique constraint id memaksa satu winner; loser menangani violation dengan membandingkan payload untuk duplicate/conflict. Operasi kompleks perlu transaksi/isolation tepat. Mutex satu process tidak mengatur writer pada server lain.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Dua read mendahului write.",
+        "Invariant dijaga shared database.",
+        "Loser duplicate/conflict dan scope mutex dibahas."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MDN HTTP overview",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+        },
+        {
+          "title": "PostgreSQL indexes",
+          "url": "https://www.postgresql.org/docs/current/indexes.html"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m26-e3",
+      "moduleId": "m26",
+      "lessonId": "m26-l2",
+      "title": "Recovery respons hilang",
+      "kind": "explanation",
+      "concepts": [
+        "http-idempotency"
+      ],
+      "family": "network-retry",
+      "variant": "practice",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Order K/P sudah commit, respons hilang. Rancang retry client dan ledger server, termasuk K/Q dan job pending.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Pisahkan operasi dan transport.",
+        "Simpan key sebelum request.",
+        "Tinjau restart sesudah commit."
+      ],
+      "explanation": "Contoh respons / standar hasil: Persist K/P fingerprint sebelum send; retry selalu K/P. Server atomik menyimpan key,payload,status,result. Selesai mengembalikan result sama;pending menyediakan status/polling;K/Q conflict. Key baru berisiko duplicate. Retention serta restart recovery harus jelas. Timeout unknown sampai hasil diketahui, bukan failed bisnis otomatis.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Identitas durable melewati reload.",
+        "Ledger atomik dan conflict payload.",
+        "Pending/unknown berbeda dari failure."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MDN HTTP overview",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+        },
+        {
+          "title": "PostgreSQL indexes",
+          "url": "https://www.postgresql.org/docs/current/indexes.html"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m26-e4",
+      "moduleId": "m26",
+      "lessonId": "m26-l3",
+      "title": "Lost update dan scope mutex",
+      "kind": "explanation",
+      "concepts": [
+        "concurrency"
+      ],
+      "family": "concurrency-race",
+      "variant": "guided",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Counter5, A/B increment via read/write. Trace hasil6, perbaikan mutex dan batas dua server.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Jangan anggap++ atomik.",
+        "Lock dari read sampai write.",
+        "Apakah kedua server berbagi lock?"
+      ],
+      "explanation": "Contoh respons / standar hasil: A read5,B read5,A write6,B write6. Lock bersama mencakup read-modify-write penuh: A selesai6 lalu B membaca6 dan menulis7. Dua server dengan mutex terpisah tetap race; gunakan atomic UPDATE count=count+1 di database atau transaksi sesuai kebutuhan. Hardware cepat bukan perbaikan correctness.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Trace menghasilkan lost update.",
+        "Critical section utuh.",
+        "Primitive sesuai shared-state boundary."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MDN HTTP overview",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+        },
+        {
+          "title": "PostgreSQL indexes",
+          "url": "https://www.postgresql.org/docs/current/indexes.html"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m26-e5",
+      "moduleId": "m26",
+      "lessonId": "m26-l3",
+      "title": "Deadlock dua resource",
+      "kind": "explanation",
+      "concepts": [
+        "concurrency-deadlock"
+      ],
+      "family": "concurrency-locks",
+      "variant": "transfer",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "A mengambil L lalu M, B mengambil M lalu L. Tulis circular wait, pencegahan dan satu biaya.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Tulis pegang/tunggu.",
+        "Cari urutan konsisten.",
+        "Bedakan pencegahan dan recovery."
+      ],
+      "explanation": "Contoh respons / standar hasil: A memegang L,B memegang M;A menunggu M,B menunggu L. Semua jalur harus mengambil L sebelum M sehingga tidak ada cycle urutan. Biaya contention pada L dapat menserialisasi pekerjaan; critical section perlu pendek. Timeout membantu recovery/deteksi tetapi bukan bukti deadlock mustahil.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Ownership/wait jelas.",
+        "Urutan global memutus cycle.",
+        "Contention dan batas timeout disebut."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MDN HTTP overview",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+        },
+        {
+          "title": "PostgreSQL indexes",
+          "url": "https://www.postgresql.org/docs/current/indexes.html"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m26-e6",
+      "moduleId": "m26",
+      "lessonId": "m26-l4",
+      "title": "Desain katalog kecil",
+      "kind": "project",
+      "concepts": [
+        "system-design"
+      ],
+      "family": "design-catalog",
+      "variant": "practice",
+      "difficulty": "Medium",
+      "estimatedMinutes": 60,
+      "statement": "Desain2000 item20read/detik, update terlihat<=5detik. Tulis API, model, komponen minimum, index, failure dan alternatif. Tidak provision service.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Satu read/write end-to-end.",
+        "Tentukan source of truth.",
+        "Trace outage/update nama."
+      ],
+      "explanation": "Contoh respons / standar hasil: Satu API+database. GET /items?prefix=ca&limit=20, order name/id stabil dan pagination. Database canonical; validasi write/constraints. Mulai tanpa cache, ukur dahulu. Database outage→503 requestID, bukan kosong palsu. Trie in-memory alternatif butuh rebuild/invalidation serta canonical persistence. Prefix index harus cocok collation/query sebenarnya.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Requirement/API/data flow konsisten.",
+        "Komponen minimum dan pagination.",
+        "Failure/freshness serta alternatif dibahas."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MDN HTTP overview",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+        },
+        {
+          "title": "PostgreSQL indexes",
+          "url": "https://www.postgresql.org/docs/current/indexes.html"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m26-e7",
+      "moduleId": "m26",
+      "lessonId": "m26-l4",
+      "title": "Failure review desain",
+      "kind": "explanation",
+      "concepts": [
+        "system-design-failure"
+      ],
+      "family": "design-review",
+      "variant": "transfer",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Review katalog terhadap restart sesudah write,respons hilang,cache stale,query terlalu besar. Mitigasi dan trade-off tiap failure.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Letakkan failure sebelum/sesudah commit.",
+        "State durable atau memory?",
+        "Tentukan respons unknown."
+      ],
+      "explanation": "Contoh respons / standar hasil: Restart memulihkan canonical data dari database;write response hilang memakai durable idempotency key;cache TTL<=5detik atau invalidation sesuai freshness;max limit dan cursor membatasi query. Ledger memakai storage,TTL mengizinkan stale,pagination memerlukan order stabil. Rencana load/recovery test bukan hasil aktual sampai dijalankan.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Empat failure punya sebab/mitigasi.",
+        "Trade-off correctness dan biaya.",
+        "Rencana dan evidence aktual dipisah."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MDN HTTP overview",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+        },
+        {
+          "title": "PostgreSQL indexes",
+          "url": "https://www.postgresql.org/docs/current/indexes.html"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m27-e1",
+      "moduleId": "m27",
+      "lessonId": "m27-l1",
+      "title": "Longest span without repeated event type",
+      "kind": "coding",
+      "concepts": [
+        "mixed-window"
+      ],
+      "family": "interview-span",
+      "variant": "transfer",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Given event types, return the length of the longest contiguous span with no repeated type. Jelaskan klarifikasi dan invariant sebelum implementasi.",
+      "constraints": [
+        "0<=n<=100000; event lowercase ASCII1..20 karakter."
+      ],
+      "inputDescription": "n lalu n event.",
+      "outputDescription": "Panjang maksimum.",
+      "examples": [
+        {
+          "input": "4\na b a c\n",
+          "output": "3",
+          "explanation": "b,a,c."
+        },
+        {
+          "input": "0\n",
+          "output": "0",
+          "explanation": "Kosong."
+        }
+      ],
+      "tests": [
+        {
+          "input": "4\na b a c\n",
+          "expected": "3"
+        },
+        {
+          "input": "0\n",
+          "expected": "0"
+        },
+        {
+          "input": "4\na b b a\n",
+          "expected": "2"
+        },
+        {
+          "input": "3\nx x x\n",
+          "expected": "1"
+        }
+      ],
+      "starter": {
+        "python": "import sys\n\ndef main():\n    # Baca input dan implementasikan model.\n    pass\n\nif __name__ == \"__main__\":\n    main()\n",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main(){\n    // Baca input dan implementasikan algoritma.\n    return 0;\n}\n"
+      },
+      "solutions": {
+        "python": "import sys\na=sys.stdin.buffer.read().split();last={};left=0;ans=0\nfor i,x in enumerate(a[1:]):\n    left=max(left,last.get(x,-1)+1);last[x]=i;ans=max(ans,i-left+1)\nprint(ans)\n",
+        "cpp": "#include <iostream>\n#include <unordered_map>\n#include <string>\n#include <algorithm>\nusing namespace std;int main(){int n;cin>>n;unordered_map<string,int>last;int left=0,ans=0;for(int i=0;i<n;i++){string s;cin>>s;auto it=last.find(s);if(it!=last.end())left=max(left,it->second+1);last[s]=i;ans=max(ans,i-left+1);}cout<<ans<<\"\\n\";}\n"
+      },
+      "hints": [
+        "Contiguous mengarah ke window.",
+        "Simpan indeks terakhir tiap event.",
+        "Update left dengan max, bukan assignment langsung."
+      ],
+      "explanation": "Window[left,i] unik. Start<=last[x] tidak feasible; left hanya maju. Untuk tiap endpoint didapat window terpanjang, lalu maksimum global.",
+      "complexity": {
+        "time": "O(n) expected hash operations",
+        "space": "O(u) map; Python input O(n)"
+      },
+      "rubric": [
+        "Memenuhi format dan semua batas kontrak.",
+        "Menjelaskan invariant atau recurrence dan menguji boundary.",
+        "Time/space sesuai operasi dengan asumsi eksplisit."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m27-e2",
+      "moduleId": "m27",
+      "lessonId": "m27-l2",
+      "title": "First event whose repeat is observed",
+      "kind": "coding",
+      "concepts": [
+        "mixed-hash"
+      ],
+      "family": "interview-repeat",
+      "variant": "transfer",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Scan chronologically. Return the event whose second occurrence is observed earliest, or NONE if no repeat. Bukan event dengan kemunculan pertama paling awal yang akhirnya berulang.",
+      "constraints": [
+        "0<=n<=100000; event lowercase ASCII1..20 karakter; token NONE tidak muncul."
+      ],
+      "inputDescription": "n lalu n event.",
+      "outputDescription": "Event atau NONE.",
+      "examples": [
+        {
+          "input": "4\nred blue blue red\n",
+          "output": "blue",
+          "explanation": "Second blue terlihat dahulu."
+        },
+        {
+          "input": "0\n",
+          "output": "NONE",
+          "explanation": "Kosong."
+        }
+      ],
+      "tests": [
+        {
+          "input": "4\nred blue blue red\n",
+          "expected": "blue"
+        },
+        {
+          "input": "0\n",
+          "expected": "NONE"
+        },
+        {
+          "input": "3\na b c\n",
+          "expected": "NONE"
+        },
+        {
+          "input": "2\na a\n",
+          "expected": "a"
+        }
+      ],
+      "starter": {
+        "python": "import sys\n\ndef main():\n    # Baca input dan implementasikan model.\n    pass\n\nif __name__ == \"__main__\":\n    main()\n",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main(){\n    // Baca input dan implementasikan algoritma.\n    return 0;\n}\n"
+      },
+      "solutions": {
+        "python": "import sys\na=sys.stdin.buffer.read().decode().split();seen=set();ans=\"NONE\"\nfor x in a[1:]:\n    if x in seen:ans=x;break\n    seen.add(x)\nprint(ans)\n",
+        "cpp": "#include <iostream>\n#include <unordered_set>\n#include <string>\nusing namespace std;int main(){int n;cin>>n;unordered_set<string>s;string ans=\"NONE\";bool found=false;for(int i=0;i<n;i++){string x;cin>>x;if(!found){if(s.count(x)){ans=x;found=true;}else s.insert(x);}}cout<<ans<<\"\\n\";}\n"
+      },
+      "hints": [
+        "Bedakan earliest first dan earliest second.",
+        "Simpan seluruh event yang sudah lewat.",
+        "Return event pertama yang sudah ada di set."
+      ],
+      "explanation": "seen tepat berisi prefix yang telah diproses. Event pertama sudah ada dalam seen memiliki indeks kemunculan kedua minimum karena scan urut waktu.",
+      "complexity": {
+        "time": "O(n) expected hash operations",
+        "space": "O(u) set; Python input O(n)"
+      },
+      "rubric": [
+        "Memenuhi format dan semua batas kontrak.",
+        "Menjelaskan invariant atau recurrence dan menguji boundary.",
+        "Time/space sesuai operasi dengan asumsi eksplisit."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m27-e3",
+      "moduleId": "m27",
+      "lessonId": "m27-l3",
+      "title": "Shortest review packet reaching target",
+      "kind": "coding",
+      "concepts": [
+        "mixed-window"
+      ],
+      "family": "interview-positive-sum",
+      "variant": "transfer",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Find the minimum number of consecutive positive durations whose total is at least target. Return0 if impossible.",
+      "constraints": [
+        "0<=n<=100000; 1<=target<=10^15; 1<=duration<=10^9."
+      ],
+      "inputDescription": "n target lalu n durasi.",
+      "outputDescription": "Panjang minimum atau0.",
+      "examples": [
+        {
+          "input": "5 7\n2 3 1 4 2\n",
+          "output": "3",
+          "explanation": "Tidak ada pasangan>=7, tiga entry cukup."
+        },
+        {
+          "input": "1 5\n5\n",
+          "output": "1",
+          "explanation": "Tepat target."
+        }
+      ],
+      "tests": [
+        {
+          "input": "5 7\n2 3 1 4 2\n",
+          "expected": "3"
+        },
+        {
+          "input": "1 5\n5\n",
+          "expected": "1"
+        },
+        {
+          "input": "2 10\n1 2\n",
+          "expected": "0"
+        },
+        {
+          "input": "0 5\n",
+          "expected": "0"
+        }
+      ],
+      "starter": {
+        "python": "import sys\n\ndef main():\n    # Baca input dan implementasikan model.\n    pass\n\nif __name__ == \"__main__\":\n    main()\n",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main(){\n    // Baca input dan implementasikan algoritma.\n    return 0;\n}\n"
+      },
+      "solutions": {
+        "python": "import sys\na=list(map(int,sys.stdin.buffer.read().split()));n,t=a[:2];v=a[2:];left=0;total=0;ans=n+1\nfor r,x in enumerate(v):\n    total+=x\n    while total>=t:\n        ans=min(ans,r-left+1);total-=v[left];left+=1\nprint(0 if ans==n+1 else ans)\n",
+        "cpp": "#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;int main(){int n;long long t;cin>>n>>t;vector<long long>a(n);for(auto &x:a)cin>>x;int left=0,ans=n+1;long long sum=0;for(int r=0;r<n;r++){sum+=a[r];while(sum>=t){ans=min(ans,r-left+1);sum-=a[left++];}}cout<<(ans==n+1?0:ans)<<\"\\n\";}\n"
+      },
+      "hints": [
+        "Positivitas memberi monotonicity.",
+        "Tambah kanan lalu periksa sum.",
+        "Selama cukup, catat panjang dan buang kiri."
+      ],
+      "explanation": "Positif menjaga monotonicity: menambah kanan menaikkan sum, membuang kiri menurunkan. Shrink mengecek kandidat feasible hingga terpendek untuk endpoint itu. Setiap elemen masuk/keluar sekali. Negatif membatalkan alasan.",
+      "complexity": {
+        "time": "O(n)",
+        "space": "O(n) input; O(1) auxiliary"
+      },
+      "rubric": [
+        "Memenuhi format dan semua batas kontrak.",
+        "Menjelaskan invariant atau recurrence dan menguji boundary.",
+        "Time/space sesuai operasi dengan asumsi eksplisit."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m27-e4",
+      "moduleId": "m27",
+      "lessonId": "m27-l1",
+      "title": "Klarifikasi pair of records",
+      "kind": "explanation",
+      "concepts": [
+        "interview-clarification"
+      ],
+      "family": "interview-contract",
+      "variant": "guided",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Prompt Find a pair of records whose costs meet the budget. Ajukan empat klarifikasi,pilih kontrak,baseline dan optimasi.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Cari kata ambigu.",
+        "Tanya bounds.",
+        "Jelaskan alasan bukan nama pola."
+      ],
+      "explanation": "Contoh respons / standar hasil: Tepat atau<=budget? Indeks berbeda? Satu atau semua pasangan? Negatif/duplicates dan ukuran? Pilih tepat,satu pasangan,indeks berbeda. Baseline dua loopO(n²);hash cost→index expectedO(n),ruangO(n). Cari budget-x sebelum insert x supaya tidak memakai record yang sama. Nilai sama pada dua indeks tetap valid.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Pertanyaan mengubah correctness/pilihan.",
+        "Kontrak eksplisit.",
+        "Baseline/optimasi dan indeks berbeda."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m27-e5",
+      "moduleId": "m27",
+      "lessonId": "m27-l3",
+      "title": "Window dengan negatif",
+      "kind": "explanation",
+      "concepts": [
+        "interview-testing"
+      ],
+      "family": "interview-positive-sum",
+      "variant": "guided",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Buat counterexample untuk shrink-while-sum>=target saat nilai negatif boleh. Bandingkan hasil trace dan optimum.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Letakkan negatif sebelum nilai besar.",
+        "Buat shrink berhenti terlalu awal.",
+        "Bandingkan elemen tunggal terbaik."
+      ],
+      "explanation": "Contoh respons / standar hasil: Target5,array[1,-1,5]. Pada right2 total5,catat panjang3 lalu buang1→4 dan stop. Tidak membuang-1 sehingga melewatkan[5] panjang1. Hasil algoritma3,optimum1. Negatif membuat buang kiri dapat menaikkan sum. Solusi umum membutuhkan model lain, misalnya prefix dengan monotonic deque, di luar pengantar mendalam ini.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Counterexample dapat ditrace.",
+        "Hasil salah dan optimum dihitung.",
+        "Asumsi positivity yang gagal dijelaskan."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "MIT OCW Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m27-e6",
+      "moduleId": "m27",
+      "lessonId": "m27-l4",
+      "title": "Mock dengan catatan bantuan",
+      "kind": "project",
+      "concepts": [
+        "mock-interview"
+      ],
+      "family": "interview-session",
+      "variant": "practice",
+      "difficulty": "Medium",
+      "estimatedMinutes": 60,
+      "statement": "Pilih soal belum dibuka solusinya. Sesi<=35menit atau dua blok. Catat exposure,klarifikasi,baseline,kode,tes aktual,complexity,bantuan;nilai lima dimensi0..3.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Sembunyikan label/solusi.",
+        "Catat keputusan milestone.",
+        "Akhiri dua tes diagnostik."
+      ],
+      "explanation": "Contoh respons / standar hasil: Format: exposure baru/dikenal;hint tidak ada/ke-1;clarity2 karena duplicates ditanya;correctness belum terbukti jika tests belum run;testing1 hanya normal;complexity2 waktu benar ruang lupa. Lampirkan kode/output aktual. Jika waktu habis tulis state parsial. Tidak mengubah rencana tes menjadi executed atau assistance menjadi independent.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Exposure/bantuan jujur.",
+        "Dimensi punya evidence.",
+        "Aktual/expected/parsial terpisah."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "Amazon SDE interview preparation",
+          "url": "https://www.amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m27-e7",
+      "moduleId": "m27",
+      "lessonId": "m27-l4",
+      "title": "Post-mock recovery",
+      "kind": "explanation",
+      "concepts": [
+        "mock-review"
+      ],
+      "family": "interview-session",
+      "variant": "transfer",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Skenario benar setelah dua hint,gagal empty,menyebut memoryO(1) padahal map. Buat diagnosis dan dua sesi tindak lanjut.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Tulis error spesifik.",
+        "Target penyebab bukan skor.",
+        "Uji reasoning baru setelah jeda."
+      ],
+      "explanation": "Contoh respons / standar hasil: Attempt assisted,bukan unseen transfer. Empty gagal menunjukkan base belum dites. Map u key memakaiO(u). Besok15menit trace invariant/empty pada soal dikenal untuk recall;setelah tiga hari coba variasi berbeda tanpa label/hint untuk transfer. Review tertunda diperlukan retention. Menyalin perbaikan tidak otomatis menaikkan mastery.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Correctness/complexity/assistance terpisah.",
+        "Dua sesi punya tujuan/bukti berbeda.",
+        "Retry dikenal bukan transfer."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "Amazon SDE interview preparation",
+          "url": "https://www.amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m28-e1",
+      "moduleId": "m28",
+      "lessonId": "m28-l1",
+      "title": "Matriks role fit awal",
+      "kind": "career",
+      "concepts": [
+        "career-role-fit"
+      ],
+      "family": "career-direction",
+      "variant": "guided",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Dapat dimulai setelah m04. Bandingkan SWE/SDET pada lima tugas,minat dan evidence0..2. Tulis hipotesis serta eksperimen dua minggu.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Bayangkan tugas harian.",
+        "Pisahkan suka dan mampu.",
+        "Pilih eksperimen dua arah."
+      ],
+      "explanation": "Contoh respons / standar hasil: API minat2 evidence1;test tooling2/2;concurrency1/0;UI1/1;quality strategy2/1. Hipotesis SDET dekat bukti,SWE tetap diuji. Eksperimen CLI+API kecil dan harness malformed/conflict. Ukur artefak,hambatan dan energi pada kedua tugas. Tidak menunggu elective atau menganggap QA otomatis mampu coding.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Lima tugas konkret,minat/evidence terpisah.",
+        "Hipotesis dapat direvisi.",
+        "Eksperimen berdurasi dan artefak jelas."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "Amazon SDE interview preparation",
+          "url": "https://www.amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m28-e2",
+      "moduleId": "m28",
+      "lessonId": "m28-l2",
+      "title": "Audit engineering evidence awal",
+      "kind": "career",
+      "concepts": [
+        "career-evidence"
+      ],
+      "family": "career-evidence-audit",
+      "variant": "practice",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Audit tiga klaim kemampuan: artefak,kontribusi,reproduksi,limit,next action. Jika belum ada bukti,tandai gap dan rancang artefak kecil.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Cari artefak untuk tiap kata kerja.",
+        "Tulis belum tersedia bila kosong.",
+        "Bukti terkecil yang reproducible."
+      ],
+      "explanation": "Contoh respons / standar hasil: Hashing didukung fungsi dedup/tests/fixture;kontribusi aturan conflict;limit sintetis,belum benchmark. Concurrency belum bukti→buat lost-update reproducer dan perbaikan dengan test. Domain QA didukung cerita diagnosis nyata disanitasi. Klaim yang kosong tidak diganti confidence;next action menghasilkan bukti yang bisa direview.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Tiga klaim punya evidence/gap.",
+        "Kontribusi/konteks aman jelas.",
+        "Next action teramati,terpisah mastery DSA."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "Amazon SDE interview preparation",
+          "url": "https://www.amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m28-e3",
+      "moduleId": "m28",
+      "lessonId": "m28-l2",
+      "title": "CV tanpa angka karangan",
+      "kind": "career",
+      "concepts": [
+        "cv-evidence"
+      ],
+      "family": "career-cv",
+      "variant": "transfer",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Ubah Expert Python developer,improved speed90% menjadi dua bullet jujur memakai proyek. Jika belum ada pengukuran,hapus angka dan rencanakan benchmark terpisah.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Ganti expert dengan tindakan.",
+        "Sebut perilaku teramati.",
+        "Pisahkan rencana/hasil."
+      ],
+      "explanation": "Contoh respons / standar hasil: Membangun CLI dedup data sintetis dengan kebijakan conflict dan output stabil;dokumentasi expectedO(n) lookup/O(u)memory. Menulis regression untuk conflict,malformed,repeated run dengan command README. Jumlah test hanya setelah dihitung. Benchmark plan dataset/seed,baseline,versi,ukuran,pengulangan belum boleh diklaim sebagai pencapaian.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Tindakan/artefak nyata.",
+        "Angka tanpa bukti dihapus,konteks pribadi jelas.",
+        "Measurement plan bukan result."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "Amazon SDE interview preparation",
+          "url": "https://www.amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m28-e4",
+      "moduleId": "m28",
+      "lessonId": "m28-l3",
+      "title": "Portfolio pembaca baru",
+      "kind": "career",
+      "concepts": [
+        "portfolio-review"
+      ],
+      "family": "career-portfolio",
+      "variant": "practice",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Audit masalah,instruksi,demo,tests,trade-off,limit,kontribusi. Self-review atau reviewer tersedia;nyatakan jenis review dan prioritas.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Baca seolah belum tahu kode.",
+        "Cari langkah yang harus ditebak.",
+        "Perbaiki blocker reproduksi."
+      ],
+      "explanation": "Contoh respons / standar hasil: Self-review:masalah jelas;quick start lupa versi;demo normal ada,error belum;command tests ada,hasil belum dicatat;hash-vs-sort dibahas;memory limit ada;solo jelas. Prioritas versi runtime dan error fixture sebelum fitur. Jangan menyebut reviewer eksternal bila belum terjadi;self-report punya batas verifikasi.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Tujuh area punya status/bukti.",
+        "Reviewer dan limit jujur.",
+        "Prioritas reproduksi/correctness."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "Amazon SDE interview preparation",
+          "url": "https://www.amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m28-e5",
+      "moduleId": "m28",
+      "lessonId": "m28-l3",
+      "title": "STAR tentang keputusan bug",
+      "kind": "career",
+      "concepts": [
+        "star-story"
+      ],
+      "family": "career-behavioral",
+      "variant": "practice",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Tulis200..300kata STAR dari pengalaman nyata/proyek,atau label sintetis. Sertakan alternatif,kontribusi,verifikasi dan batas hasil.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Satu kejadian.",
+        "Apa keputusanmu sendiri?",
+        "Hasil terukur atau limit sah."
+      ],
+      "explanation": "Contoh respons / standar hasil: Kerangka sintetis: shared fixture membuat flaky suite;task reproduksi deterministik. Action catat seed/order,isolasikan state,bandingkan timeout dengan per-test fixture,pilih root-cause fix dan regression. Result sesuai suite/environment yang benar-benar diverifikasi,belum semua OS. Ganti dengan pengalaman sendiri dan data aman;contoh ini bukan pengalaman kerja pengguna.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Action dominan dan konkret.",
+        "Alternatif/kontribusi/verifikasi.",
+        "Konteks nyata/sintetis serta limit jujur."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "Amazon SDE interview preparation",
+          "url": "https://www.amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m28-e6",
+      "moduleId": "m28",
+      "lessonId": "m28-l4",
+      "title": "Gap map dua role",
+      "kind": "career",
+      "concepts": [
+        "career-gap-map"
+      ],
+      "family": "career-direction",
+      "variant": "transfer",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Pilih dua role aktual yang dibaca sendiri atau hipotetis berlabel. Petakan coding,proyek,CS,komunikasi,domain ke bukti/gap dan rencana4minggu. Tidak mengirim lamaran.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Mulai dari tugas.",
+        "Satu gap satu artefak.",
+        "Batasi dua prioritas terbesar."
+      ],
+      "explanation": "Contoh respons / standar hasil: Hipotetis SWE junior membutuhkan API/model/testing;evidence CLI,gap HTTP recovery. SDET membutuhkan harness/diagnosis;evidence QA story,gap tooling reusable. Minggu1 README/API,2 retry+harness,3 dua mock,4 CV sesuai bukti. Requirement aktual harus dibaca saat digunakan karena berubah;template bukan ringkasan lowongan tertentu.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Sumber/tanggal atau label hipotetis.",
+        "Lima dimensi terkait bukti.",
+        "Prioritas realistis dengan waktu tersedia."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "Amazon SDE interview preparation",
+          "url": "https://www.amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "id": "m28-e7",
+      "moduleId": "m28",
+      "lessonId": "m28-l4",
+      "title": "Tracker manual dan feedback",
+      "kind": "career",
+      "concepts": [
+        "career-feedback"
+      ],
+      "family": "career-application",
+      "variant": "guided",
+      "difficulty": "Medium",
+      "estimatedMinutes": 35,
+      "statement": "Rancang tracker>=5kolom dan weekly review dengan dua entri sintetis. Jelaskan penolakan tanpa menebak sebab serta belajar/lamaran paralel.",
+      "constraints": [
+        "Nyatakan asumsi dan bantuan yang digunakan.",
+        "Gunakan data sintetis atau pengalaman yang aman dibagikan."
+      ],
+      "inputDescription": "Respons terstruktur; tidak ada stdin untuk aktivitas review.",
+      "outputDescription": "Respons dinilai manusia dengan rubrik; bukan verdict otomatis.",
+      "examples": [],
+      "tests": [],
+      "starter": {},
+      "solutions": {},
+      "hints": [
+        "Simpan data tindakan berikutnya.",
+        "Review sesuai beban double job.",
+        "Pisahkan fakta dan dugaan."
+      ],
+      "explanation": "Contoh respons / standar hasil: Kolom role/link,tanggal,stage,CV version,next action/date. SintetisA SWE draft CVv2 cek requirement Jumat;B SDET mock CVv1 perbaiki concurrency story. Weekly review melihat tindakan serta gap dari feedback nyata. Penolakan tanpa alasan=unknown,bukan DSA buruk otomatis. Lamaran sesuai bukti level dapat berjalan sambil review tanpa menunggu elective. Tidak ada aplikasi dikirim oleh tugas ini.",
+      "complexity": {
+        "time": "Bergantung rancangan; nyatakan operasi dominan bila relevan.",
+        "space": "Bergantung artefak; bukan runtime yang dinilai otomatis."
+      },
+      "rubric": [
+        "Tracker dapat dipakai,entri sintetis jelas.",
+        "Review menghasilkan next action.",
+        "Unknown bukan diagnosis,career bukan DSA mastery."
+      ],
+      "answer": {
+        "options": [],
+        "correctIndex": 0,
+        "explanation": "Bandingkan respons dengan rubrik dan contoh; tidak ada auto-grading."
+      },
+      "sources": [
+        {
+          "title": "Amazon SDE interview preparation",
+          "url": "https://www.amazon.jobs/content/en/how-we-hire/sde-ii-interview-prep"
+        }
+      ],
+      "version": 1
+    }
+  ]
+}

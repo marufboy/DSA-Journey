@@ -1,0 +1,401 @@
+{
+  "scope": "Document structure and declared inventories only; no implementation or learning-effectiveness verification",
+  "snapshot_sha256": "2f4e04c14c159fa28c0bd1e1650b1adc0c74de976c5195a69baa6dd337e142dd",
+  "file_sha256": {
+    "README.md": "ae15ad7ebca1554a1c2a82cf5859dc7af5b4b603c51cfbadba3ff80ba1b094d1",
+    "AGENTS.md": "74481c54d13cf264460d0cf19bbce4435a88571721ce6974da41a12b23736913",
+    "01-PRD.md": "a7a6b2d6cb7d20d45784b024854261e06a82afc4cfbb61dac6b073d00065b035",
+    "02-UI-UX.md": "313026319bcbd91546186a43c87f8cc5b9f80592dcb282225601e1e7bbe2b32c",
+    "03-CURRICULUM.md": "1e9255bfa9d14fc48dd9df7f53c9c0732baedd37e4dc875fbeb5ae6dfe5e9ed4",
+    "04-TECHNICAL-ARCHITECTURE.md": "9200c8a07bf3f317de4cfce6958c7b11a4110786ca1dde85338a114bb9795d3d",
+    "05-ACCEPTANCE-AND-VALIDATION.md": "7dfcb11652fe47ab4fa4a7446cccab2f178640e5cd29e491e6d8c338eb5b1b0d",
+    "06-DECISIONS-AND-REVIEW.md": "e0aba6271537fa95e12a10de8f645cbe7cdd59c3d84b97cb828e1a69c8116ebf",
+    "07-SOURCES.md": "4ff64e70b42d58cb5eba6ab270ca704f429dddcff8428ee77109c505a60bf760",
+    "08-DEVELOPMENT-RULES.md": "a72cd61fdd6d77aa91964100875762b5b32084952f942b952d9101dd4dd4efc8",
+    "09-VALIDATION-AGENT.md": "b74daa3606b36d47249412e201150616b285744e98ff4bb1138c54269863f132",
+    "11-ADVERSARIAL-REVIEW.md": "af469beba94afa7e5f1099b92fef773bd18dc446f32bba0c6a964d07be1ff334",
+    "12-IMPLEMENTATION-ADDENDUM.md": "2f9b76782c439a5550fb6cf82157eaae0f7594e50469cf7aa40240bb6bb196e5"
+  },
+  "validator_sha256": "7aaaf44034a7ef1471739f8864df777917e6f1f63de095f853c1564479dfb495",
+  "result": "PASS",
+  "passed": 52,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "required:README.md",
+      "result": "PASS",
+      "detail": "README.md"
+    },
+    {
+      "check": "readable:README.md",
+      "result": "PASS",
+      "detail": "Heading, UTF-8 and control characters"
+    },
+    {
+      "check": "local-links:README.md",
+      "result": "PASS",
+      "detail": []
+    },
+    {
+      "check": "required:AGENTS.md",
+      "result": "PASS",
+      "detail": "AGENTS.md"
+    },
+    {
+      "check": "readable:AGENTS.md",
+      "result": "PASS",
+      "detail": "Heading, UTF-8 and control characters"
+    },
+    {
+      "check": "local-links:AGENTS.md",
+      "result": "PASS",
+      "detail": []
+    },
+    {
+      "check": "required:01-PRD.md",
+      "result": "PASS",
+      "detail": "01-PRD.md"
+    },
+    {
+      "check": "readable:01-PRD.md",
+      "result": "PASS",
+      "detail": "Heading, UTF-8 and control characters"
+    },
+    {
+      "check": "local-links:01-PRD.md",
+      "result": "PASS",
+      "detail": []
+    },
+    {
+      "check": "required:02-UI-UX.md",
+      "result": "PASS",
+      "detail": "02-UI-UX.md"
+    },
+    {
+      "check": "readable:02-UI-UX.md",
+      "result": "PASS",
+      "detail": "Heading, UTF-8 and control characters"
+    },
+    {
+      "check": "local-links:02-UI-UX.md",
+      "result": "PASS",
+      "detail": []
+    },
+    {
+      "check": "required:03-CURRICULUM.md",
+      "result": "PASS",
+      "detail": "03-CURRICULUM.md"
+    },
+    {
+      "check": "readable:03-CURRICULUM.md",
+      "result": "PASS",
+      "detail": "Heading, UTF-8 and control characters"
+    },
+    {
+      "check": "local-links:03-CURRICULUM.md",
+      "result": "PASS",
+      "detail": []
+    },
+    {
+      "check": "required:04-TECHNICAL-ARCHITECTURE.md",
+      "result": "PASS",
+      "detail": "04-TECHNICAL-ARCHITECTURE.md"
+    },
+    {
+      "check": "readable:04-TECHNICAL-ARCHITECTURE.md",
+      "result": "PASS",
+      "detail": "Heading, UTF-8 and control characters"
+    },
+    {
+      "check": "local-links:04-TECHNICAL-ARCHITECTURE.md",
+      "result": "PASS",
+      "detail": []
+    },
+    {
+      "check": "required:05-ACCEPTANCE-AND-VALIDATION.md",
+      "result": "PASS",
+      "detail": "05-ACCEPTANCE-AND-VALIDATION.md"
+    },
+    {
+      "check": "readable:05-ACCEPTANCE-AND-VALIDATION.md",
+      "result": "PASS",
+      "detail": "Heading, UTF-8 and control characters"
+    },
+    {
+      "check": "local-links:05-ACCEPTANCE-AND-VALIDATION.md",
+      "result": "PASS",
+      "detail": []
+    },
+    {
+      "check": "required:06-DECISIONS-AND-REVIEW.md",
+      "result": "PASS",
+      "detail": "06-DECISIONS-AND-REVIEW.md"
+    },
+    {
+      "check": "readable:06-DECISIONS-AND-REVIEW.md",
+      "result": "PASS",
+      "detail": "Heading, UTF-8 and control characters"
+    },
+    {
+      "check": "local-links:06-DECISIONS-AND-REVIEW.md",
+      "result": "PASS",
+      "detail": []
+    },
+    {
+      "check": "required:07-SOURCES.md",
+      "result": "PASS",
+      "detail": "07-SOURCES.md"
+    },
+    {
+      "check": "readable:07-SOURCES.md",
+      "result": "PASS",
+      "detail": "Heading, UTF-8 and control characters"
+    },
+    {
+      "check": "local-links:07-SOURCES.md",
+      "result": "PASS",
+      "detail": []
+    },
+    {
+      "check": "required:08-DEVELOPMENT-RULES.md",
+      "result": "PASS",
+      "detail": "08-DEVELOPMENT-RULES.md"
+    },
+    {
+      "check": "readable:08-DEVELOPMENT-RULES.md",
+      "result": "PASS",
+      "detail": "Heading, UTF-8 and control characters"
+    },
+    {
+      "check": "local-links:08-DEVELOPMENT-RULES.md",
+      "result": "PASS",
+      "detail": []
+    },
+    {
+      "check": "required:09-VALIDATION-AGENT.md",
+      "result": "PASS",
+      "detail": "09-VALIDATION-AGENT.md"
+    },
+    {
+      "check": "readable:09-VALIDATION-AGENT.md",
+      "result": "PASS",
+      "detail": "Heading, UTF-8 and control characters"
+    },
+    {
+      "check": "local-links:09-VALIDATION-AGENT.md",
+      "result": "PASS",
+      "detail": []
+    },
+    {
+      "check": "required:11-ADVERSARIAL-REVIEW.md",
+      "result": "PASS",
+      "detail": "11-ADVERSARIAL-REVIEW.md"
+    },
+    {
+      "check": "readable:11-ADVERSARIAL-REVIEW.md",
+      "result": "PASS",
+      "detail": "Heading, UTF-8 and control characters"
+    },
+    {
+      "check": "local-links:11-ADVERSARIAL-REVIEW.md",
+      "result": "PASS",
+      "detail": []
+    },
+    {
+      "check": "required:12-IMPLEMENTATION-ADDENDUM.md",
+      "result": "PASS",
+      "detail": "12-IMPLEMENTATION-ADDENDUM.md"
+    },
+    {
+      "check": "readable:12-IMPLEMENTATION-ADDENDUM.md",
+      "result": "PASS",
+      "detail": "Heading, UTF-8 and control characters"
+    },
+    {
+      "check": "local-links:12-IMPLEMENTATION-ADDENDUM.md",
+      "result": "PASS",
+      "detail": []
+    },
+    {
+      "check": "FR-inventory",
+      "result": "PASS",
+      "detail": {
+        "actual": [
+          "FR-01",
+          "FR-02",
+          "FR-03",
+          "FR-04",
+          "FR-05",
+          "FR-06",
+          "FR-07",
+          "FR-08",
+          "FR-09",
+          "FR-10",
+          "FR-11",
+          "FR-12",
+          "FR-13",
+          "FR-14",
+          "FR-15",
+          "FR-16",
+          "FR-17",
+          "FR-18"
+        ],
+        "expected_count": 18
+      }
+    },
+    {
+      "check": "NFR-inventory",
+      "result": "PASS",
+      "detail": {
+        "actual": [
+          "NFR-01",
+          "NFR-02",
+          "NFR-03",
+          "NFR-04",
+          "NFR-05",
+          "NFR-06",
+          "NFR-07",
+          "NFR-08",
+          "NFR-09"
+        ],
+        "expected_count": 9
+      }
+    },
+    {
+      "check": "UX-inventory",
+      "result": "PASS",
+      "detail": {
+        "actual": [
+          "UX-01",
+          "UX-02",
+          "UX-03",
+          "UX-04",
+          "UX-05",
+          "UX-06",
+          "UX-07"
+        ],
+        "expected_count": 7
+      }
+    },
+    {
+      "check": "AT-inventory",
+      "result": "PASS",
+      "detail": {
+        "actual": [
+          "AT-01",
+          "AT-02",
+          "AT-03",
+          "AT-04",
+          "AT-05",
+          "AT-06",
+          "AT-07",
+          "AT-08",
+          "AT-09",
+          "AT-10",
+          "AT-11",
+          "AT-12",
+          "AT-13",
+          "AT-14",
+          "AT-15",
+          "AT-16"
+        ],
+        "expected_count": 16
+      }
+    },
+    {
+      "check": "module-sequence",
+      "result": "PASS",
+      "detail": 28
+    },
+    {
+      "check": "content-total",
+      "result": "PASS",
+      "detail": {
+        "lessons": 112,
+        "exercises": 180
+      }
+    },
+    {
+      "check": "release-counts",
+      "result": "PASS",
+      "detail": [
+        [
+          16,
+          32
+        ],
+        [
+          16,
+          24
+        ],
+        [
+          64,
+          96
+        ],
+        [
+          16,
+          28
+        ]
+      ]
+    },
+    {
+      "check": "hour-total",
+      "result": "PASS",
+      "detail": [
+        600,
+        800
+      ]
+    },
+    {
+      "check": "rules-entry",
+      "result": "PASS",
+      "detail": "Agent entry references rules"
+    },
+    {
+      "check": "approval-recorded",
+      "result": "PASS",
+      "detail": "Explicit recorded authorization or pending review; not product verification"
+    },
+    {
+      "check": "traceability-row-coverage",
+      "result": "PASS",
+      "detail": {
+        "missing": []
+      }
+    },
+    {
+      "check": "traceability-no-placeholders",
+      "result": "PASS",
+      "detail": []
+    },
+    {
+      "check": "narrative-lesson-total",
+      "result": "PASS",
+      "detail": [
+        {
+          "file": "README.md",
+          "count": 112
+        },
+        {
+          "file": "01-PRD.md",
+          "count": 112
+        },
+        {
+          "file": "01-PRD.md",
+          "count": 112
+        },
+        {
+          "file": "03-CURRICULUM.md",
+          "count": 112
+        },
+        {
+          "file": "07-SOURCES.md",
+          "count": 112
+        },
+        {
+          "file": "12-IMPLEMENTATION-ADDENDUM.md",
+          "count": 112
+        }
+      ]
+    }
+  ]
+}

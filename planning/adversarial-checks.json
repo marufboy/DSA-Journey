@@ -1,0 +1,20 @@
+[
+  {
+    "scenario": "baseline",
+    "validator_result": "PASS",
+    "passed": 44,
+    "failed": 0
+  },
+  {
+    "scenario": "meaningless_acceptance",
+    "validator_result": "PASS",
+    "passed": 44,
+    "failed": 0
+  },
+  {
+    "scenario": "contradictory_curriculum_total",
+    "validator_result": "PASS",
+    "passed": 44,
+    "failed": 0
+  }
+]

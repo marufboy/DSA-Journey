@@ -1,0 +1,17 @@
+Γ£ö standalone srcdoc runtime chooses embedded worker before resolving an external URL (7.3518ms)
+Γ£ö trace answer feedback persists exposure before a corrected retry (3.0259ms)
+Γ£ö correct first trace transfer keeps evidence after feedback and import (1.1091ms)
+Γ£ö new C++ run cannot overwrite an outstanding recovery ID (0.6409ms)
+Γ£ö execution language is immutable across every case and recorded evidence (1.2545ms)
+Γ£ö double activation reserves only one execution before awaiting persistence (0.4991ms)
+Γ£ö navigation while saving prevents an old execution from starting afterward (0.6659ms)
+Γ£ö malformed optional records reject before destructive replacement (0.5536ms)
+Γ£ö normal boot reconciles stored content versions just like manual import (1.0202ms)
+Γä╣ tests 9
+Γä╣ suites 0
+Γä╣ pass 9
+Γä╣ fail 0
+Γä╣ cancelled 0
+Γä╣ skipped 0
+Γä╣ todo 0
+Γä╣ duration_ms 83.341

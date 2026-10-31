@@ -1,0 +1,1026 @@
+{
+  "modules": 28,
+  "lessons": 112,
+  "exercises": 180,
+  "codingExercises": 100,
+  "declaredPythonCases": 366,
+  "concepts": 169,
+  "introductoryConcepts": 131,
+  "errors": [],
+  "coverage": [
+    {
+      "concept": "python-io",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "python-conversion",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "python-arithmetic",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "python-token-io",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "python-variables",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "python-types",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "python-conditions",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "python-boolean",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "python-domain",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "python-for",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "python-while",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "python-functions",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "python-scope",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "python-list",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "python-dict",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "python-debugging",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "python-testing",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "cpp-compile",
+      "activityCount": 2,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "cpp-streams",
+      "activityCount": 2,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "cpp-types",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "cpp-division",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "cpp-value",
+      "activityCount": 2,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "cpp-reference",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "cpp-const",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "cpp-scope",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "cpp-pointer",
+      "activityCount": 2,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "cpp-lifetime",
+      "activityCount": 3,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "cpp-raii",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "cpp-ownership",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "stl-vector",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "language-bridge",
+      "activityCount": 5,
+      "automatedCount": 5,
+      "transferCount": 1
+    },
+    {
+      "concept": "stl-string",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "stl-set",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "stl-map",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "discrete-logic",
+      "activityCount": 2,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "counterexample",
+      "activityCount": 2,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "discrete-sets",
+      "activityCount": 2,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "discrete-counting",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "discrete-logarithms",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "complexity-logarithmic",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 0
+    },
+    {
+      "concept": "complexity-linear",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "complexity-quadratic",
+      "activityCount": 2,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "complexity-amortized",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "complexity-space",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "recursion-stack",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "recursion-base",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 0
+    },
+    {
+      "concept": "recursion-progress",
+      "activityCount": 4,
+      "automatedCount": 3,
+      "transferCount": 1
+    },
+    {
+      "concept": "gcd",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "recursion-divide",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "arrays-traversal",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "correctness-counterexample",
+      "activityCount": 2,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "correctness-invariant",
+      "activityCount": 4,
+      "automatedCount": 3,
+      "transferCount": 2
+    },
+    {
+      "concept": "arrays-scan",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "arrays-bounds",
+      "activityCount": 3,
+      "automatedCount": 3,
+      "transferCount": 1
+    },
+    {
+      "concept": "testing-boundary",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "arrays-mutation",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 0
+    },
+    {
+      "concept": "arrays-index-mapping",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "strings-runs",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "arrays-contiguous",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "strings-normalization",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "arrays-two-ends",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "arrays-matrix",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "hash-membership",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "hash-ordering",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "hash-frequency",
+      "activityCount": 4,
+      "automatedCount": 4,
+      "transferCount": 2
+    },
+    {
+      "concept": "hash-tie",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "hash-complement",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "multiset-equality",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "hash-state-update",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "linked-list",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 0
+    },
+    {
+      "concept": "pointer-update",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 0
+    },
+    {
+      "concept": "stack",
+      "activityCount": 4,
+      "automatedCount": 3,
+      "transferCount": 1
+    },
+    {
+      "concept": "delimiter-matching",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "queue",
+      "activityCount": 2,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "fifo",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "amortized-analysis",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "binary-search",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 0
+    },
+    {
+      "concept": "sorting",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 0
+    },
+    {
+      "concept": "two-pointers",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "sliding-window",
+      "activityCount": 2,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "nonnegative-invariant",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "prefix-sum",
+      "activityCount": 2,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "range-query",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "tree-traversal",
+      "activityCount": 2,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "bst-insert",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "tree-invariant",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "bst-invariant",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "ancestor-bounds",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "tree-height",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "bfs",
+      "activityCount": 3,
+      "automatedCount": 2,
+      "transferCount": 0
+    },
+    {
+      "concept": "heap",
+      "activityCount": 6,
+      "automatedCount": 6,
+      "transferCount": 1
+    },
+    {
+      "concept": "top-k",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 0
+    },
+    {
+      "concept": "greedy-intuition",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "interval-scheduling",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "priority-key",
+      "activityCount": 2,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "backtracking",
+      "activityCount": 7,
+      "automatedCount": 5,
+      "transferCount": 2
+    },
+    {
+      "concept": "subset-state",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "prefix-pruning",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "undo",
+      "activityCount": 2,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "grid-path",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "capacity-pruning",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "graph-representation",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "dfs",
+      "activityCount": 4,
+      "automatedCount": 3,
+      "transferCount": 0
+    },
+    {
+      "concept": "components",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "unweighted-shortest-path",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "bipartite",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "bfs-coloring",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "directed-cycle",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 0
+    },
+    {
+      "concept": "topological-sort",
+      "activityCount": 2,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "indegree",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "dsu",
+      "activityCount": 2,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "path-compression",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "union-by-size",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "dijkstra",
+      "activityCount": 4,
+      "automatedCount": 3,
+      "transferCount": 1
+    },
+    {
+      "concept": "relaxation",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "stale-entries",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 0
+    },
+    {
+      "concept": "multi-source",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "structure-selection",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "invariant",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "bst-height",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "complexity",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "heap-invariant",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "testing",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "pruning-correctness",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "duplicate-control",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "graph-model",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "algorithm-selection",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "greedy-interval",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "greedy-exchange",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "greedy-resources",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "greedy-proof",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "greedy-counterexample",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "dp-state",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "dp-min-coins",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 1
+    },
+    {
+      "concept": "dp-grid",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "dp-include-exclude",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "dp-reconstruction",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "bitmask",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "string-matching",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 0
+    },
+    {
+      "concept": "range-prefix",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 0
+    },
+    {
+      "concept": "range-structure-choice",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "elective-scope",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "project-scope",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "project-contract",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "git-review",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "test-design",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "regression-testing",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "readme-evidence",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "engineering-evidence",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "database-index",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "database-integrity",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "http-idempotency",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "concurrency",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "concurrency-deadlock",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "system-design",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "system-design-failure",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "mixed-window",
+      "activityCount": 2,
+      "automatedCount": 2,
+      "transferCount": 2
+    },
+    {
+      "concept": "mixed-hash",
+      "activityCount": 1,
+      "automatedCount": 1,
+      "transferCount": 1
+    },
+    {
+      "concept": "interview-clarification",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "interview-testing",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "mock-interview",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "mock-review",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "career-role-fit",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "career-evidence",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "cv-evidence",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "portfolio-review",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "star-story",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "career-gap-map",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    },
+    {
+      "concept": "career-feedback",
+      "activityCount": 1,
+      "automatedCount": 0,
+      "transferCount": 0
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+data/
+artifacts/
+node_modules/
+__pycache__/
+.env
+.env.*
+.openai/
+docs/*-red.log
+docs/tests-current.log
