@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-09",
+  "total": 61,
+  "byLanguage": {
+    "English": 41,
+    "Indonesian": 20
+  },
+  "byFormat": {
+    "course": 39,
+    "series": 22
+  },
+  "byVerification": {
+    "primary-page-opened": 55,
+    "search-only": 6
+  },
+  "byBatch": {
+    "english-design": 19,
+    "english-foundations": 22,
+    "indonesian": 20
+  },
+  "uniqueYouTubeResources": 61,
+  "errors": [],
+  "limits": "Structural and exact-URL deduplication audit. Does not prove subject uniqueness, source truth, playback, language audio, completeness or quality; curator review is required."
+}

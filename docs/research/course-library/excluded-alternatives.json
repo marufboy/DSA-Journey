@@ -1,0 +1,32 @@
+[
+  {
+    "id": "en-fcc-system-design-concepts-2024",
+    "title": "System Design Concepts Course and Interview Prep",
+    "publisher": "freeCodeCamp.org / Hayk Simonyan",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "system design",
+      "scalability",
+      "CAP theorem",
+      "caching",
+      "load balancing",
+      "database sharding"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "HTTP dasar",
+      "database dasar",
+      "programming"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=F2FmTdLtb_4",
+    "youtubeUrl": "https://www.youtube.com/watch?v=F2FmTdLtb_4",
+    "sourceUrl": "https://www.youtube.com/watch?v=F2FmTdLtb_4",
+    "whyUseful": "Memberi peta istilah untuk membaca dan membandingkan desain sistem.",
+    "practice": "Desain URL shortener dan catat kebutuhan throughput, cache serta strategi penyimpanan.",
+    "verification": "search-only",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman resmi YouTube dibuka tetapi hanya footer terbaca; metadata pencarian resmi menyediakan judul, pembuat dan bab. Tidak diasumsikan setara kuliah universitas atau kursus SOLID. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit.",
+    "exclusionReason": "Conservative deduplication: earlier Hayk Simonyan introductory system-design offering overlaps the 2026 Hayk course. Retained as an alternative, not counted as an additional course; source corroboration is also pending."
+  }
+]

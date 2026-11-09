@@ -1,7 +1,7 @@
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {basename,resolve} from 'node:path';
 const root=new URL('../',import.meta.url),dist=new URL('../dist/',import.meta.url);
-const names=['core.js','ui.js','storage.js','runner.js','dashboard.js','views-lab.js','views-extra.js','views.js','app.js'];
+const names=['course-data.js','courses.js','videos.js','core.js','ui.js','storage.js','runner.js','dashboard.js','views-lab.js','views-extra.js','views-course.js','views-video.js','views.js','app.js'];
 const factories=[];
 for(const name of names){let source=await readFile(new URL(name,dist),'utf8');const exports=[...source.matchAll(/export\s+(?:async\s+)?(?:function|const|let|class)\s+(\w+)/g)].map(m=>m[1]);
  source=source.replace(/^import\s+\{([^}]+)\}\s+from\s+['"](.+)['"];?\s*$/gm,(_,imports,path)=>`const {${imports}}=__require(${JSON.stringify(basename(path))});`);

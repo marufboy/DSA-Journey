@@ -1,0 +1,505 @@
+[
+  {
+    "id": "id-kt-python-dasar",
+    "title": "Belajar Python Bahasa Indonesia [Dasar]",
+    "publisher": "Kelas Terbuka",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Python",
+      "Programming fundamentals",
+      "Functions",
+      "Collections"
+    ],
+    "level": "Beginner",
+    "prerequisites": [],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo7cgStrKAMhgnOT66z2qKz1",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo7cgStrKAMhgnOT66z2qKz1",
+    "sourceUrl": "https://github.com/kelasterbuka/Python3.x_Dasar_Programming",
+    "whyUseful": "Membangun dasar sintaks dan cara memecah persoalan sebelum masuk DSA.",
+    "practice": "Buat pencatat pengeluaran CLI dengan validasi masukan dan ringkasan per kategori.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman About repositori resmi Kelas Terbuka berhasil dibuka dan menautkan persis playlist YouTube ini. Bukti mendukung judul kursus dan tujuan tautannya; halaman YouTube hanya menampilkan footer/metadata. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi."
+  },
+  {
+    "id": "id-kt-python-oop",
+    "title": "Belajar Python 3.x Object Oriented Programming Bahasa Indonesia [OOP]",
+    "publisher": "Kelas Terbuka",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Python",
+      "OOP",
+      "Encapsulation",
+      "Inheritance",
+      "Abstract classes"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Python dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo7ab0-EveSvf4CLdyOECMm0",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo7ab0-EveSvf4CLdyOECMm0",
+    "sourceUrl": "https://github.com/kelasterbuka/Python3.x_Object_Oriented_Programming",
+    "whyUseful": "Menghubungkan class, enkapsulasi, pewarisan, dan abstraksi dengan contoh program.",
+    "practice": "Bangun sistem peminjaman buku memakai class dan abstract base class; uji aturan stok.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi."
+  },
+  {
+    "id": "id-kt-cpp-dasar",
+    "title": "Belajar C++ Bahasa Indonesia [Dasar]",
+    "publisher": "Kelas Terbuka",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "C++",
+      "Programming fundamentals",
+      "Arrays",
+      "Functions"
+    ],
+    "level": "Beginner",
+    "prerequisites": [],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo4Ze0bbGB1WKBSNMPzi-eWI",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo4Ze0bbGB1WKBSNMPzi-eWI",
+    "sourceUrl": "https://github.com/kelasterbuka/CPP_dasar-dasar-programming",
+    "whyUseful": "Menyediakan fondasi C++ untuk latihan algoritma dan pemahaman tipe data.",
+    "practice": "Implementasikan pencarian linear dan binary search, lalu bandingkan jumlah perbandingannya.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman About repositori resmi Kelas Terbuka berhasil dibuka dan menautkan persis playlist YouTube ini. Bukti mendukung judul kursus dan tujuan tautannya; halaman YouTube hanya menampilkan footer/metadata. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi."
+  },
+  {
+    "id": "id-kt-cpp-oop",
+    "title": "Belajar C++ - Object Oriented Programming Bahasa Indonesia [OOP]",
+    "publisher": "Kelas Terbuka",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "C++",
+      "OOP",
+      "Object lifetime",
+      "Encapsulation",
+      "Inheritance"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "C++ dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo7-RC_-hkL9gu0_ofABw862",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo7-RC_-hkL9gu0_ofABw862",
+    "sourceUrl": "https://github.com/kelasterbuka/CPP_Lanjut_OOP",
+    "whyUseful": "Memperjelas hubungan objek, lifetime, enkapsulasi, dan pewarisan di C++.",
+    "practice": "Buat class Buffer yang mencatat constructor dan destructor, lalu amati lifetime dalam beberapa scope.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi."
+  },
+  {
+    "id": "id-kt-java-oop",
+    "title": "Belajar Java - Object Oriented Programming Bahasa Indonesia [Lanjut]",
+    "publisher": "Kelas Terbuka",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Java",
+      "OOP",
+      "Polymorphism",
+      "Interfaces",
+      "Encapsulation"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Java dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo6V4_vk1s1NcM2HoW5KFG7i",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo6V4_vk1s1NcM2HoW5KFG7i",
+    "sourceUrl": "https://github.com/kelasterbuka/JAVA_Lanjut_OOP",
+    "whyUseful": "Menyiapkan pemahaman interface dan polymorphism sebelum belajar design patterns.",
+    "practice": "Buat interface PaymentMethod dengan dua implementasi dan pisahkan perhitungan total pesanan.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi."
+  },
+  {
+    "id": "id-kt-java-dasar",
+    "title": "Belajar Java Bahasa Indonesia [Dasar]",
+    "publisher": "Kelas Terbuka",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Java",
+      "Programming fundamentals",
+      "Arrays",
+      "Control flow"
+    ],
+    "level": "Beginner",
+    "prerequisites": [],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo51w0Hmqi0C8h2KWNzDfo6F",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo51w0Hmqi0C8h2KWNzDfo6F",
+    "sourceUrl": "https://github.com/kelasterbuka/JAVA_dasar_programming",
+    "whyUseful": "Memberi pijakan sintaks Java sebelum OOP, testing, dan pola desain.",
+    "practice": "Buat program statistik nilai dengan fungsi terpisah untuk input, rata-rata, dan pencarian nilai.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi."
+  },
+  {
+    "id": "id-wpu-php-oop",
+    "title": "OOP DASAR pada PHP",
+    "publisher": "Web Programming UNPAS / Sandhika Galih",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "PHP",
+      "OOP",
+      "Encapsulation",
+      "Interfaces"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "PHP dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLFIM0718LjIWvxxll-6wLXrC_16h_Bl_p",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLFIM0718LjIWvxxll-6wLXrC_16h_Bl_p",
+    "sourceUrl": "https://github.com/sandhikagalih/oophp",
+    "whyUseful": "Membantu memindahkan program PHP prosedural menjadi objek dengan tanggung jawab jelas.",
+    "practice": "Ubah keranjang belanja prosedural menjadi class Produk, Keranjang, dan KalkulatorDiskon.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi."
+  },
+  {
+    "id": "id-wpu-php-mvc",
+    "title": "Membuat Aplikasi MVC dengan PHP",
+    "publisher": "Web Programming UNPAS / Sandhika Galih",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "PHP",
+      "MVC",
+      "Architecture",
+      "Backend"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "PHP dasar",
+      "OOP dasar",
+      "SQL dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLFIM0718LjIVEh_d-h5wAjsdv2W4SAtkx",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLFIM0718LjIVEh_d-h5wAjsdv2W4SAtkx",
+    "sourceUrl": "https://github.com/sandhikagalih/phpmvc",
+    "whyUseful": "Memperlihatkan pemisahan model, view, dan controller melalui aplikasi nyata.",
+    "practice": "Bangun CRUD inventaris dengan MVC dan pastikan view tidak menjalankan query SQL.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi."
+  },
+  {
+    "id": "id-wpu-javascript-lanjutan",
+    "title": "JAVASCRIPT LANJUTAN",
+    "publisher": "Web Programming UNPAS / Sandhika Galih",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "JavaScript",
+      "Functions",
+      "OOP",
+      "Asynchronous programming"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "JavaScript dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLFIM0718LjIUGpY8wmE41W7rTJo_3Y46-",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLFIM0718LjIUGpY8wmE41W7rTJo_3Y46-",
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLFIM0718LjIUGpY8wmE41W7rTJo_3Y46-",
+    "whyUseful": "Melanjutkan dasar JavaScript ke konsep bahasa yang berguna saat merancang aplikasi.",
+    "practice": "Buat modul pengambil data dengan async/await dan penanganan error; pisahkan transformasi datanya.",
+    "verification": "search-only",
+    "checkedAt": "2026-11-09",
+    "notes": "Kandidat dari indeks kursus dan metadata judul/deskripsi YouTube; URL primer dicoba tetapi hanya footer/metadata yang terbaca. Bahasa Indonesia didukung judul/deskripsi dan konteks indeks berbahasa Indonesia; audio belum didengar. Playback, kelengkapan playlist, dan akses gratis setiap video belum diuji. Level dan prasyarat adalah saran kurasi."
+  },
+  {
+    "id": "id-wpu-nodejs",
+    "title": "Belajar NodeJS",
+    "publisher": "Web Programming UNPAS / Sandhika Galih",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Node.js",
+      "Backend",
+      "Express",
+      "Web development"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "JavaScript dasar",
+      "HTTP dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLFIM0718LjIW-XBdVOerYgKegBtD6rSfD",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLFIM0718LjIW-XBdVOerYgKegBtD6rSfD",
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLFIM0718LjIW-XBdVOerYgKegBtD6rSfD",
+    "whyUseful": "Memberi jalur praktik backend JavaScript setelah memahami dasar bahasa.",
+    "practice": "Buat API daftar tugas dengan router, service, dan penyimpanan sederhana yang terpisah.",
+    "verification": "search-only",
+    "checkedAt": "2026-11-09",
+    "notes": "Kandidat dari indeks kursus dan metadata judul/deskripsi YouTube; URL primer dicoba tetapi hanya footer/metadata yang terbaca. Bahasa Indonesia didukung judul/deskripsi dan konteks indeks berbahasa Indonesia; audio belum didengar. Playback, kelengkapan playlist, dan akses gratis setiap video belum diuji. Level dan prasyarat adalah saran kurasi."
+  },
+  {
+    "id": "id-pzn-design-patterns",
+    "title": "Belajar Design Patterns untuk Pemula",
+    "publisher": "Programmer Zaman Now / Eko Kurniawan Khannedy",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Design patterns",
+      "OOP",
+      "Software design"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "OOP dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH_yiziXrQeogYOJzCmD8XLM",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH_yiziXrQeogYOJzCmD8XLM",
+    "sourceUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH_yiziXrQeogYOJzCmD8XLM",
+    "whyUseful": "Memperkenalkan kosakata pola desain untuk membahas pilihan struktur kode.",
+    "practice": "Implementasikan Builder untuk konfigurasi laporan dan bandingkan dengan constructor panjang.",
+    "verification": "search-only",
+    "checkedAt": "2026-11-09",
+    "notes": "Kandidat dari indeks kursus dan metadata judul/deskripsi YouTube; URL primer dicoba tetapi hanya footer/metadata yang terbaca. Bahasa Indonesia didukung judul/deskripsi dan konteks indeks berbahasa Indonesia; audio belum didengar. Playback, kelengkapan playlist, dan akses gratis setiap video belum diuji. Level dan prasyarat adalah saran kurasi."
+  },
+  {
+    "id": "id-pzn-microservices",
+    "title": "Belajar Microservices untuk Pemula",
+    "publisher": "Programmer Zaman Now / Eko Kurniawan Khannedy",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Microservices",
+      "Architecture",
+      "Distributed systems"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "HTTP dasar",
+      "Backend dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-MtoBwQ0F3xNG21yjt5Kvs",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-MtoBwQ0F3xNG21yjt5Kvs",
+    "sourceUrl": "https://github.com/khannedy/belajar-microservices",
+    "whyUseful": "Membuka pembahasan batas layanan dan konsekuensi arsitektur terdistribusi.",
+    "practice": "Rancang batas layanan katalog dan pesanan, lalu tuliskan kegagalan saat komunikasi antarservice terputus.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "README resmi menyatakan materi berasal dari seri screencast Programmer Zaman Now dan menautkan persis playlist ini; daftar materi mencakup monolith, microservices, database per service, messaging, orchestration, dan choreography. Playback dan akses gratis setiap video belum diuji. Seri lama; gunakan dokumentasi terkini untuk implementasi. Level dan prasyarat adalah saran kurasi."
+  },
+  {
+    "id": "id-pzn-kafka",
+    "title": "Belajar Apache Kafka untuk Pemula",
+    "publisher": "Programmer Zaman Now / Eko Kurniawan Khannedy",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Apache Kafka",
+      "Messaging",
+      "Distributed systems",
+      "Backend"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Backend dasar",
+      "Terminal dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8dJMuQGojbjUdLEty8mqYF",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8dJMuQGojbjUdLEty8mqYF",
+    "sourceUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8dJMuQGojbjUdLEty8mqYF",
+    "whyUseful": "Mengenalkan messaging sebagai dasar komunikasi layanan dan pemrosesan event.",
+    "practice": "Buat producer event pesanan dan consumer pencatat; catat perilaku saat consumer dijalankan ulang.",
+    "verification": "search-only",
+    "checkedAt": "2026-11-09",
+    "notes": "Kandidat dari indeks kursus dan metadata judul/deskripsi YouTube; URL primer dicoba tetapi hanya footer/metadata yang terbaca. Bahasa Indonesia didukung judul/deskripsi dan konteks indeks berbahasa Indonesia; audio belum didengar. Playback, kelengkapan playlist, dan akses gratis setiap video belum diuji. Level dan prasyarat adalah saran kurasi."
+  },
+  {
+    "id": "id-pzn-docker",
+    "title": "Belajar Docker untuk Pemula",
+    "publisher": "Programmer Zaman Now / Eko Kurniawan Khannedy",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Docker",
+      "Containers",
+      "DevOps"
+    ],
+    "level": "Beginner",
+    "prerequisites": [
+      "Terminal dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-A7jBmdertzbeACuQWvQao",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-A7jBmdertzbeACuQWvQao",
+    "sourceUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-A7jBmdertzbeACuQWvQao",
+    "whyUseful": "Membantu menyiapkan lingkungan latihan backend yang dapat diulang.",
+    "practice": "Containerisasi API kecil dan dokumentasikan perbedaan image, container, volume, serta port.",
+    "verification": "search-only",
+    "checkedAt": "2026-11-09",
+    "notes": "Kandidat dari indeks kursus dan metadata judul/deskripsi YouTube; URL primer dicoba tetapi hanya footer/metadata yang terbaca. Bahasa Indonesia didukung judul/deskripsi dan konteks indeks berbahasa Indonesia; audio belum didengar. Playback, kelengkapan playlist, dan akses gratis setiap video belum diuji. Level dan prasyarat adalah saran kurasi."
+  },
+  {
+    "id": "id-pzn-java-unit-test",
+    "title": "Tutorial Java Unit Test Bahasa Indonesia",
+    "publisher": "Programmer Zaman Now / Eko Kurniawan Khannedy",
+    "language": "Indonesian",
+    "format": "course",
+    "topics": [
+      "Java",
+      "Testing",
+      "JUnit",
+      "Mocking"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Java dasar",
+      "Java OOP"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=0jreaBRIOTo",
+    "youtubeUrl": "https://www.youtube.com/watch?v=0jreaBRIOTo",
+    "sourceUrl": "https://github.com/ProgrammerZamanNow/belajar-java-unit-test",
+    "whyUseful": "Membahas pengujian otomatis dan mocking sebagai bekal perubahan kode yang terukur.",
+    "practice": "Uji service peminjaman dengan parameterized tests dan mock repository untuk stok kosong serta berhasil.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi."
+  },
+  {
+    "id": "id-pzn-golang-restful-api",
+    "title": "Tutorial Golang RESTful API (Bahasa Indonesia)",
+    "publisher": "Programmer Zaman Now / Eko Kurniawan Khannedy",
+    "language": "Indonesian",
+    "format": "course",
+    "topics": [
+      "Go",
+      "REST API",
+      "Layered architecture",
+      "Testing",
+      "OpenAPI"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Go dasar",
+      "SQL dasar",
+      "HTTP dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=bJ2ZFt9D0uI",
+    "youtubeUrl": "https://www.youtube.com/watch?v=bJ2ZFt9D0uI",
+    "sourceUrl": "https://github.com/ProgrammerZamanNow/belajar-golang-restful-api",
+    "whyUseful": "Menghubungkan spesifikasi API, repository, service, controller, dan pengujian.",
+    "practice": "Buat API kategori berdasarkan spesifikasi sendiri dan uji validasi serta error database pada service.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi."
+  },
+  {
+    "id": "id-pzn-kotlin-unit-test",
+    "title": "Belajar Kotlin Unit Test",
+    "publisher": "Programmer Zaman Now / Eko Kurniawan Khannedy",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Kotlin",
+      "Testing",
+      "JUnit",
+      "Mocking"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Kotlin dasar",
+      "OOP dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8HoTBUpYgQ-Q45U54Tn_up",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8HoTBUpYgQ-Q45U54Tn_up",
+    "sourceUrl": "https://github.com/ProgrammerZamanNow/belajar-kotlin-unit-test",
+    "whyUseful": "Menyediakan jalur unit testing untuk pelajar yang memilih backend atau aplikasi Kotlin.",
+    "practice": "Tulis pengujian tabel kasus untuk kalkulator ongkos kirim dan mock sumber tarif.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi."
+  },
+  {
+    "id": "id-pzn-kotlin-oop",
+    "title": "Belajar Kotlin Object Oriented Programming",
+    "publisher": "Programmer Zaman Now / Eko Kurniawan Khannedy",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Kotlin",
+      "OOP",
+      "Software design"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Kotlin dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8lHOsi7kIDxK57WWLmzVog",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8lHOsi7kIDxK57WWLmzVog",
+    "sourceUrl": "https://github.com/ProgrammerZamanNow/belajar-kotlin-oop",
+    "whyUseful": "Membangun fondasi objek Kotlin sebelum pola desain dan pengujian layanan.",
+    "practice": "Modelkan pesanan dan metode pengiriman dengan class serta interface yang punya tanggung jawab berbeda.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi."
+  },
+  {
+    "id": "id-ib-scikit-learn",
+    "title": "Tutorial Belajar Machine Learning Dasar | Python Scikit-Learn",
+    "publisher": "Indonesia Belajar / Setia Budi",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Python",
+      "Machine learning",
+      "Data preprocessing",
+      "Model evaluation"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Python dasar",
+      "NumPy dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PL2O3HdJI4voHNEv59SdXKRQVRZAFmwN9E",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PL2O3HdJI4voHNEv59SdXKRQVRZAFmwN9E",
+    "sourceUrl": "https://github.com/boedybios/belajar_scikit_learn",
+    "whyUseful": "Memberi jalur lanjutan Python melalui workflow pemodelan dan evaluasi data.",
+    "practice": "Latih dua classifier pada dataset kecil dengan pemisahan train/test dan bandingkan kesalahannya.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi."
+  },
+  {
+    "id": "id-ib-matplotlib",
+    "title": "Tutorial Belajar Visualisasi Data Dasar | Python Matplotlib",
+    "publisher": "Indonesia Belajar / Setia Budi",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Python",
+      "Data visualization",
+      "Matplotlib"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Python dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PL2O3HdJI4voHrfoMFvkDeblmjarDN8nC8",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PL2O3HdJI4voHrfoMFvkDeblmjarDN8nC8",
+    "sourceUrl": "https://github.com/boedybios/belajar_matplotlib",
+    "whyUseful": "Mendukung visualisasi hasil eksperimen algoritma dan analisis data.",
+    "practice": "Plot waktu beberapa algoritma pencarian terhadap ukuran input dengan label sumbu dan metode ukur jelas.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi."
+  }
+]

@@ -27,6 +27,7 @@ node --input-type=module -e "import {startServer} from './server.mjs'; await sta
 Use http://127.0.0.1:5174 for that instance. Progress is stored per browser and origin; changing the port creates a separate progress store. Use export/import to transfer existing progress.
 
 ## What is included
+- Guided Learn → Check → Practice → Review actions, plus a Video library with 61 researched English/Indonesian courses and series, five related lesson videos, and your own links. See [course verification](docs/COURSE-VERIFICATION.md) and the [original video PRD](docs/superpowers/specs/2026-11-09-learning-video-design.md).
 - 28 modules, 112 original lessons, and 180 activities, including 100 coding problems.
 - Python/C++ reference implementations, worked examples, checkpoints, gradual hints, and sources.
 - Learning path, coding lab, six reference visualizers, review queue, notebook, evidence-based progress, interview timer, and early role-fit workspace.
@@ -35,6 +36,27 @@ Use http://127.0.0.1:5174 for that instance. Progress is stored per browser and 
 - Fresh isolated Python worker per execution case; immutable submission snapshots; Stop preserves drafts.
 - Historical-content recovery, stale checkpoint handling, atomic backups, and multi-tab revision checks.
 - Durable SQLite C++ request correlation and replay/conflict protection.
+
+## Learn with videos
+
+**Courses** is now the default Video library tab: 41 English and 20 Indonesian courses/series, including programming, DSA, OOP, SOLID/design principles, design patterns, architecture, distributed systems, and testing. Filter language, topic, level and research status, or search title/publisher/topics. Results use 12 cards per page. The 55 source-inspected entries and six provisional entries are clearly labelled; source inspection does not certify playback or educational quality. See the [research catalog](docs/research/course-library/README.md).
+
+Open a course and select **Muat playlist/course** to use the privacy-enhanced YouTube player. Course pages include suggested prerequisites, an original practice task, sources and research limitations. Save local course notes and manual self-reported completion. Full-course videos support manual bookmarks up to 48 hours; for playlists, note the episode in your notes because episode position is not automatically tracked. Course notes are included in existing backup export/import and never grant mastery. The **Video pelajaran & pribadi** tab preserves your earlier video library and notes.
+
+Start the server, open the app, and select **Video library** in the sidebar. A lesson's **Belajar lewat video** section links to relevant curated or personal videos. In the library, add a YouTube link with a title and optional lesson/channel, or search and filter existing resources. Initial curation is a small seed set; it does not cover every lesson.
+
+Select **Muat video**, then use YouTube's native Play/controls. The player connects to YouTube only after activation and uses privacy-enhanced mode. **Tutup pemutar** and navigation remove the iframe. **Buka di YouTube** remains available if a publisher blocks embedding, a video disappears, or the player cannot load. In-app playback requires an HTTP/HTTPS page; the standalone `file://` artifact explains how to start localhost and offers the external link.
+
+Save reflection notes, a manual resume bookmark in seconds, and an optional self-reported watched flag. Reload the player to use an updated bookmark. Notes and links stay on this browser/device and are included in Settings → Export/Import backup. Watching does not pass a checkpoint, create an exercise attempt, or grant mastery. Personal links and their notes/bookmarks can be deleted with confirmation; curated resources remain available.
+
+Video UI/browser regression checks with an existing Playwright installation:
+
+```text
+node scripts/video-browser-eval.mjs PATH_TO_PLAYWRIGHT_PACKAGE
+node scripts/course-browser-eval.mjs PATH_TO_PLAYWRIGHT_PACKAGE
+```
+
+Set BROWSER_EXECUTABLE if needed. This runs in fresh temporary browser storage, uses an ephemeral local server, and writes its playback result and screenshots under docs/video-eval/. Build the standalone artifact first. Third-party playback is reported separately from UI and persistence checks.
 
 ## C++ execution
 Real C++17 Run/Submit is **configured locally on this PC** through Ubuntu WSL2, GCC 15.2, bubblewrap and seccomp. Compilation and execution use isolated jobs, disabled network, resource limits and bounded output. All 100 authored C++ coding references compiled and passed 366 declared cases. Runtime process/thread creation is disabled; this runner is for the personal curriculum, not a public multiuser judge. The standalone file cannot access this backend: use the local server URL for C++.
@@ -49,6 +71,8 @@ python scripts/check_references.py
 python scripts/check_independent_algorithms.py
 node scripts/build-standalone.mjs
 ```
+
+When the researched course catalog changes, regenerate its browser data with `node scripts/build-course-data.mjs` before rebuilding standalone HTML. `dist/course-data.js` is generated from `docs/research/course-library/catalog.json`; do not edit both copies manually.
 
 The Python checker executes trusted authored reference programs only; it is not a learner-code execution server. See [docs/VERIFICATION.md](docs/VERIFICATION.md) for results and exact limits. The standalone builder writes artifacts/DSA-Journey.html and parses its bundled JavaScript before delivery.
 
