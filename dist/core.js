@@ -1,7 +1,9 @@
+import {validateCourseProgress} from './courses.js';
+import {validateVideoState} from './videos.js';
 export const DAY=86400000;
 export const uid=()=>globalThis.crypto?.randomUUID?.()||`${Date.now()}-${Math.random().toString(36).slice(2)}`;
 const copy=x=>structuredClone(x);
-export function emptyState(){return {schemaVersion:1,revision:0,settings:{name:'Reydian',sessionMinutes:45,route:'interleaved',theme:'light',fontSize:18,primaryLanguage:'python',role:'Software Engineer',targetRegion:'',cppAvailable:false,lastMissionType:'lesson',cppApiUrl:''},completedLessons:{},checkpointScores:{},checkpointVersions:{},historicalCheckpoints:{},explanations:{},drafts:{},attempts:[],exposures:[],reviews:{},notes:[],career:[],reflections:{}};}
+export function emptyState(){return {schemaVersion:1,revision:0,settings:{name:'Reydian',sessionMinutes:45,route:'interleaved',theme:'light',fontSize:18,primaryLanguage:'python',role:'Software Engineer',targetRegion:'',cppAvailable:false,lastMissionType:'lesson',cppApiUrl:''},completedLessons:{},checkpointScores:{},checkpointVersions:{},historicalCheckpoints:{},explanations:{},drafts:{},attempts:[],exposures:[],reviews:{},notes:[],career:[],reflections:{},videos:[],videoProgress:{},courseProgress:{}};}
 export function recordExposure(state,exercise,at=Date.now(),afterAttemptId=null){
  const s=copy(state);if(!s.exposures.some(x=>x.exerciseId===exercise.id&&x.version===exercise.version))s.exposures.push({exerciseId:exercise.id,version:exercise.version,family:exercise.family||exercise.id,at,afterAttemptId});return s;
 }
@@ -47,7 +49,7 @@ function safeTree(value,depth=0){if(depth>14)throw new Error('Backup terlalu dal
 export function importState(current,backup,catalog){
  if(!backup||backup.schemaVersion!==1||!backup.data||backup.data.schemaVersion!==1)throw new Error('Versi backup tidak didukung; data lama tetap utuh.');
  if(JSON.stringify(backup).length>20*1024*1024)throw new Error('Backup melebihi 20 MiB.');safeTree(backup);
- const incoming=copy(backup.data);assertRecords(incoming.attempts,'Attempts');assertRecords(incoming.notes,'Notes');assertRecords(incoming.career,'Career');
+ const incoming=copy(backup.data);validateVideoState(incoming);validateCourseProgress(incoming.courseProgress);assertRecords(incoming.attempts,'Attempts');assertRecords(incoming.notes,'Notes');assertRecords(incoming.career,'Career');
  if(!Array.isArray(incoming.exposures)||incoming.exposures.some(x=>typeof x.exerciseId!=='string'||typeof x.family!=='string'||!Number.isFinite(x.at)))throw new Error('Exposure history tidak valid.');
  for(const k of ['settings','completedLessons','checkpointScores','drafts','reviews'])if(!incoming[k]||Array.isArray(incoming[k])||typeof incoming[k]!=='object')throw new Error(`${k} tidak valid.`);
  const exposureMap=new Map();for(const x of [...(current.exposures||[]),...incoming.exposures]){const key=`${x.exerciseId}:${x.version}:${x.family}`;if(!exposureMap.has(key)||exposureMap.get(key).at>x.at)exposureMap.set(key,copy(x));}incoming.exposures=[...exposureMap.values()];

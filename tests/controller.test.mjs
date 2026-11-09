@@ -3,6 +3,9 @@ import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import {readFile} from 'node:fs/promises';
 import * as core from '../dist/core.js';
+import * as videos from '../dist/videos.js';
+import * as courses from '../dist/courses.js';
+import {esc} from '../dist/ui.js';
 const appSource=(await readFile(new URL('../dist/app.js',import.meta.url),'utf8')).replace(/^import .*;\r?\n/gm,'').replace(/boot\(\);\s*$/,'');
 const ex={id:'e',moduleId:'m01',lessonId:'l1',family:'f',variant:'transfer',kind:'coding',version:1,tests:[{input:'',expected:'1'},{input:'',expected:'1'}],concepts:['loop']};
 const catalog={modules:[{id:'m01'}],lessons:[{id:'l1',moduleId:'m01',version:1,title:'First lesson'}],exercises:[ex]};
@@ -10,13 +13,13 @@ const flush=()=>new Promise(resolve=>setImmediate(resolve));
 async function harness(cat=catalog){
  const listeners={},windowListeners={},calls=[],element={classList:{add(){},remove(){}},textContent:'',innerHTML:''};
  const editor={dataset:{exerciseId:'e'},value:'print(1)'};
- const ctx={...core,console,URLSearchParams,TextEncoder,AbortController,structuredClone,clearTimeout(){},setTimeout(){return 0},clearInterval(){},setInterval(){return 0},
-  location:{hash:'#practice/e'},window:{addEventListener:(name,fn)=>windowListeners[name]=fn},
+ const ctx={...core,...videos,...courses,esc,console,URL,URLSearchParams,TextEncoder,AbortController,AbortSignal,structuredClone,clearTimeout(){},setTimeout(){return 0},clearInterval(){},setInterval(){return 0},
+  location:{hash:'#practice/e',protocol:'http:'},window:{addEventListener:(name,fn)=>windowListeners[name]=fn},
   document:{addEventListener:(name,fn)=>listeners[name]=fn,getElementById:id=>id==='code-editor'?editor:id==='custom-input'?{value:''}:element},
   FormData:class{constructor(form){this.values=form.values;}get(key){return this.values[key];}},
   runPython:async()=>{calls.push('python');return {status:'completed',stdout:'1'};},runCpp:async()=>{calls.push('cpp');return {status:'completed',stdout:'1'};}};
- vm.createContext(ctx);vm.runInContext(appSource,ctx);ctx.catalogFixture=cat;
- vm.runInContext('render=()=>{};renderResults=()=>{};persist=async()=>{};catalog=catalogFixture;',ctx);
+ vm.createContext(ctx);vm.runInContext(appSource,ctx);vm.runInContext('globalThis.actualPersist=persist;',ctx);ctx.catalogFixture=cat;
+ vm.runInContext('render=()=>{};renderResults=()=>{};persist=async()=>true;catalog=catalogFixture;',ctx);
  return {ctx,listeners,windowListeners,calls,element,editor,run:code=>vm.runInContext(code,ctx)};
 }
 test('standalone srcdoc runtime chooses embedded worker before resolving an external URL',async()=>{
@@ -89,4 +92,89 @@ test('background C++ availability refresh updates the initial unavailable view',
  const h=await harness();h.ctx.AbortSignal=AbortSignal;h.ctx.fetch=async()=>({ok:true,json:async()=>({configured:true})});
  h.run('ui.renderCount=0;render=()=>{ui.renderCount++};globalThis.work=checkCpp();');await h.ctx.work;
  assert.equal(h.run('state.settings.cppAvailable'),true);assert.equal(h.run('ui.renderCount'),1);
+});
+
+
+test('video add and notes forms persist without granting evidence or replacing inputs',async()=>{
+ const h=await harness();const form={dataset:{form:'add-video'},closest:()=>null,values:{title:'Personal',url:'https://youtu.be/JP7ITIXGpHk',lessonId:'l1',publisher:'Me'}};
+ await h.listeners.submit({target:form,preventDefault(){}});assert.equal(h.run('state.videos.length'),1);assert.match(h.ctx.location.hash,/#videos\/user-/);
+ const id=h.run('state.videos[0].id');h.ctx.location.hash='#videos/'+id;
+ const progress={dataset:{form:'video-progress',id},closest:()=>null,values:{notes:'My explanation',resumeSeconds:'72',watched:'on'}};
+ await h.listeners.submit({target:progress,preventDefault(){}});assert.equal(h.run('state.videoProgress[state.videos[0].id].resumeSeconds'),72);assert.equal(h.run('state.attempts.length'),0);
+ progress.values.resumeSeconds='-1';await h.listeners.submit({target:progress,preventDefault(){}});assert.equal(h.run('state.videoProgress[state.videos[0].id].resumeSeconds'),72);assert.match(h.element.textContent,/bookmark|detik/);
+});
+
+test('video player mounts only on explicit activation with a fixed origin and unload removes it',async()=>{
+ const h=await harness();h.ctx.location.hash='#videos/cs50p-functions';h.run('state.videoProgress["cs50p-functions"]={notes:"",resumeSeconds:42,watched:false,updatedAt:0}');
+ const click=action=>h.listeners.click({target:{closest:selector=>selector==='[data-action]'?{dataset:{action,id:'cs50p-functions'}}:null}});
+ await click('load-video');assert.match(h.element.innerHTML,/<iframe/);assert.match(h.element.innerHTML,/https:\/\/www.youtube-nocookie.com\/embed\/JP7ITIXGpHk\?start=42/);assert.match(h.element.innerHTML,/referrerpolicy="strict-origin-when-cross-origin"/);assert.doesNotMatch(h.element.innerHTML,/autoplay=1/);
+ await click('unload-video');assert.doesNotMatch(h.element.innerHTML,/<iframe/);
+ h.ctx.location.protocol='file:';await click('load-video');assert.doesNotMatch(h.element.innerHTML,/<iframe/);assert.match(h.element.innerHTML,/HTTP|localhost/);
+});
+
+test('background compiler status cannot destroy video drafts or the active player',async()=>{
+ const h=await harness();h.ctx.location.hash='#videos/cs50p-functions';let renders=0;h.ctx.render=()=>renders++;
+ h.ctx.fetch=async()=>({ok:true,json:async()=>({configured:true})});await h.run('checkCpp()');assert.equal(renders,0);assert.equal(h.run('state.settings.cppAvailable'),true);
+});
+
+test('guided lesson anchors focus content without changing the application route',async()=>{
+ const h=await harness();h.ctx.location.hash='#learn/l1';let focused=false,scrolled=false,prevented=false;
+ h.ctx.document.getElementById=()=>({focus(){focused=true;},scrollIntoView(){scrolled=true;}});
+ await h.listeners.click({target:{closest:selector=>selector==='[data-lesson-anchor]'?{dataset:{lessonAnchor:'lesson-checkpoint'}}:null},preventDefault(){prevented=true;}});
+ assert.equal(h.ctx.location.hash,'#learn/l1');assert.ok(focused&&scrolled&&prevented);
+});
+
+
+test('delayed video save cannot redirect away from the learner new route',async()=>{
+ const h=await harness();h.ctx.location.hash='#videos';let release;h.ctx.delay=()=>new Promise(r=>release=r);h.run('persist=delay;');
+ const form={dataset:{form:'add-video'},closest:()=>null,values:{title:'Personal',url:'https://youtu.be/JP7ITIXGpHk',lessonId:'l1',publisher:''}};
+ const saving=h.listeners.submit({target:form,preventDefault(){}});await flush();h.ctx.location.hash='#learn/l1';release(true);await saving;assert.equal(h.ctx.location.hash,'#learn/l1');
+});
+
+test('repeated unchanged saves including pagehide do not create a stale revision after reload',async()=>{
+ const h=await harness();let writes=0;h.ctx.fakeStore={write:async s=>{writes++;return {...s,revision:s.revision+1};}};
+ h.ctx.document.getElementById=id=>id==='code-editor'?null:h.element;
+ h.run('store=fakeStore;persist=actualPersist;');await h.run('persist()');await h.run('persist()');h.windowListeners.pagehide();await h.run('queue');
+ assert.equal(writes,1);
+ h.run('state.settings.name="Changed";');await h.run('persist()');assert.equal(writes,2);
+});
+
+test('backup replacement waits behind pending writes and uses the committed revision',async()=>{
+ const h=await harness();const writes=[];let release;h.ctx.fakeStore={write:async s=>{writes.push(structuredClone(s));if(writes.length===1)await new Promise(r=>release=r);return {...s,revision:s.revision+1};}};
+ h.run('store=fakeStore;persist=actualPersist;globalThis.first=persist();');await flush();
+ h.ctx.candidate=core.emptyState();h.ctx.candidate.settings.name='Restored';h.run('globalThis.replacing=replaceStoredState(candidate);');await flush();assert.equal(writes.length,1);
+ release();await h.ctx.first;await h.ctx.replacing;assert.equal(writes.length,2);assert.equal(writes[1].revision,1);assert.equal(h.run('state.settings.name'),'Restored');
+});
+
+
+test('course playlist and full-video players use fixed privacy-enhanced embeds and unload',async()=>{
+ const h=await harness();h.ctx.location.hash='#courses/en-cs50p';
+ const click=(action,id)=>h.listeners.click({target:{closest:selector=>selector==='[data-action]'?{dataset:{action,id}}:null}});
+ await click('load-course','en-cs50p');assert.match(h.element.innerHTML,/youtube-nocookie.com\/embed\/videoseries/);assert.match(h.element.innerHTML,/listType=playlist/);await click('unload-course','en-cs50p');assert.doesNotMatch(h.element.innerHTML,/<iframe/);
+ h.ctx.location.hash='#courses/en-fcc-cpp20';h.run('state.courseProgress["en-fcc-cpp20"]={notes:"",resumeSeconds:100000,watched:false,updatedAt:0}');await click('load-course','en-fcc-cpp20');assert.match(h.element.innerHTML,/start=100000/);
+ h.ctx.location.protocol='file:';await click('load-course','en-fcc-cpp20');assert.doesNotMatch(h.element.innerHTML,/<iframe/);assert.match(h.element.innerHTML,/localhost/);
+});
+
+test('course form saves manual notes without rerendering the active player or granting evidence',async()=>{
+ const h=await harness();h.ctx.location.hash='#courses/en-cs50p';h.ctx.render=()=>{throw new Error('Must preserve mounted player and notes form');};
+ const form={dataset:{form:'course-progress',id:'en-cs50p'},closest:()=>null,values:{notes:'Episode 3, explain it myself',resumeSeconds:'0',watched:'on'}};
+ await h.listeners.submit({target:form,preventDefault(){}});assert.equal(h.run('state.courseProgress["en-cs50p"].notes'),'Episode 3, explain it myself');assert.equal(h.run('state.attempts.length'),0);
+ form.values.resumeSeconds='42';await h.listeners.submit({target:form,preventDefault(){}});assert.equal(h.run('state.courseProgress["en-cs50p"].resumeSeconds'),0);assert.match(h.element.textContent,/tidak valid/);
+});
+
+test('background compiler status leaves course notes and playback mounted',async()=>{
+ const h=await harness();h.ctx.location.hash='#courses/en-cs50p';let renders=0;h.ctx.render=()=>renders++;h.ctx.fetch=async()=>({ok:true,json:async()=>({configured:true})});await h.run('checkCpp()');assert.equal(renders,0);
+});
+
+test('successful video and course saves report recovery after a transient write failure',async()=>{
+ for(const type of ['add-video','video-progress','course-progress']){
+  const h=await harness();let writes=0;h.ctx.fakeStore={write:async s=>{if(++writes===1)throw new Error('Temporary write failure');return {...s,revision:s.revision+1};}};
+  h.run('store=fakeStore;persist=actualPersist;');await h.run('persist()');assert.match(h.run('ui.storageWarning'),/Temporary/);
+  const id=type==='course-progress'?'en-cs50p':'cs50p-functions';h.ctx.location.hash=type==='course-progress'?'#courses/'+id:'#videos/'+id;
+  const form={dataset:{form:type,id},closest:()=>null,values:{title:'Personal',url:'https://youtu.be/JP7ITIXGpHk',publisher:'',lessonId:'l1',notes:'Recovered',resumeSeconds:'0'}};
+  await h.listeners.submit({target:form,preventDefault(){}});
+  assert.equal(writes,2);
+  if(type==='add-video')assert.match(h.ctx.location.hash,/#videos\/user-/);
+  else {assert.match(h.element.textContent,/tersimpan/);assert.doesNotMatch(h.element.textContent,/belum tersimpan/);}
+ }
 });

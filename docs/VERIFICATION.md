@@ -1,4 +1,8 @@
 # Verification and Delivery Status
+## Course library integration — 9 November 2026
+
+All 61 researched courses/series are now available in Video library with language/topic/level/evidence filters, pagination, full-video/playlist embeds and separate local course notes. Current suite: 95 Node tests pass. Real Edge playlist playback, notes/reload/backup, 320px/390px layouts, standalone catalog/fallback and legacy video/Python regression checks pass. See [course verification](COURSE-VERIFICATION.md), which states precise scope and remaining third-party/course-quality limits. C++ provider code was unchanged; existing local API still reports configured.
+
 ## Current C++ setup and evaluation — 1 November 2026
 
 Local C++17 is configured and running at http://127.0.0.1:5174 via `npm start`: GCC 15.2.0 in Ubuntu WSL2 with bubblewrap/seccomp. No paid remote service was used. Local architecture/limits/recovery are documented in [cpp-backend.md](cpp-backend.md).

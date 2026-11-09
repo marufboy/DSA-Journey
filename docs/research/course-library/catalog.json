@@ -1,0 +1,1677 @@
+[
+  {
+    "id": "en-cs50x",
+    "title": "CS50's Introduction to Computer Science",
+    "publisher": "Harvard CS50",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "C",
+      "Python",
+      "algorithms",
+      "data structures",
+      "memory"
+    ],
+    "level": "Beginner",
+    "prerequisites": [],
+    "courseUrl": "https://cs50.harvard.edu/x/",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6",
+    "sourceUrl": "https://cs50.harvard.edu/x/",
+    "whyUseful": "Memberi fondasi cara berpikir komputasional dan hubungan antara kode, memori, serta algoritma.",
+    "practice": "Buat program indeks kata dalam C, lalu implementasikan ulang di Python dan jelaskan penggunaan memorinya.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman OpenCourseWare resmi berhasil dibuka dan menautkan playlist persis ini. Playback dan kelengkapan seluruh video belum diuji. Materi gratis; sertifikat atau kredit berbayar terpisah.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-cs50p",
+    "title": "CS50's Introduction to Programming with Python",
+    "publisher": "Harvard CS50",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "Python",
+      "functions",
+      "exceptions",
+      "unit testing",
+      "file I/O"
+    ],
+    "level": "Beginner",
+    "prerequisites": [],
+    "courseUrl": "https://cs50.harvard.edu/python/",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V",
+    "sourceUrl": "https://cs50.harvard.edu/python/",
+    "whyUseful": "Jalur Python terstruktur dengan tugas untuk menghubungkan sintaks, debugging, dan pengujian.",
+    "practice": "Buat pencatat pengeluaran berbasis CSV dengan validasi input dan unit test.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman OpenCourseWare resmi berhasil dibuka dan menautkan playlist persis ini. Playback dan kelengkapan seluruh video belum diuji. Materi gratis; sertifikat atau kredit berbayar terpisah.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-cs50-sql",
+    "title": "CS50's Introduction to Databases with SQL",
+    "publisher": "Harvard CS50",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "SQL",
+      "relational databases",
+      "joins",
+      "indexes",
+      "normalization"
+    ],
+    "level": "Beginner",
+    "prerequisites": [],
+    "courseUrl": "https://cs50.harvard.edu/sql/",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLhQjrBD2T382v1MBjNOhPu9SiJ1fsD4C0",
+    "sourceUrl": "https://cs50.harvard.edu/sql/",
+    "whyUseful": "Melengkapi latihan DSA dengan pemodelan dan pencarian data persisten.",
+    "practice": "Rancang database perpustakaan, tulis query peminjaman terlambat, lalu bandingkan query plan sebelum dan sesudah indeks.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman OpenCourseWare resmi berhasil dibuka dan menautkan playlist persis ini. Playback dan kelengkapan seluruh video belum diuji. Materi gratis; sertifikat atau kredit berbayar terpisah.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-cs50-ai",
+    "title": "CS50's Introduction to Artificial Intelligence with Python",
+    "publisher": "Harvard CS50",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "Python",
+      "graph search",
+      "optimization",
+      "probability",
+      "machine learning"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "CS50x atau pengalaman Python sekitar satu tahun"
+    ],
+    "courseUrl": "https://cs50.harvard.edu/ai/",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLhQjrBD2T381PopUTYtMSstgk-hsTGkVm",
+    "sourceUrl": "https://cs50.harvard.edu/ai/",
+    "whyUseful": "Memperluas penerapan pencarian dan optimasi melalui proyek AI setelah fondasi programming.",
+    "practice": "Buat pencarian rute dengan BFS dan A*, lalu ukur jumlah simpul yang diperiksa.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman OpenCourseWare resmi berhasil dibuka dan menautkan playlist persis ini. Playback dan kelengkapan seluruh video belum diuji. Materi gratis; sertifikat atau kredit berbayar terpisah.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-cs50-web",
+    "title": "CS50's Web Programming with Python and JavaScript",
+    "publisher": "Harvard CS50",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "Python",
+      "JavaScript",
+      "Django",
+      "SQL",
+      "testing",
+      "CI/CD"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "CS50x atau pengalaman satu bahasa pemrograman"
+    ],
+    "courseUrl": "https://cs50.harvard.edu/web/",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLhQjrBD2T380xvFSUmToMMzERZ3qB5Ueu",
+    "sourceUrl": "https://cs50.harvard.edu/web/",
+    "whyUseful": "Menghubungkan kemampuan programming dengan aplikasi web, database, dan pengujian.",
+    "practice": "Buat aplikasi issue tracker dengan otorisasi pengguna, query teruji, dan pengujian endpoint.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman OpenCourseWare resmi berhasil dibuka dan menautkan playlist persis ini. Playback dan kelengkapan seluruh video belum diuji. Materi gratis; sertifikat atau kredit berbayar terpisah.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-cs50-cybersecurity",
+    "title": "CS50's Introduction to Cybersecurity",
+    "publisher": "Harvard CS50",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "cybersecurity",
+      "accounts",
+      "data security",
+      "software security",
+      "privacy"
+    ],
+    "level": "Beginner",
+    "prerequisites": [],
+    "courseUrl": "https://cs50.harvard.edu/cybersecurity/",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLhQjrBD2T383Cqo5I1oRrbC1EKRAKGKUE",
+    "sourceUrl": "https://cs50.harvard.edu/cybersecurity/",
+    "whyUseful": "Membantu menilai keputusan keamanan dan privasi saat membangun software.",
+    "practice": "Buat threat model aplikasi catatan pribadi dan jelaskan mitigasi untuk tiga ancaman konkret.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman OpenCourseWare resmi berhasil dibuka dan menautkan playlist persis ini. Playback dan kelengkapan seluruh video belum diuji. Materi gratis; sertifikat atau kredit berbayar terpisah.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-fcc-cpp20",
+    "title": "C++ Programming Course - Beginner to Advanced",
+    "publisher": "freeCodeCamp.org",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "C++",
+      "C++20",
+      "pointers",
+      "references",
+      "templates",
+      "OOP"
+    ],
+    "level": "Beginner",
+    "prerequisites": [],
+    "courseUrl": "https://www.freecodecamp.org/news/learn-c-with-free-31-hour-course/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=8jLOx1hD3_o",
+    "sourceUrl": "https://www.freecodecamp.org/news/learn-c-with-free-31-hour-course/",
+    "whyUseful": "Menyediakan jembatan dari Python ke model memori dan tipe C++.",
+    "practice": "Port program pencatat nilai ke C++; gunakan vector, string, referensi const, dan uji input kosong.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Daniel Gakwaya; contoh mencakup C++20. Dukungan compiler lokal belum diperiksa. Halaman penerbit berhasil dibuka dan URL video diambil dari link/embed resminya. Playback belum diuji.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-fcc-python-dsa",
+    "title": "Data Structures and Algorithms in Python - Full Course for Beginners",
+    "publisher": "freeCodeCamp.org",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "Python",
+      "binary search",
+      "trees",
+      "sorting",
+      "dynamic programming",
+      "graphs"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Python dasar",
+      "fungsi dan kelas"
+    ],
+    "courseUrl": "https://www.freecodecamp.org/news/learn-algorithms-and-data-structures-in-python/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=pkYVOmU3MgA",
+    "sourceUrl": "https://www.freecodecamp.org/news/learn-algorithms-and-data-structures-in-python/",
+    "whyUseful": "Mengajarkan implementasi DSA melalui masalah dan notebook yang dapat dikerjakan ulang.",
+    "practice": "Implementasikan hash table dengan linear probing serta uji collision, penghapusan, dan kapasitas penuh.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Aakash N S/Jovian. Akses layanan notebook dan penilaian eksternal belum diuji. Halaman penerbit berhasil dibuka dan URL video diambil dari link/embed resminya. Playback belum diuji.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-fcc-ds-concepts",
+    "title": "Data Structures Explained - Learn Computer Science Concepts",
+    "publisher": "freeCodeCamp.org",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "data structures",
+      "Big O",
+      "arrays",
+      "stacks",
+      "queues",
+      "trees",
+      "graphs"
+    ],
+    "level": "Beginner",
+    "prerequisites": [
+      "dasar computer science",
+      "satu bahasa pemrograman disarankan"
+    ],
+    "courseUrl": "https://www.freecodecamp.org/news/learn-all-about-data-structures-used-in-computer-science/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=zg9ih6SVACc",
+    "sourceUrl": "https://www.freecodecamp.org/news/learn-all-about-data-structures-used-in-computer-science/",
+    "whyUseful": "Memberi gambaran lintas bahasa sebelum membangun struktur data sendiri.",
+    "practice": "Pilih struktur untuk undo editor, antrean cetak, dan pencarian prefix; tulis alasan serta biaya operasinya.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Steven/NullPointer Exception. Fokus konsep; latihan implementasi perlu ditambahkan. Halaman penerbit berhasil dibuka dan URL video diambil dari link/embed resminya. Playback belum diuji.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-fcc-graph-interviews",
+    "title": "Graph Algorithms for Technical Interviews",
+    "publisher": "freeCodeCamp.org",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "graphs",
+      "BFS",
+      "DFS",
+      "connected components",
+      "shortest paths"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "dasar programming",
+      "rekursi"
+    ],
+    "courseUrl": "https://www.freecodecamp.org/news/graph-algorithms-for-technical-interviews/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=tWVWeAqZ0WU",
+    "sourceUrl": "https://www.freecodecamp.org/news/graph-algorithms-for-technical-interviews/",
+    "whyUseful": "Memperkuat penerjemahan masalah jaringan atau grid menjadi traversal graf.",
+    "practice": "Tulis penghitung pulau di Python, termasuk grid kosong dan pulau yang hanya bersentuhan diagonal.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Alvin Zablan/Structy; contoh kode JavaScript, dapat diterapkan ulang di Python/C++. Halaman penerbit berhasil dibuka dan URL video diambil dari link/embed resminya. Playback belum diuji.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-fcc-dynamic-programming",
+    "title": "Dynamic Programming - Memoization and Tabulation",
+    "publisher": "freeCodeCamp.org",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "dynamic programming",
+      "recursion",
+      "memoization",
+      "tabulation"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "fungsi",
+      "array",
+      "rekursi"
+    ],
+    "courseUrl": "https://www.freecodecamp.org/news/learn-dynamic-programing-to-solve-coding-challenges/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=oBt53YbR9Kk",
+    "sourceUrl": "https://www.freecodecamp.org/news/learn-dynamic-programing-to-solve-coding-challenges/",
+    "whyUseful": "Menyediakan latihan bertahap untuk mengubah rekursi berulang menjadi solusi DP.",
+    "practice": "Selesaikan minimum coin change dengan rekursi, memoization, dan tabulation; jelaskan state serta kompleksitas.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Alvin Zablan. Contoh berbahasa JavaScript; bukan seluruh cakupan dynamic programming. Halaman penerbit berhasil dibuka dan URL video diambil dari link/embed resminya. Playback belum diuji.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-fcc-graph-theory",
+    "title": "Graph Theory Algorithms",
+    "publisher": "freeCodeCamp.org",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "graphs",
+      "shortest paths",
+      "topological sort",
+      "strongly connected components",
+      "network flow"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "struktur data dasar",
+      "rekursi"
+    ],
+    "courseUrl": "https://www.freecodecamp.org/news/learn-graph-theory-algorithms-from-a-google-engineer/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=09_LlHjoEiY",
+    "sourceUrl": "https://www.freecodecamp.org/news/learn-graph-theory-algorithms-from-a-google-engineer/",
+    "whyUseful": "Mendalami algoritma graf di luar BFS/DFS dengan representasi dan analisis yang lebih luas.",
+    "practice": "Implementasikan deteksi siklus terarah dan topological sort untuk dependensi tugas; uji graf terputus.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "William Fiset. Contoh implementasi memerlukan adaptasi bila memakai Python/C++. Halaman penerbit berhasil dibuka dan URL video diambil dari link/embed resminya. Playback belum diuji.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-fcc-data-structures-fiset",
+    "title": "Data Structures - Easy to Advanced Course",
+    "publisher": "freeCodeCamp.org",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "data structures",
+      "heaps",
+      "union find",
+      "hash tables",
+      "Fenwick trees",
+      "AVL trees"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "dasar programming",
+      "kelas",
+      "rekursi"
+    ],
+    "courseUrl": "https://www.freecodecamp.org/news/learn-data-structures-from-a-google-engineer/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=RBSGKlAvoiM",
+    "sourceUrl": "https://www.freecodecamp.org/news/learn-data-structures-from-a-google-engineer/",
+    "whyUseful": "Memperluas struktur data inti menuju struktur untuk query dan pembaruan efisien.",
+    "practice": "Bangun Fenwick tree untuk prefix sum dan bandingkan terhadap array naif pada pembaruan acak.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "William Fiset; kode contoh Java. Judul advanced tidak berarti semua struktur data lanjutan tercakup. Halaman penerbit berhasil dibuka dan URL video diambil dari link/embed resminya. Playback belum diuji.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-fcc-sql-mike-dane",
+    "title": "SQL Tutorial - Full Database Course for Beginners",
+    "publisher": "freeCodeCamp.org",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "SQL",
+      "MySQL",
+      "joins",
+      "CRUD",
+      "ER diagrams",
+      "triggers"
+    ],
+    "level": "Beginner",
+    "prerequisites": [],
+    "courseUrl": "https://www.freecodecamp.org/news/sql-and-databases-full-course/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+    "sourceUrl": "https://www.freecodecamp.org/news/sql-and-databases-full-course/",
+    "whyUseful": "Alternatif praktis untuk belajar SQL melalui skema database dan operasi sehari-hari.",
+    "practice": "Buat skema toko kecil dengan pelanggan, pesanan, dan item; tulis laporan pendapatan menggunakan join.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Mike Dane. Instruksi instalasi MySQL berasal dari materi lama; kompatibilitas tool belum diuji. Halaman penerbit berhasil dibuka dan URL video diambil dari link/embed resminya. Playback belum diuji.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-fcc-networking-fundamentals",
+    "title": "Computer Networking Fundamentals",
+    "publisher": "freeCodeCamp.org",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "networking",
+      "IPv4",
+      "subnetting",
+      "TCP",
+      "UDP",
+      "routing",
+      "DNS"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "dasar DSA",
+      "bilangan biner disarankan"
+    ],
+    "courseUrl": "https://www.freecodecamp.org/news/computer-networking-fundamentals/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=fQbBPa0ADvs",
+    "sourceUrl": "https://www.freecodecamp.org/news/computer-networking-fundamentals/",
+    "whyUseful": "Memberi landasan jaringan untuk memahami koneksi, latensi, dan kegagalan aplikasi.",
+    "practice": "Hitung pembagian subnet untuk tiga kelompok perangkat dan jelaskan alur DNS, TCP, lalu HTTP.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Syllabus penerbit menyebut DSA sebagai prerequisite; praktik perangkat jaringan belum diuji. Halaman penerbit berhasil dibuka dan URL video diambil dari link/embed resminya. Playback belum diuji.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-fcc-http-javascript",
+    "title": "HTTP Networking in JavaScript",
+    "publisher": "freeCodeCamp.org",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "HTTP",
+      "DNS",
+      "JavaScript",
+      "async/await",
+      "JSON",
+      "HTTPS"
+    ],
+    "level": "Beginner",
+    "prerequisites": [
+      "JavaScript dasar"
+    ],
+    "courseUrl": "https://www.freecodecamp.org/news/http-full-course/",
+    "youtubeUrl": "https://www.youtube.com/watch?v=2JYT5f2isg4",
+    "sourceUrl": "https://www.freecodecamp.org/news/http-full-course/",
+    "whyUseful": "Menghubungkan protokol HTTP dengan kode client dan penanganan kesalahan.",
+    "practice": "Buat client fetch dengan timeout, penanganan respons non-2xx, dan pemrosesan JSON tidak valid.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Lane Wagner. Video gratis; versi latihan interaktif Boot.dev merupakan layanan terpisah dan tidak dinilai di sini. Halaman penerbit berhasil dibuka dan URL video diambil dari link/embed resminya. Playback belum diuji.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-mit-6006",
+    "title": "MIT 6.006 Introduction to Algorithms",
+    "publisher": "MIT OpenCourseWare",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "algorithms",
+      "data structures",
+      "sorting",
+      "graphs",
+      "dynamic programming"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Python",
+      "matematika diskrit"
+    ],
+    "courseUrl": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY",
+    "sourceUrl": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
+    "whyUseful": "Menguatkan alasan correctness dan efisiensi selain kemampuan menulis solusi.",
+    "practice": "Implementasikan Dijkstra dan jelaskan invariant; uji node terputus dan bandingkan dengan BFS pada bobot seragam.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Spring 2020. Halaman MIT menyebut Problem Session 6 tidak tersedia. Halaman course/syllabus MIT berhasil dibuka; judul playlist YouTube cocok saat URL dibuka. Isi daftar YouTube terbatas pada metadata; playback dan kelengkapan seluruh video belum diuji. Prerequisite dalam katalog adalah panduan pemilihan.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-mit-6046",
+    "title": "MIT 6.046J Design and Analysis of Algorithms",
+    "publisher": "MIT OpenCourseWare",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "algorithm analysis",
+      "divide and conquer",
+      "randomization",
+      "greedy",
+      "network flow",
+      "complexity"
+    ],
+    "level": "Advanced",
+    "prerequisites": [
+      "algoritma setara 6.006",
+      "pembuktian matematika"
+    ],
+    "courseUrl": "https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp",
+    "sourceUrl": "https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/",
+    "whyUseful": "Memperdalam desain algoritma dan analisis untuk masalah yang tidak langsung memiliki pola sederhana.",
+    "practice": "Buktikan greedy interval scheduling, kemudian buat contoh tandingan untuk strategi durasi terpendek.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Spring 2015. Merupakan kelanjutan algoritma, bukan pengantar programming. Halaman course/syllabus MIT berhasil dibuka; judul playlist YouTube cocok saat URL dibuka. Isi daftar YouTube terbatas pada metadata; playback dan kelengkapan seluruh video belum diuji. Prerequisite dalam katalog adalah panduan pemilihan.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-mit-60001",
+    "title": "MIT 6.0001 Introduction to Computer Science and Programming in Python",
+    "publisher": "MIT OpenCourseWare",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "Python",
+      "computation",
+      "recursion",
+      "testing",
+      "debugging",
+      "complexity"
+    ],
+    "level": "Beginner",
+    "prerequisites": [],
+    "courseUrl": "https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA",
+    "sourceUrl": "https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/",
+    "whyUseful": "Mengajarkan proses menyelesaikan masalah, debugging, dan abstraksi melalui Python.",
+    "practice": "Buat simulasi tabungan untuk mencapai target dengan pencarian bisection dan uji batas target yang tidak tercapai.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Fall 2016. Lingkungan Python dan petunjuk instalasi lama perlu disesuaikan. Halaman course/syllabus MIT berhasil dibuka; judul playlist YouTube cocok saat URL dibuka. Isi daftar YouTube terbatas pada metadata; playback dan kelengkapan seluruh video belum diuji. Prerequisite dalam katalog adalah panduan pemilihan.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-mit-60002",
+    "title": "MIT 6.0002 Introduction to Computational Thinking and Data Science",
+    "publisher": "MIT OpenCourseWare",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "Python",
+      "optimization",
+      "simulation",
+      "probability",
+      "data science"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Python setara 6.0001"
+    ],
+    "courseUrl": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLUl4u3cNGP619EG1wp0kT-7rDE_Az5TNd",
+    "sourceUrl": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/",
+    "whyUseful": "Menerapkan pemrograman pada simulasi, optimasi, dan penalaran tentang data.",
+    "practice": "Bandingkan greedy dan exhaustive search pada knapsack kecil, lalu simulasikan input acak untuk menemukan kegagalan greedy.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Fall 2016. Bukan kursus DSA menyeluruh; dependensi latihan lama belum diuji. Halaman course/syllabus MIT berhasil dibuka; judul playlist YouTube cocok saat URL dibuka. Isi daftar YouTube terbatas pada metadata; playback dan kelengkapan seluruh video belum diuji. Prerequisite dalam katalog adalah panduan pemilihan.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-mit-6851",
+    "title": "MIT 6.851 Advanced Data Structures",
+    "publisher": "MIT OpenCourseWare",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "advanced data structures",
+      "persistence",
+      "amortized analysis",
+      "memory hierarchy"
+    ],
+    "level": "Advanced",
+    "prerequisites": [
+      "desain dan analisis algoritma",
+      "pembuktian matematika"
+    ],
+    "courseUrl": "https://ocw.mit.edu/courses/6-851-advanced-data-structures-spring-2012/",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf",
+    "sourceUrl": "https://ocw.mit.edu/courses/6-851-advanced-data-structures-spring-2012/",
+    "whyUseful": "Bahan lanjutan untuk memahami trade-off struktur data setelah fondasi DSA kuat.",
+    "practice": "Implementasikan persistent stack dengan berbagi node, lalu buktikan versi lama tetap dapat dibaca setelah update.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Spring 2012, tingkat graduate. Perlu matematika dan analisis yang jauh melampaui Python dasar. Halaman course/syllabus MIT berhasil dibuka; judul playlist YouTube cocok saat URL dibuka. Isi daftar YouTube terbatas pada metadata; playback dan kelengkapan seluruh video belum diuji. Prerequisite dalam katalog adalah panduan pemilihan.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-mit-6042",
+    "title": "MIT 6.042J Mathematics for Computer Science",
+    "publisher": "MIT OpenCourseWare",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "discrete mathematics",
+      "proofs",
+      "induction",
+      "graphs",
+      "counting",
+      "probability"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "aljabar sekolah",
+      "kesiapan membaca notasi matematika"
+    ],
+    "courseUrl": "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLB7540DEDD482705B",
+    "sourceUrl": "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/",
+    "whyUseful": "Membangun bahasa pembuktian dan matematika diskrit yang mendasari correctness serta kompleksitas.",
+    "practice": "Buktikan invariant binary search dan hitung jumlah perbandingan maksimum dengan relasi rekurensi.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Fall 2010. Satu course matematika dihitung satu; versi semester lain tidak ditambahkan. Halaman course/syllabus MIT berhasil dibuka; judul playlist YouTube cocok saat URL dibuka. Isi daftar YouTube terbatas pada metadata; playback dan kelengkapan seluruh video belum diuji. Prerequisite dalam katalog adalah panduan pemilihan.",
+    "batch": "english-foundations"
+  },
+  {
+    "id": "en-arjancodes-write-better-python",
+    "title": "Write Better Python Code",
+    "publisher": "ArjanCodes",
+    "language": "English",
+    "format": "series",
+    "topics": [
+      "OOP",
+      "SOLID",
+      "design patterns",
+      "coupling and cohesion",
+      "unit testing"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Python dasar",
+      "classes dan functions"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLC0nd42SBTaNuP4iB4L6SJlMaHE71FG6N",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLC0nd42SBTaNuP4iB4L6SJlMaHE71FG6N",
+    "sourceUrl": "https://github.com/ArjanCodes/betterpython",
+    "whyUseful": "Menghubungkan desain kelas Python dengan perubahan kode yang lebih mudah diuji.",
+    "practice": "Ubah kalkulator ongkir menjadi Strategy lalu suntikkan penyedia tarif palsu untuk unit test.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori resmi menautkan playlist dan mengelompokkan contoh per topik. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit.",
+    "batch": "english-design"
+  },
+  {
+    "id": "en-dan-adams-csharp-patterns-solid",
+    "title": "Mastering Design Patterns in C#: A Beginner-Friendly Guide, Including OOP and SOLID Principles",
+    "publisher": "Dan Adams / DoableDanny",
+    "language": "English",
+    "format": "series",
+    "topics": [
+      "OOP",
+      "SOLID",
+      "UML",
+      "design patterns"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "C# dasar",
+      "functions dan classes"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLxkN9e3dfloHD01FzTGVYWYgGgtepuQIg",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLxkN9e3dfloHD01FzTGVYWYgGgtepuQIg",
+    "sourceUrl": "https://github.com/DoableDanny/Design-Patterns-in-C-Sharp",
+    "whyUseful": "Menjadi jembatan dari konsep objek menuju keputusan penggunaan pola desain.",
+    "practice": "Bangun editor teks mini dengan Command untuk undo dan jelaskan mengapa pola itu diperlukan.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori resmi menautkan rangkaian video. Versi kompilasi freeCodeCamp adalah materi yang sama dan tidak dihitung terpisah. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit.",
+    "batch": "english-design"
+  },
+  {
+    "id": "en-okhravi-design-patterns",
+    "title": "Design Patterns in Object Oriented Programming",
+    "publisher": "Christopher Okhravi",
+    "language": "English",
+    "format": "series",
+    "topics": [
+      "OOP",
+      "design patterns"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "OOP dasar",
+      "interfaces dan polymorphism"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc",
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc",
+    "whyUseful": "Memberi rangkaian penjelasan konseptual untuk membandingkan solusi pola desain.",
+    "practice": "Implementasikan notifikasi dengan Observer lalu bandingkan dengan pemanggilan langsung.",
+    "verification": "search-only",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman playlist dibuka tetapi hanya footer terbaca; judul seri dan atribusi tersedia pada metadata pencarian video resmi episode pertama. Kelengkapan playlist belum diperiksa. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit.",
+    "batch": "english-design"
+  },
+  {
+    "id": "en-resocoder-clean-architecture-tdd",
+    "title": "Flutter TDD Clean Architecture Course",
+    "publisher": "Reso Coder",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "clean architecture",
+      "TDD",
+      "repository pattern",
+      "dependency inversion",
+      "refactoring"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Dart dasar",
+      "Flutter dasar",
+      "async programming"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=dc3B_mMrZ-Q",
+    "youtubeUrl": "https://www.youtube.com/watch?v=dc3B_mMrZ-Q",
+    "sourceUrl": "https://resocoder.com/flutter-clean-architecture-tdd/",
+    "whyUseful": "Menunjukkan pemisahan domain, data, dan presentasi sambil membangun fitur dengan tes.",
+    "practice": "Buat fitur fakta angka dengan repository palsu dan uji use case tanpa UI.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Seri asli dan video kompilasinya dihitung sekali. Materi lama: versi Flutter, Dart, BLoC dan paket mungkin memerlukan adaptasi; build contoh belum diuji. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit.",
+    "batch": "english-design"
+  },
+  {
+    "id": "en-resocoder-firebase-ddd",
+    "title": "Flutter Firebase & DDD Course",
+    "publisher": "Reso Coder",
+    "language": "English",
+    "format": "series",
+    "topics": [
+      "DDD",
+      "value objects",
+      "domain entities",
+      "clean architecture",
+      "repository pattern"
+    ],
+    "level": "Advanced",
+    "prerequisites": [
+      "Dart dan Flutter",
+      "async streams",
+      "OOP dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLB6lc7nQ1n4iS5p-IezFFgqP6YvAJy84U",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLB6lc7nQ1n4iS5p-IezFFgqP6YvAJy84U",
+    "sourceUrl": "https://resocoder.com/2020/03/09/flutter-firebase-ddd-course-1-domain-driven-design-principles/",
+    "whyUseful": "Memperlihatkan pemodelan aturan domain dan validasi pada aplikasi catatan.",
+    "practice": "Modelkan alamat email sebagai value object dan uji bahwa nilai tidak valid tidak dapat membentuk objek domain.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman resmi seri dan repositori dibuka; URL playlist ditemukan lewat tautan forum lalu halaman YouTube dibuka. Materi 2020; kompatibilitas paket dan seluruh episode belum diuji. Firebase dapat memerlukan akun; tidak ada provisioning dilakukan. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit.",
+    "batch": "english-design"
+  },
+  {
+    "id": "en-cambridge-distributed-systems",
+    "title": "Distributed Systems (2020/21)",
+    "publisher": "University of Cambridge / Martin Kleppmann",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "distributed systems",
+      "fault tolerance",
+      "replication",
+      "consistency",
+      "consensus"
+    ],
+    "level": "Advanced",
+    "prerequisites": [
+      "networking dasar",
+      "concurrency dasar",
+      "database dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB",
+    "sourceUrl": "https://www.cl.cam.ac.uk/teaching/2021/ConcDisSys/dist-sys-notes.pdf",
+    "whyUseful": "Memberi dasar untuk menilai kegagalan parsial dan konsistensi sebelum memilih arsitektur layanan.",
+    "practice": "Simulasikan dua replika dengan pesan terlambat lalu tulis invariant dan skenario kegagalannya.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "PDF resmi menautkan playlist kuliah; ini bagian distributed systems dari Concurrent and Distributed Systems, dihitung sekali. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit.",
+    "batch": "english-design"
+  },
+  {
+    "id": "en-fcc-javascript-clean-code",
+    "title": "JavaScript Clean Code Course – Fix Code Smells & Refactor",
+    "publisher": "freeCodeCamp.org / Tapas Adhikary",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "clean code",
+      "code smells",
+      "refactoring",
+      "ESLint",
+      "Prettier"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "JavaScript dasar",
+      "functions dan objects"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=626BcUO84og",
+    "youtubeUrl": "https://www.youtube.com/watch?v=626BcUO84og",
+    "sourceUrl": "https://www.freecodecamp.org/news/level-up-your-javascript-detect-smells-and-write-clean-code",
+    "whyUseful": "Melatih membaca kode sulit dirawat dan memilih refactor yang relevan.",
+    "practice": "Ambil fungsi checkout panjang, tambahkan tes perilaku lalu lakukan extract function tanpa mengubah hasil.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman penerbit merinci cakupan dan menautkan video penuh; linting tidak dianggap bukti kebenaran program. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit.",
+    "batch": "english-design"
+  },
+  {
+    "id": "en-fcc-pytest",
+    "title": "Pytest Tutorial – How to Test Python Code",
+    "publisher": "freeCodeCamp.org / Farhan Ali",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "testing",
+      "pytest",
+      "fixtures",
+      "parametrization",
+      "mocking"
+    ],
+    "level": "Beginner",
+    "prerequisites": [
+      "Python dasar",
+      "functions",
+      "imports"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=cHYq1MRoyI0",
+    "youtubeUrl": "https://www.youtube.com/watch?v=cHYq1MRoyI0",
+    "sourceUrl": "https://www.freecodecamp.org/news/testing-in-python-with-pytest",
+    "whyUseful": "Memberikan fondasi tes Python untuk menjaga perilaku saat kode berkembang.",
+    "practice": "Uji parser transaksi dengan kasus normal, input kosong, format salah dan dependency jaringan palsu.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Bagian penggunaan ChatGPT tersedia; hasil AI tetap perlu diperiksa. Tidak ada tes contoh yang dijalankan pada riset ini. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit.",
+    "batch": "english-design"
+  },
+  {
+    "id": "en-fcc-jest",
+    "title": "How to Test JavaScript Code with Jest",
+    "publisher": "freeCodeCamp.org / Tomi Tokko",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "testing",
+      "Jest",
+      "mocking",
+      "async tests",
+      "snapshot testing"
+    ],
+    "level": "Beginner",
+    "prerequisites": [
+      "JavaScript dasar",
+      "Node.js dasar",
+      "promises"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=IPiUDhwnZxA",
+    "youtubeUrl": "https://www.youtube.com/watch?v=IPiUDhwnZxA",
+    "sourceUrl": "https://www.freecodecamp.org/news/how-to-test-javascript-code-with-jest",
+    "whyUseful": "Membantu menguji fungsi dan dependency asinkron di proyek JavaScript.",
+    "practice": "Uji layanan keranjang belanja dan mock API pembayaran yang mengembalikan timeout.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman penerbit dibuka; pengambilan halaman YouTube gagal. Versi dependency dan eksekusi contoh belum diuji. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit.",
+    "batch": "english-design"
+  },
+  {
+    "id": "en-fcc-python-microservices-system-design",
+    "title": "Microservice Architecture and System Design with Python & Kubernetes – Full Course",
+    "publisher": "freeCodeCamp.org / Kantan Coding",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "microservices",
+      "distributed systems",
+      "RabbitMQ",
+      "Kubernetes",
+      "eventual consistency"
+    ],
+    "level": "Advanced",
+    "prerequisites": [
+      "Python backend",
+      "HTTP API",
+      "Docker dasar",
+      "database dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=hmkF77F9TLw",
+    "youtubeUrl": "https://www.youtube.com/watch?v=hmkF77F9TLw",
+    "sourceUrl": "https://www.freecodecamp.org/news/microservices-and-software-system-design-course",
+    "whyUseful": "Menghubungkan komunikasi sinkron dan asinkron dengan aplikasi konversi berkas.",
+    "practice": "Rancang antrean konversi lokal dan tambahkan idempotency key agar pesan ganda tidak menghasilkan dua keluaran.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Kursus gratis ditonton; lingkungan Kubernetes/database perlu setup tersendiri. Halaman penerbit dibuka, halaman YouTube gagal diambil; deployment tidak dijalankan. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit.",
+    "batch": "english-design"
+  },
+  {
+    "id": "en-fcc-aws-event-driven",
+    "title": "Event Driven Architecture on AWS – Course for Beginners",
+    "publisher": "freeCodeCamp.org / Matt Morgan and Matt Martz",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "event-driven architecture",
+      "refactoring",
+      "idempotency",
+      "queues",
+      "fault tolerance"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "HTTP API",
+      "serverless dasar",
+      "database dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=Zr6fnhvJKlw",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Zr6fnhvJKlw",
+    "sourceUrl": "https://www.freecodecamp.org/news/deep-dive-into-event-driven-architecture-on-aws",
+    "whyUseful": "Memperlihatkan alasan memisahkan pemrosesan pesanan dan menangani pengiriman ulang event.",
+    "practice": "Gambar alur order-payment-inventory dengan dead-letter queue lalu simulasikan pesan duplikat secara lokal.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Video gratis; praktik AWS dapat menimbulkan biaya dan memerlukan akun. Riset ini tidak membuat resource cloud. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit.",
+    "batch": "english-design"
+  },
+  {
+    "id": "en-fcc-fastapi-event-driven",
+    "title": "Event-Driven Architecture with React and FastAPI – Full Course",
+    "publisher": "freeCodeCamp.org / Scalable Scripts",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "event-driven architecture",
+      "finite state machine",
+      "FastAPI",
+      "Redis",
+      "React"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Python dan JavaScript dasar",
+      "HTTP API",
+      "React dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=NVvIpqmf_Xc",
+    "youtubeUrl": "https://www.youtube.com/watch?v=NVvIpqmf_Xc",
+    "sourceUrl": "https://www.freecodecamp.org/news/implement-event-driven-architecture-with-react-and-fastapi",
+    "whyUseful": "Mengubah event menjadi perubahan state yang dapat ditelusuri dalam aplikasi.",
+    "practice": "Buat state machine pengiriman dan tolak transisi delivered-ke-pending melalui tes.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman penerbit dibuka dan merinci proyek; pengambilan YouTube sempat gagal. Versi paket, Redis dan aplikasi belum dijalankan. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit.",
+    "batch": "english-design"
+  },
+  {
+    "id": "en-fcc-gaurav-system-design",
+    "title": "System Design for Beginners Course",
+    "publisher": "freeCodeCamp.org / Gaurav Sen",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "system design",
+      "API design",
+      "UML",
+      "video streaming",
+      "fault tolerance"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "programming dasar",
+      "HTTP",
+      "database dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=m8Icp_Cid5o",
+    "youtubeUrl": "https://www.youtube.com/watch?v=m8Icp_Cid5o",
+    "sourceUrl": "https://www.freecodecamp.org/news/software-system-design-for-beginners",
+    "whyUseful": "Mempelajari keputusan desain melalui contoh layanan streaming yang konkret.",
+    "practice": "Buat diagram upload-transcode-playback lalu jelaskan pilihan datastore dan protokol streaming.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Judul memakai Beginners tetapi prasyarat teknis disarankan. Berbeda dari proyek YouTube clone Keerti Purswani; tidak dipetakan sebagai kursus SOLID. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit.",
+    "batch": "english-design"
+  },
+  {
+    "id": "en-fcc-system-design-2026",
+    "title": "System Design Course – APIs, Databases, Caching, CDNs, Load Balancing & Production Infra",
+    "publisher": "freeCodeCamp.org / Hayk Simonyan",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "system design",
+      "API design",
+      "load balancing",
+      "databases",
+      "authentication",
+      "authorization"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "HTTP",
+      "database dasar",
+      "programming"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=C842vFY5kRo",
+    "youtubeUrl": "https://www.youtube.com/watch?v=C842vFY5kRo",
+    "sourceUrl": "https://www.freecodecamp.org/news/learn-software-system-design/",
+    "whyUseful": "Memperluas rancangan satu server menuju layanan dengan kebutuhan skala dan keamanan.",
+    "practice": "Mulai dari API satu server lalu gambar perubahan untuk health checks, load balancing dan otorisasi.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman penerbit 2026 menautkan video berbeda dari kursus konsep 2024; ada tumpang tindih topik. Tidak mengeklaim bahwa isinya sepenuhnya baru. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit. Versi Hayk 2024 (https://www.youtube.com/watch?v=F2FmTdLtb_4) dicatat sebagai alternatif terpisah di excluded-alternatives.json dan tidak menambah jumlah course.",
+    "batch": "english-design"
+  },
+  {
+    "id": "en-fcc-senior-system-design",
+    "title": "Design Software Systems Like a Senior Engineer – Complete Course",
+    "publisher": "freeCodeCamp.org",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "system design",
+      "requirements",
+      "capacity estimation",
+      "architecture tradeoffs",
+      "interview preparation"
+    ],
+    "level": "Advanced",
+    "prerequisites": [
+      "backend development",
+      "networking",
+      "database design"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=soTfFFIQQ8U",
+    "youtubeUrl": "https://www.youtube.com/watch?v=soTfFFIQQ8U",
+    "sourceUrl": "https://www.freecodecamp.org/news/learn-how-to-design-software-systems-like-a-senior-engineer-in-our-new-course",
+    "whyUseful": "Melatih merumuskan kebutuhan dan membela pilihan desain secara terstruktur.",
+    "practice": "Kerjakan rancangan layanan pemesanan hotel dengan estimasi trafik dan dua alternatif penanganan bottleneck.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman penerbit Oktober 2026 dibuka; fokus persiapan diskusi desain. Hasil interview dan kesiapan senior tidak diverifikasi. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit.",
+    "batch": "english-design"
+  },
+  {
+    "id": "en-fcc-youtube-clone-system-design",
+    "title": "Learn High-Level System Design by Coding YouTube – Full Course",
+    "publisher": "freeCodeCamp.org / Keerti Purswani",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "system design",
+      "video streaming",
+      "service boundaries",
+      "Redis",
+      "transcoding"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "JavaScript",
+      "Node.js",
+      "React",
+      "HTTP"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=FiXOaYnW64w",
+    "youtubeUrl": "https://www.youtube.com/watch?v=FiXOaYnW64w",
+    "sourceUrl": "https://www.freecodecamp.org/news/learn-high-level-system-design-by-building-a-youtube-clone/",
+    "whyUseful": "Memperlihatkan pemisahan layanan upload, transcoder dan watch melalui proyek.",
+    "practice": "Bangun prototipe antrean transcoding lokal lalu dokumentasikan penanganan upload gagal.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman penerbit menguraikan proyek dan menautkan video; ini tutorial pembelajaran, bukan bukti skala produksi. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit.",
+    "batch": "english-design"
+  },
+  {
+    "id": "en-fcc-jim-python-oop",
+    "title": "Object Oriented Programming with Python – Full Course for Beginners",
+    "publisher": "freeCodeCamp.org / JimShapedCoding",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "OOP",
+      "classes",
+      "inheritance",
+      "encapsulation",
+      "class methods"
+    ],
+    "level": "Beginner",
+    "prerequisites": [
+      "Python functions",
+      "variables",
+      "loops",
+      "conditionals"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=Ej_02ICOIgs",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Ej_02ICOIgs",
+    "sourceUrl": "https://www.freecodecamp.org/news/learn-object-oriented-programming-with-python",
+    "whyUseful": "Membantu berpindah dari skrip fungsi menuju model objek sederhana.",
+    "practice": "Bangun model inventaris toko dengan Item dan aturan diskon yang diuji.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Kursus Jim 2021 berbeda dari kursus Dan Adams 2025; dua alternatif pengantar, bukan dua tahap wajib. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit.",
+    "batch": "english-design"
+  },
+  {
+    "id": "en-fcc-dan-python-oop",
+    "title": "Python Object Oriented Programming (OOP) – Full Course for Beginners",
+    "publisher": "freeCodeCamp.org / Dan Adams",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "OOP",
+      "classes",
+      "properties",
+      "inheritance",
+      "polymorphism",
+      "abstraction"
+    ],
+    "level": "Beginner",
+    "prerequisites": [
+      "Python dasar",
+      "functions"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=iLRZi0Gu8Go",
+    "youtubeUrl": "https://www.youtube.com/watch?v=iLRZi0Gu8Go",
+    "sourceUrl": "https://www.freecodecamp.org/news/master-object-oriented-programming-in-python",
+    "whyUseful": "Memberi alternatif pengantar objek dengan pembahasan property dan pengendalian data.",
+    "practice": "Modelkan rekening dengan deposit dan withdraw, lalu cegah saldo negatif melalui tes.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman penerbit Januari 2025 dibuka. Tumpang tindih topik dengan pengantar Jim; kurasi tidak mengharuskan menonton keduanya. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit.",
+    "batch": "english-design"
+  },
+  {
+    "id": "en-fcc-playwright-software-testing",
+    "title": "Software Testing Course – Playwright, E2E, and AI Agents",
+    "publisher": "freeCodeCamp.org / Beau Carnes",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "testing",
+      "testing pyramid",
+      "Playwright",
+      "E2E testing",
+      "mocking",
+      "accessibility testing"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "JavaScript",
+      "web development dasar",
+      "command line dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=jydYq7oAtD8",
+    "youtubeUrl": "https://www.youtube.com/watch?v=jydYq7oAtD8",
+    "sourceUrl": "https://www.freecodecamp.org/news/software-testing-with-playwright/",
+    "whyUseful": "Menghubungkan strategi pengujian dengan perjalanan pengguna dan kondisi gagal aplikasi.",
+    "practice": "Tulis tes checkout dengan pembayaran ditolak dan jaringan lambat serta periksa navigasi keyboard.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Video gratis; sebagian bab mendemonstrasikan KaneAI dan dapat memerlukan layanan/akun. Tidak ada langganan atau runtime browser yang diuji. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit.",
+    "batch": "english-design"
+  },
+  {
+    "id": "id-kt-python-dasar",
+    "title": "Belajar Python Bahasa Indonesia [Dasar]",
+    "publisher": "Kelas Terbuka",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Python",
+      "Programming fundamentals",
+      "Functions",
+      "Collections"
+    ],
+    "level": "Beginner",
+    "prerequisites": [],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo7cgStrKAMhgnOT66z2qKz1",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo7cgStrKAMhgnOT66z2qKz1",
+    "sourceUrl": "https://github.com/kelasterbuka/Python3.x_Dasar_Programming",
+    "whyUseful": "Membangun dasar sintaks dan cara memecah persoalan sebelum masuk DSA.",
+    "practice": "Buat pencatat pengeluaran CLI dengan validasi masukan dan ringkasan per kategori.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman About repositori resmi Kelas Terbuka berhasil dibuka dan menautkan persis playlist YouTube ini. Bukti mendukung judul kursus dan tujuan tautannya; halaman YouTube hanya menampilkan footer/metadata. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi.",
+    "batch": "indonesian"
+  },
+  {
+    "id": "id-kt-python-oop",
+    "title": "Belajar Python 3.x Object Oriented Programming Bahasa Indonesia [OOP]",
+    "publisher": "Kelas Terbuka",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Python",
+      "OOP",
+      "Encapsulation",
+      "Inheritance",
+      "Abstract classes"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Python dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo7ab0-EveSvf4CLdyOECMm0",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo7ab0-EveSvf4CLdyOECMm0",
+    "sourceUrl": "https://github.com/kelasterbuka/Python3.x_Object_Oriented_Programming",
+    "whyUseful": "Menghubungkan class, enkapsulasi, pewarisan, dan abstraksi dengan contoh program.",
+    "practice": "Bangun sistem peminjaman buku memakai class dan abstract base class; uji aturan stok.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi.",
+    "batch": "indonesian"
+  },
+  {
+    "id": "id-kt-cpp-dasar",
+    "title": "Belajar C++ Bahasa Indonesia [Dasar]",
+    "publisher": "Kelas Terbuka",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "C++",
+      "Programming fundamentals",
+      "Arrays",
+      "Functions"
+    ],
+    "level": "Beginner",
+    "prerequisites": [],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo4Ze0bbGB1WKBSNMPzi-eWI",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo4Ze0bbGB1WKBSNMPzi-eWI",
+    "sourceUrl": "https://github.com/kelasterbuka/CPP_dasar-dasar-programming",
+    "whyUseful": "Menyediakan fondasi C++ untuk latihan algoritma dan pemahaman tipe data.",
+    "practice": "Implementasikan pencarian linear dan binary search, lalu bandingkan jumlah perbandingannya.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman About repositori resmi Kelas Terbuka berhasil dibuka dan menautkan persis playlist YouTube ini. Bukti mendukung judul kursus dan tujuan tautannya; halaman YouTube hanya menampilkan footer/metadata. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi.",
+    "batch": "indonesian"
+  },
+  {
+    "id": "id-kt-cpp-oop",
+    "title": "Belajar C++ - Object Oriented Programming Bahasa Indonesia [OOP]",
+    "publisher": "Kelas Terbuka",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "C++",
+      "OOP",
+      "Object lifetime",
+      "Encapsulation",
+      "Inheritance"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "C++ dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo7-RC_-hkL9gu0_ofABw862",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo7-RC_-hkL9gu0_ofABw862",
+    "sourceUrl": "https://github.com/kelasterbuka/CPP_Lanjut_OOP",
+    "whyUseful": "Memperjelas hubungan objek, lifetime, enkapsulasi, dan pewarisan di C++.",
+    "practice": "Buat class Buffer yang mencatat constructor dan destructor, lalu amati lifetime dalam beberapa scope.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi.",
+    "batch": "indonesian"
+  },
+  {
+    "id": "id-kt-java-oop",
+    "title": "Belajar Java - Object Oriented Programming Bahasa Indonesia [Lanjut]",
+    "publisher": "Kelas Terbuka",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Java",
+      "OOP",
+      "Polymorphism",
+      "Interfaces",
+      "Encapsulation"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Java dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo6V4_vk1s1NcM2HoW5KFG7i",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo6V4_vk1s1NcM2HoW5KFG7i",
+    "sourceUrl": "https://github.com/kelasterbuka/JAVA_Lanjut_OOP",
+    "whyUseful": "Menyiapkan pemahaman interface dan polymorphism sebelum belajar design patterns.",
+    "practice": "Buat interface PaymentMethod dengan dua implementasi dan pisahkan perhitungan total pesanan.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi.",
+    "batch": "indonesian"
+  },
+  {
+    "id": "id-kt-java-dasar",
+    "title": "Belajar Java Bahasa Indonesia [Dasar]",
+    "publisher": "Kelas Terbuka",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Java",
+      "Programming fundamentals",
+      "Arrays",
+      "Control flow"
+    ],
+    "level": "Beginner",
+    "prerequisites": [],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo51w0Hmqi0C8h2KWNzDfo6F",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLZS-MHyEIRo51w0Hmqi0C8h2KWNzDfo6F",
+    "sourceUrl": "https://github.com/kelasterbuka/JAVA_dasar_programming",
+    "whyUseful": "Memberi pijakan sintaks Java sebelum OOP, testing, dan pola desain.",
+    "practice": "Buat program statistik nilai dengan fungsi terpisah untuk input, rata-rata, dan pencarian nilai.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi.",
+    "batch": "indonesian"
+  },
+  {
+    "id": "id-wpu-php-oop",
+    "title": "OOP DASAR pada PHP",
+    "publisher": "Web Programming UNPAS / Sandhika Galih",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "PHP",
+      "OOP",
+      "Encapsulation",
+      "Interfaces"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "PHP dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLFIM0718LjIWvxxll-6wLXrC_16h_Bl_p",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLFIM0718LjIWvxxll-6wLXrC_16h_Bl_p",
+    "sourceUrl": "https://github.com/sandhikagalih/oophp",
+    "whyUseful": "Membantu memindahkan program PHP prosedural menjadi objek dengan tanggung jawab jelas.",
+    "practice": "Ubah keranjang belanja prosedural menjadi class Produk, Keranjang, dan KalkulatorDiskon.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi.",
+    "batch": "indonesian"
+  },
+  {
+    "id": "id-wpu-php-mvc",
+    "title": "Membuat Aplikasi MVC dengan PHP",
+    "publisher": "Web Programming UNPAS / Sandhika Galih",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "PHP",
+      "MVC",
+      "Architecture",
+      "Backend"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "PHP dasar",
+      "OOP dasar",
+      "SQL dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLFIM0718LjIVEh_d-h5wAjsdv2W4SAtkx",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLFIM0718LjIVEh_d-h5wAjsdv2W4SAtkx",
+    "sourceUrl": "https://github.com/sandhikagalih/phpmvc",
+    "whyUseful": "Memperlihatkan pemisahan model, view, dan controller melalui aplikasi nyata.",
+    "practice": "Bangun CRUD inventaris dengan MVC dan pastikan view tidak menjalankan query SQL.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi.",
+    "batch": "indonesian"
+  },
+  {
+    "id": "id-wpu-javascript-lanjutan",
+    "title": "JAVASCRIPT LANJUTAN",
+    "publisher": "Web Programming UNPAS / Sandhika Galih",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "JavaScript",
+      "Functions",
+      "OOP",
+      "Asynchronous programming"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "JavaScript dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLFIM0718LjIUGpY8wmE41W7rTJo_3Y46-",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLFIM0718LjIUGpY8wmE41W7rTJo_3Y46-",
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLFIM0718LjIUGpY8wmE41W7rTJo_3Y46-",
+    "whyUseful": "Melanjutkan dasar JavaScript ke konsep bahasa yang berguna saat merancang aplikasi.",
+    "practice": "Buat modul pengambil data dengan async/await dan penanganan error; pisahkan transformasi datanya.",
+    "verification": "search-only",
+    "checkedAt": "2026-11-09",
+    "notes": "Kandidat dari indeks kursus dan metadata judul/deskripsi YouTube; URL primer dicoba tetapi hanya footer/metadata yang terbaca. Bahasa Indonesia didukung judul/deskripsi dan konteks indeks berbahasa Indonesia; audio belum didengar. Playback, kelengkapan playlist, dan akses gratis setiap video belum diuji. Level dan prasyarat adalah saran kurasi.",
+    "batch": "indonesian"
+  },
+  {
+    "id": "id-wpu-nodejs",
+    "title": "Belajar NodeJS",
+    "publisher": "Web Programming UNPAS / Sandhika Galih",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Node.js",
+      "Backend",
+      "Express",
+      "Web development"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "JavaScript dasar",
+      "HTTP dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLFIM0718LjIW-XBdVOerYgKegBtD6rSfD",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLFIM0718LjIW-XBdVOerYgKegBtD6rSfD",
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLFIM0718LjIW-XBdVOerYgKegBtD6rSfD",
+    "whyUseful": "Memberi jalur praktik backend JavaScript setelah memahami dasar bahasa.",
+    "practice": "Buat API daftar tugas dengan router, service, dan penyimpanan sederhana yang terpisah.",
+    "verification": "search-only",
+    "checkedAt": "2026-11-09",
+    "notes": "Kandidat dari indeks kursus dan metadata judul/deskripsi YouTube; URL primer dicoba tetapi hanya footer/metadata yang terbaca. Bahasa Indonesia didukung judul/deskripsi dan konteks indeks berbahasa Indonesia; audio belum didengar. Playback, kelengkapan playlist, dan akses gratis setiap video belum diuji. Level dan prasyarat adalah saran kurasi.",
+    "batch": "indonesian"
+  },
+  {
+    "id": "id-pzn-design-patterns",
+    "title": "Belajar Design Patterns untuk Pemula",
+    "publisher": "Programmer Zaman Now / Eko Kurniawan Khannedy",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Design patterns",
+      "OOP",
+      "Software design"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "OOP dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH_yiziXrQeogYOJzCmD8XLM",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH_yiziXrQeogYOJzCmD8XLM",
+    "sourceUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH_yiziXrQeogYOJzCmD8XLM",
+    "whyUseful": "Memperkenalkan kosakata pola desain untuk membahas pilihan struktur kode.",
+    "practice": "Implementasikan Builder untuk konfigurasi laporan dan bandingkan dengan constructor panjang.",
+    "verification": "search-only",
+    "checkedAt": "2026-11-09",
+    "notes": "Kandidat dari indeks kursus dan metadata judul/deskripsi YouTube; URL primer dicoba tetapi hanya footer/metadata yang terbaca. Bahasa Indonesia didukung judul/deskripsi dan konteks indeks berbahasa Indonesia; audio belum didengar. Playback, kelengkapan playlist, dan akses gratis setiap video belum diuji. Level dan prasyarat adalah saran kurasi.",
+    "batch": "indonesian"
+  },
+  {
+    "id": "id-pzn-microservices",
+    "title": "Belajar Microservices untuk Pemula",
+    "publisher": "Programmer Zaman Now / Eko Kurniawan Khannedy",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Microservices",
+      "Architecture",
+      "Distributed systems"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "HTTP dasar",
+      "Backend dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-MtoBwQ0F3xNG21yjt5Kvs",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-MtoBwQ0F3xNG21yjt5Kvs",
+    "sourceUrl": "https://github.com/khannedy/belajar-microservices",
+    "whyUseful": "Membuka pembahasan batas layanan dan konsekuensi arsitektur terdistribusi.",
+    "practice": "Rancang batas layanan katalog dan pesanan, lalu tuliskan kegagalan saat komunikasi antarservice terputus.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "README resmi menyatakan materi berasal dari seri screencast Programmer Zaman Now dan menautkan persis playlist ini; daftar materi mencakup monolith, microservices, database per service, messaging, orchestration, dan choreography. Playback dan akses gratis setiap video belum diuji. Seri lama; gunakan dokumentasi terkini untuk implementasi. Level dan prasyarat adalah saran kurasi.",
+    "batch": "indonesian"
+  },
+  {
+    "id": "id-pzn-kafka",
+    "title": "Belajar Apache Kafka untuk Pemula",
+    "publisher": "Programmer Zaman Now / Eko Kurniawan Khannedy",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Apache Kafka",
+      "Messaging",
+      "Distributed systems",
+      "Backend"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Backend dasar",
+      "Terminal dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8dJMuQGojbjUdLEty8mqYF",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8dJMuQGojbjUdLEty8mqYF",
+    "sourceUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8dJMuQGojbjUdLEty8mqYF",
+    "whyUseful": "Mengenalkan messaging sebagai dasar komunikasi layanan dan pemrosesan event.",
+    "practice": "Buat producer event pesanan dan consumer pencatat; catat perilaku saat consumer dijalankan ulang.",
+    "verification": "search-only",
+    "checkedAt": "2026-11-09",
+    "notes": "Kandidat dari indeks kursus dan metadata judul/deskripsi YouTube; URL primer dicoba tetapi hanya footer/metadata yang terbaca. Bahasa Indonesia didukung judul/deskripsi dan konteks indeks berbahasa Indonesia; audio belum didengar. Playback, kelengkapan playlist, dan akses gratis setiap video belum diuji. Level dan prasyarat adalah saran kurasi.",
+    "batch": "indonesian"
+  },
+  {
+    "id": "id-pzn-docker",
+    "title": "Belajar Docker untuk Pemula",
+    "publisher": "Programmer Zaman Now / Eko Kurniawan Khannedy",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Docker",
+      "Containers",
+      "DevOps"
+    ],
+    "level": "Beginner",
+    "prerequisites": [
+      "Terminal dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-A7jBmdertzbeACuQWvQao",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-A7jBmdertzbeACuQWvQao",
+    "sourceUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH-A7jBmdertzbeACuQWvQao",
+    "whyUseful": "Membantu menyiapkan lingkungan latihan backend yang dapat diulang.",
+    "practice": "Containerisasi API kecil dan dokumentasikan perbedaan image, container, volume, serta port.",
+    "verification": "search-only",
+    "checkedAt": "2026-11-09",
+    "notes": "Kandidat dari indeks kursus dan metadata judul/deskripsi YouTube; URL primer dicoba tetapi hanya footer/metadata yang terbaca. Bahasa Indonesia didukung judul/deskripsi dan konteks indeks berbahasa Indonesia; audio belum didengar. Playback, kelengkapan playlist, dan akses gratis setiap video belum diuji. Level dan prasyarat adalah saran kurasi.",
+    "batch": "indonesian"
+  },
+  {
+    "id": "id-pzn-java-unit-test",
+    "title": "Tutorial Java Unit Test Bahasa Indonesia",
+    "publisher": "Programmer Zaman Now / Eko Kurniawan Khannedy",
+    "language": "Indonesian",
+    "format": "course",
+    "topics": [
+      "Java",
+      "Testing",
+      "JUnit",
+      "Mocking"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Java dasar",
+      "Java OOP"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=0jreaBRIOTo",
+    "youtubeUrl": "https://www.youtube.com/watch?v=0jreaBRIOTo",
+    "sourceUrl": "https://github.com/ProgrammerZamanNow/belajar-java-unit-test",
+    "whyUseful": "Membahas pengujian otomatis dan mocking sebagai bekal perubahan kode yang terukur.",
+    "practice": "Uji service peminjaman dengan parameterized tests dan mock repository untuk stok kosong serta berhasil.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi.",
+    "batch": "indonesian"
+  },
+  {
+    "id": "id-pzn-golang-restful-api",
+    "title": "Tutorial Golang RESTful API (Bahasa Indonesia)",
+    "publisher": "Programmer Zaman Now / Eko Kurniawan Khannedy",
+    "language": "Indonesian",
+    "format": "course",
+    "topics": [
+      "Go",
+      "REST API",
+      "Layered architecture",
+      "Testing",
+      "OpenAPI"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Go dasar",
+      "SQL dasar",
+      "HTTP dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=bJ2ZFt9D0uI",
+    "youtubeUrl": "https://www.youtube.com/watch?v=bJ2ZFt9D0uI",
+    "sourceUrl": "https://github.com/ProgrammerZamanNow/belajar-golang-restful-api",
+    "whyUseful": "Menghubungkan spesifikasi API, repository, service, controller, dan pengujian.",
+    "practice": "Buat API kategori berdasarkan spesifikasi sendiri dan uji validasi serta error database pada service.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi.",
+    "batch": "indonesian"
+  },
+  {
+    "id": "id-pzn-kotlin-unit-test",
+    "title": "Belajar Kotlin Unit Test",
+    "publisher": "Programmer Zaman Now / Eko Kurniawan Khannedy",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Kotlin",
+      "Testing",
+      "JUnit",
+      "Mocking"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Kotlin dasar",
+      "OOP dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8HoTBUpYgQ-Q45U54Tn_up",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8HoTBUpYgQ-Q45U54Tn_up",
+    "sourceUrl": "https://github.com/ProgrammerZamanNow/belajar-kotlin-unit-test",
+    "whyUseful": "Menyediakan jalur unit testing untuk pelajar yang memilih backend atau aplikasi Kotlin.",
+    "practice": "Tulis pengujian tabel kasus untuk kalkulator ongkos kirim dan mock sumber tarif.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi.",
+    "batch": "indonesian"
+  },
+  {
+    "id": "id-pzn-kotlin-oop",
+    "title": "Belajar Kotlin Object Oriented Programming",
+    "publisher": "Programmer Zaman Now / Eko Kurniawan Khannedy",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Kotlin",
+      "OOP",
+      "Software design"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Kotlin dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8lHOsi7kIDxK57WWLmzVog",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PL-CtdCApEFH8lHOsi7kIDxK57WWLmzVog",
+    "sourceUrl": "https://github.com/ProgrammerZamanNow/belajar-kotlin-oop",
+    "whyUseful": "Membangun fondasi objek Kotlin sebelum pola desain dan pengujian layanan.",
+    "practice": "Modelkan pesanan dan metode pengiriman dengan class serta interface yang punya tanggung jawab berbeda.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi.",
+    "batch": "indonesian"
+  },
+  {
+    "id": "id-ib-scikit-learn",
+    "title": "Tutorial Belajar Machine Learning Dasar | Python Scikit-Learn",
+    "publisher": "Indonesia Belajar / Setia Budi",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Python",
+      "Machine learning",
+      "Data preprocessing",
+      "Model evaluation"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Python dasar",
+      "NumPy dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PL2O3HdJI4voHNEv59SdXKRQVRZAFmwN9E",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PL2O3HdJI4voHNEv59SdXKRQVRZAFmwN9E",
+    "sourceUrl": "https://github.com/boedybios/belajar_scikit_learn",
+    "whyUseful": "Memberi jalur lanjutan Python melalui workflow pemodelan dan evaluasi data.",
+    "practice": "Latih dua classifier pada dataset kecil dengan pemisahan train/test dan bandingkan kesalahannya.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi.",
+    "batch": "indonesian"
+  },
+  {
+    "id": "id-ib-matplotlib",
+    "title": "Tutorial Belajar Visualisasi Data Dasar | Python Matplotlib",
+    "publisher": "Indonesia Belajar / Setia Budi",
+    "language": "Indonesian",
+    "format": "series",
+    "topics": [
+      "Python",
+      "Data visualization",
+      "Matplotlib"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Python dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PL2O3HdJI4voHrfoMFvkDeblmjarDN8nC8",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PL2O3HdJI4voHrfoMFvkDeblmjarDN8nC8",
+    "sourceUrl": "https://github.com/boedybios/belajar_matplotlib",
+    "whyUseful": "Mendukung visualisasi hasil eksperimen algoritma dan analisis data.",
+    "practice": "Plot waktu beberapa algoritma pencarian terhadap ukuran input dengan label sumbu dan metode ukur jelas.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori materi resmi pembuat berhasil dibuka; judul dan/atau susunan materi menguatkan keberadaan kursus. Tautan YouTube ditemukan terpisah; halaman YouTube hanya menampilkan metadata/footer atau gagal dimuat. Playback, kelengkapan playlist, akses gratis setiap video, dan kompatibilitas versi belum diuji. Level dan prasyarat adalah saran kurasi.",
+    "batch": "indonesian"
+  }
+]

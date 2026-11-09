@@ -1,0 +1,531 @@
+[
+  {
+    "id": "en-arjancodes-write-better-python",
+    "title": "Write Better Python Code",
+    "publisher": "ArjanCodes",
+    "language": "English",
+    "format": "series",
+    "topics": [
+      "OOP",
+      "SOLID",
+      "design patterns",
+      "coupling and cohesion",
+      "unit testing"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Python dasar",
+      "classes dan functions"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLC0nd42SBTaNuP4iB4L6SJlMaHE71FG6N",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLC0nd42SBTaNuP4iB4L6SJlMaHE71FG6N",
+    "sourceUrl": "https://github.com/ArjanCodes/betterpython",
+    "whyUseful": "Menghubungkan desain kelas Python dengan perubahan kode yang lebih mudah diuji.",
+    "practice": "Ubah kalkulator ongkir menjadi Strategy lalu suntikkan penyedia tarif palsu untuk unit test.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori resmi menautkan playlist dan mengelompokkan contoh per topik. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit."
+  },
+  {
+    "id": "en-dan-adams-csharp-patterns-solid",
+    "title": "Mastering Design Patterns in C#: A Beginner-Friendly Guide, Including OOP and SOLID Principles",
+    "publisher": "Dan Adams / DoableDanny",
+    "language": "English",
+    "format": "series",
+    "topics": [
+      "OOP",
+      "SOLID",
+      "UML",
+      "design patterns"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "C# dasar",
+      "functions dan classes"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLxkN9e3dfloHD01FzTGVYWYgGgtepuQIg",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLxkN9e3dfloHD01FzTGVYWYgGgtepuQIg",
+    "sourceUrl": "https://github.com/DoableDanny/Design-Patterns-in-C-Sharp",
+    "whyUseful": "Menjadi jembatan dari konsep objek menuju keputusan penggunaan pola desain.",
+    "practice": "Bangun editor teks mini dengan Command untuk undo dan jelaskan mengapa pola itu diperlukan.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Repositori resmi menautkan rangkaian video. Versi kompilasi freeCodeCamp adalah materi yang sama dan tidak dihitung terpisah. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit."
+  },
+  {
+    "id": "en-okhravi-design-patterns",
+    "title": "Design Patterns in Object Oriented Programming",
+    "publisher": "Christopher Okhravi",
+    "language": "English",
+    "format": "series",
+    "topics": [
+      "OOP",
+      "design patterns"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "OOP dasar",
+      "interfaces dan polymorphism"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc",
+    "sourceUrl": "https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc",
+    "whyUseful": "Memberi rangkaian penjelasan konseptual untuk membandingkan solusi pola desain.",
+    "practice": "Implementasikan notifikasi dengan Observer lalu bandingkan dengan pemanggilan langsung.",
+    "verification": "search-only",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman playlist dibuka tetapi hanya footer terbaca; judul seri dan atribusi tersedia pada metadata pencarian video resmi episode pertama. Kelengkapan playlist belum diperiksa. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit."
+  },
+  {
+    "id": "en-resocoder-clean-architecture-tdd",
+    "title": "Flutter TDD Clean Architecture Course",
+    "publisher": "Reso Coder",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "clean architecture",
+      "TDD",
+      "repository pattern",
+      "dependency inversion",
+      "refactoring"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Dart dasar",
+      "Flutter dasar",
+      "async programming"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=dc3B_mMrZ-Q",
+    "youtubeUrl": "https://www.youtube.com/watch?v=dc3B_mMrZ-Q",
+    "sourceUrl": "https://resocoder.com/flutter-clean-architecture-tdd/",
+    "whyUseful": "Menunjukkan pemisahan domain, data, dan presentasi sambil membangun fitur dengan tes.",
+    "practice": "Buat fitur fakta angka dengan repository palsu dan uji use case tanpa UI.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Seri asli dan video kompilasinya dihitung sekali. Materi lama: versi Flutter, Dart, BLoC dan paket mungkin memerlukan adaptasi; build contoh belum diuji. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit."
+  },
+  {
+    "id": "en-resocoder-firebase-ddd",
+    "title": "Flutter Firebase & DDD Course",
+    "publisher": "Reso Coder",
+    "language": "English",
+    "format": "series",
+    "topics": [
+      "DDD",
+      "value objects",
+      "domain entities",
+      "clean architecture",
+      "repository pattern"
+    ],
+    "level": "Advanced",
+    "prerequisites": [
+      "Dart dan Flutter",
+      "async streams",
+      "OOP dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLB6lc7nQ1n4iS5p-IezFFgqP6YvAJy84U",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLB6lc7nQ1n4iS5p-IezFFgqP6YvAJy84U",
+    "sourceUrl": "https://resocoder.com/2020/03/09/flutter-firebase-ddd-course-1-domain-driven-design-principles/",
+    "whyUseful": "Memperlihatkan pemodelan aturan domain dan validasi pada aplikasi catatan.",
+    "practice": "Modelkan alamat email sebagai value object dan uji bahwa nilai tidak valid tidak dapat membentuk objek domain.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman resmi seri dan repositori dibuka; URL playlist ditemukan lewat tautan forum lalu halaman YouTube dibuka. Materi 2020; kompatibilitas paket dan seluruh episode belum diuji. Firebase dapat memerlukan akun; tidak ada provisioning dilakukan. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit."
+  },
+  {
+    "id": "en-cambridge-distributed-systems",
+    "title": "Distributed Systems (2020/21)",
+    "publisher": "University of Cambridge / Martin Kleppmann",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "distributed systems",
+      "fault tolerance",
+      "replication",
+      "consistency",
+      "consensus"
+    ],
+    "level": "Advanced",
+    "prerequisites": [
+      "networking dasar",
+      "concurrency dasar",
+      "database dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB",
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB",
+    "sourceUrl": "https://www.cl.cam.ac.uk/teaching/2021/ConcDisSys/dist-sys-notes.pdf",
+    "whyUseful": "Memberi dasar untuk menilai kegagalan parsial dan konsistensi sebelum memilih arsitektur layanan.",
+    "practice": "Simulasikan dua replika dengan pesan terlambat lalu tulis invariant dan skenario kegagalannya.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "PDF resmi menautkan playlist kuliah; ini bagian distributed systems dari Concurrent and Distributed Systems, dihitung sekali. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit."
+  },
+  {
+    "id": "en-fcc-javascript-clean-code",
+    "title": "JavaScript Clean Code Course – Fix Code Smells & Refactor",
+    "publisher": "freeCodeCamp.org / Tapas Adhikary",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "clean code",
+      "code smells",
+      "refactoring",
+      "ESLint",
+      "Prettier"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "JavaScript dasar",
+      "functions dan objects"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=626BcUO84og",
+    "youtubeUrl": "https://www.youtube.com/watch?v=626BcUO84og",
+    "sourceUrl": "https://www.freecodecamp.org/news/level-up-your-javascript-detect-smells-and-write-clean-code",
+    "whyUseful": "Melatih membaca kode sulit dirawat dan memilih refactor yang relevan.",
+    "practice": "Ambil fungsi checkout panjang, tambahkan tes perilaku lalu lakukan extract function tanpa mengubah hasil.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman penerbit merinci cakupan dan menautkan video penuh; linting tidak dianggap bukti kebenaran program. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit."
+  },
+  {
+    "id": "en-fcc-pytest",
+    "title": "Pytest Tutorial – How to Test Python Code",
+    "publisher": "freeCodeCamp.org / Farhan Ali",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "testing",
+      "pytest",
+      "fixtures",
+      "parametrization",
+      "mocking"
+    ],
+    "level": "Beginner",
+    "prerequisites": [
+      "Python dasar",
+      "functions",
+      "imports"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=cHYq1MRoyI0",
+    "youtubeUrl": "https://www.youtube.com/watch?v=cHYq1MRoyI0",
+    "sourceUrl": "https://www.freecodecamp.org/news/testing-in-python-with-pytest",
+    "whyUseful": "Memberikan fondasi tes Python untuk menjaga perilaku saat kode berkembang.",
+    "practice": "Uji parser transaksi dengan kasus normal, input kosong, format salah dan dependency jaringan palsu.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Bagian penggunaan ChatGPT tersedia; hasil AI tetap perlu diperiksa. Tidak ada tes contoh yang dijalankan pada riset ini. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit."
+  },
+  {
+    "id": "en-fcc-jest",
+    "title": "How to Test JavaScript Code with Jest",
+    "publisher": "freeCodeCamp.org / Tomi Tokko",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "testing",
+      "Jest",
+      "mocking",
+      "async tests",
+      "snapshot testing"
+    ],
+    "level": "Beginner",
+    "prerequisites": [
+      "JavaScript dasar",
+      "Node.js dasar",
+      "promises"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=IPiUDhwnZxA",
+    "youtubeUrl": "https://www.youtube.com/watch?v=IPiUDhwnZxA",
+    "sourceUrl": "https://www.freecodecamp.org/news/how-to-test-javascript-code-with-jest",
+    "whyUseful": "Membantu menguji fungsi dan dependency asinkron di proyek JavaScript.",
+    "practice": "Uji layanan keranjang belanja dan mock API pembayaran yang mengembalikan timeout.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman penerbit dibuka; pengambilan halaman YouTube gagal. Versi dependency dan eksekusi contoh belum diuji. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit."
+  },
+  {
+    "id": "en-fcc-python-microservices-system-design",
+    "title": "Microservice Architecture and System Design with Python & Kubernetes – Full Course",
+    "publisher": "freeCodeCamp.org / Kantan Coding",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "microservices",
+      "distributed systems",
+      "RabbitMQ",
+      "Kubernetes",
+      "eventual consistency"
+    ],
+    "level": "Advanced",
+    "prerequisites": [
+      "Python backend",
+      "HTTP API",
+      "Docker dasar",
+      "database dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=hmkF77F9TLw",
+    "youtubeUrl": "https://www.youtube.com/watch?v=hmkF77F9TLw",
+    "sourceUrl": "https://www.freecodecamp.org/news/microservices-and-software-system-design-course",
+    "whyUseful": "Menghubungkan komunikasi sinkron dan asinkron dengan aplikasi konversi berkas.",
+    "practice": "Rancang antrean konversi lokal dan tambahkan idempotency key agar pesan ganda tidak menghasilkan dua keluaran.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Kursus gratis ditonton; lingkungan Kubernetes/database perlu setup tersendiri. Halaman penerbit dibuka, halaman YouTube gagal diambil; deployment tidak dijalankan. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit."
+  },
+  {
+    "id": "en-fcc-aws-event-driven",
+    "title": "Event Driven Architecture on AWS – Course for Beginners",
+    "publisher": "freeCodeCamp.org / Matt Morgan and Matt Martz",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "event-driven architecture",
+      "refactoring",
+      "idempotency",
+      "queues",
+      "fault tolerance"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "HTTP API",
+      "serverless dasar",
+      "database dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=Zr6fnhvJKlw",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Zr6fnhvJKlw",
+    "sourceUrl": "https://www.freecodecamp.org/news/deep-dive-into-event-driven-architecture-on-aws",
+    "whyUseful": "Memperlihatkan alasan memisahkan pemrosesan pesanan dan menangani pengiriman ulang event.",
+    "practice": "Gambar alur order-payment-inventory dengan dead-letter queue lalu simulasikan pesan duplikat secara lokal.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Video gratis; praktik AWS dapat menimbulkan biaya dan memerlukan akun. Riset ini tidak membuat resource cloud. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit."
+  },
+  {
+    "id": "en-fcc-fastapi-event-driven",
+    "title": "Event-Driven Architecture with React and FastAPI – Full Course",
+    "publisher": "freeCodeCamp.org / Scalable Scripts",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "event-driven architecture",
+      "finite state machine",
+      "FastAPI",
+      "Redis",
+      "React"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "Python dan JavaScript dasar",
+      "HTTP API",
+      "React dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=NVvIpqmf_Xc",
+    "youtubeUrl": "https://www.youtube.com/watch?v=NVvIpqmf_Xc",
+    "sourceUrl": "https://www.freecodecamp.org/news/implement-event-driven-architecture-with-react-and-fastapi",
+    "whyUseful": "Mengubah event menjadi perubahan state yang dapat ditelusuri dalam aplikasi.",
+    "practice": "Buat state machine pengiriman dan tolak transisi delivered-ke-pending melalui tes.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman penerbit dibuka dan merinci proyek; pengambilan YouTube sempat gagal. Versi paket, Redis dan aplikasi belum dijalankan. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit."
+  },
+  {
+    "id": "en-fcc-gaurav-system-design",
+    "title": "System Design for Beginners Course",
+    "publisher": "freeCodeCamp.org / Gaurav Sen",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "system design",
+      "API design",
+      "UML",
+      "video streaming",
+      "fault tolerance"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "programming dasar",
+      "HTTP",
+      "database dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=m8Icp_Cid5o",
+    "youtubeUrl": "https://www.youtube.com/watch?v=m8Icp_Cid5o",
+    "sourceUrl": "https://www.freecodecamp.org/news/software-system-design-for-beginners",
+    "whyUseful": "Mempelajari keputusan desain melalui contoh layanan streaming yang konkret.",
+    "practice": "Buat diagram upload-transcode-playback lalu jelaskan pilihan datastore dan protokol streaming.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Judul memakai Beginners tetapi prasyarat teknis disarankan. Berbeda dari proyek YouTube clone Keerti Purswani; tidak dipetakan sebagai kursus SOLID. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit."
+  },
+  {
+    "id": "en-fcc-system-design-2026",
+    "title": "System Design Course – APIs, Databases, Caching, CDNs, Load Balancing & Production Infra",
+    "publisher": "freeCodeCamp.org / Hayk Simonyan",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "system design",
+      "API design",
+      "load balancing",
+      "databases",
+      "authentication",
+      "authorization"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "HTTP",
+      "database dasar",
+      "programming"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=C842vFY5kRo",
+    "youtubeUrl": "https://www.youtube.com/watch?v=C842vFY5kRo",
+    "sourceUrl": "https://www.freecodecamp.org/news/learn-software-system-design/",
+    "whyUseful": "Memperluas rancangan satu server menuju layanan dengan kebutuhan skala dan keamanan.",
+    "practice": "Mulai dari API satu server lalu gambar perubahan untuk health checks, load balancing dan otorisasi.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman penerbit 2026 menautkan video berbeda dari kursus konsep 2024; ada tumpang tindih topik. Tidak mengeklaim bahwa isinya sepenuhnya baru. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit. Versi Hayk 2024 (https://www.youtube.com/watch?v=F2FmTdLtb_4) dicatat sebagai alternatif terpisah di excluded-alternatives.json dan tidak menambah jumlah course."
+  },
+  {
+    "id": "en-fcc-senior-system-design",
+    "title": "Design Software Systems Like a Senior Engineer – Complete Course",
+    "publisher": "freeCodeCamp.org",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "system design",
+      "requirements",
+      "capacity estimation",
+      "architecture tradeoffs",
+      "interview preparation"
+    ],
+    "level": "Advanced",
+    "prerequisites": [
+      "backend development",
+      "networking",
+      "database design"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=soTfFFIQQ8U",
+    "youtubeUrl": "https://www.youtube.com/watch?v=soTfFFIQQ8U",
+    "sourceUrl": "https://www.freecodecamp.org/news/learn-how-to-design-software-systems-like-a-senior-engineer-in-our-new-course",
+    "whyUseful": "Melatih merumuskan kebutuhan dan membela pilihan desain secara terstruktur.",
+    "practice": "Kerjakan rancangan layanan pemesanan hotel dengan estimasi trafik dan dua alternatif penanganan bottleneck.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman penerbit Oktober 2026 dibuka; fokus persiapan diskusi desain. Hasil interview dan kesiapan senior tidak diverifikasi. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit."
+  },
+  {
+    "id": "en-fcc-youtube-clone-system-design",
+    "title": "Learn High-Level System Design by Coding YouTube – Full Course",
+    "publisher": "freeCodeCamp.org / Keerti Purswani",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "system design",
+      "video streaming",
+      "service boundaries",
+      "Redis",
+      "transcoding"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "JavaScript",
+      "Node.js",
+      "React",
+      "HTTP"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=FiXOaYnW64w",
+    "youtubeUrl": "https://www.youtube.com/watch?v=FiXOaYnW64w",
+    "sourceUrl": "https://www.freecodecamp.org/news/learn-high-level-system-design-by-building-a-youtube-clone/",
+    "whyUseful": "Memperlihatkan pemisahan layanan upload, transcoder dan watch melalui proyek.",
+    "practice": "Bangun prototipe antrean transcoding lokal lalu dokumentasikan penanganan upload gagal.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman penerbit menguraikan proyek dan menautkan video; ini tutorial pembelajaran, bukan bukti skala produksi. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit."
+  },
+  {
+    "id": "en-fcc-jim-python-oop",
+    "title": "Object Oriented Programming with Python – Full Course for Beginners",
+    "publisher": "freeCodeCamp.org / JimShapedCoding",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "OOP",
+      "classes",
+      "inheritance",
+      "encapsulation",
+      "class methods"
+    ],
+    "level": "Beginner",
+    "prerequisites": [
+      "Python functions",
+      "variables",
+      "loops",
+      "conditionals"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=Ej_02ICOIgs",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Ej_02ICOIgs",
+    "sourceUrl": "https://www.freecodecamp.org/news/learn-object-oriented-programming-with-python",
+    "whyUseful": "Membantu berpindah dari skrip fungsi menuju model objek sederhana.",
+    "practice": "Bangun model inventaris toko dengan Item dan aturan diskon yang diuji.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Kursus Jim 2021 berbeda dari kursus Dan Adams 2025; dua alternatif pengantar, bukan dua tahap wajib. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit."
+  },
+  {
+    "id": "en-fcc-dan-python-oop",
+    "title": "Python Object Oriented Programming (OOP) – Full Course for Beginners",
+    "publisher": "freeCodeCamp.org / Dan Adams",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "OOP",
+      "classes",
+      "properties",
+      "inheritance",
+      "polymorphism",
+      "abstraction"
+    ],
+    "level": "Beginner",
+    "prerequisites": [
+      "Python dasar",
+      "functions"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=iLRZi0Gu8Go",
+    "youtubeUrl": "https://www.youtube.com/watch?v=iLRZi0Gu8Go",
+    "sourceUrl": "https://www.freecodecamp.org/news/master-object-oriented-programming-in-python",
+    "whyUseful": "Memberi alternatif pengantar objek dengan pembahasan property dan pengendalian data.",
+    "practice": "Modelkan rekening dengan deposit dan withdraw, lalu cegah saldo negatif melalui tes.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Halaman penerbit Januari 2025 dibuka. Tumpang tindih topik dengan pengantar Jim; kurasi tidak mengharuskan menonton keduanya. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit."
+  },
+  {
+    "id": "en-fcc-playwright-software-testing",
+    "title": "Software Testing Course – Playwright, E2E, and AI Agents",
+    "publisher": "freeCodeCamp.org / Beau Carnes",
+    "language": "English",
+    "format": "course",
+    "topics": [
+      "testing",
+      "testing pyramid",
+      "Playwright",
+      "E2E testing",
+      "mocking",
+      "accessibility testing"
+    ],
+    "level": "Intermediate",
+    "prerequisites": [
+      "JavaScript",
+      "web development dasar",
+      "command line dasar"
+    ],
+    "courseUrl": "https://www.youtube.com/watch?v=jydYq7oAtD8",
+    "youtubeUrl": "https://www.youtube.com/watch?v=jydYq7oAtD8",
+    "sourceUrl": "https://www.freecodecamp.org/news/software-testing-with-playwright/",
+    "whyUseful": "Menghubungkan strategi pengujian dengan perjalanan pengguna dan kondisi gagal aplikasi.",
+    "practice": "Tulis tes checkout dengan pembayaran ditolak dan jaringan lambat serta periksa navigasi keyboard.",
+    "verification": "primary-page-opened",
+    "checkedAt": "2026-11-09",
+    "notes": "Video gratis; sebagian bab mendemonstrasikan KaneAI dan dapat memerlukan layanan/akun. Tidak ada langganan atau runtime browser yang diuji. Bahasa berdasarkan metadata/judul penerbit berbahasa Inggris; audio dan playback belum diuji. Level dan prasyarat adalah rekomendasi kuratorial, bukan sertifikasi penerbit."
+  }
+]
